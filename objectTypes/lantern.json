@@ -1,14 +1,14 @@
 {
-	"name": "Player",
+	"name": "Lantern",
 	"plugin-id": "Sprite",
-	"sid": 891045395490574,
+	"sid": 670998068666926,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "TileMovement",
-			"name": "TileMovement",
-			"sid": 823645115326580
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 596978852135921
 		}
 	],
 	"effectTypes": [],
@@ -17,19 +17,19 @@
 			{
 				"frames": [
 					{
-						"width": 64,
-						"height": 64,
+						"width": 201,
+						"height": 201,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2032723,
+						"imageSpriteId": 8127516,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 696195817201169,
+				"sid": 837290095290287,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

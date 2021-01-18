@@ -24,8 +24,8 @@
 					"world": {
 						"x": 0,
 						"y": 0,
-						"width": 640,
-						"height": 360,
+						"width": 1280,
+						"height": 720,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -71,8 +71,8 @@
 					"type": "Wall",
 					"properties": {
 						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
+						"tile-width": 64,
+						"tile-height": 64,
 						"tile-x-offset": 0,
 						"tile-y-offset": 0,
 						"tile-x-spacing": 0,
@@ -89,28 +89,35 @@
 								"enabled": true,
 								"tags": ""
 							}
+						},
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
+							}
 						}
 					},
 					"ownData": {
 						"tilemapData": {
-							"width": 20,
-							"height": 12,
-							"max-width": 20,
-							"max-height": 12,
-							"data": "7x0,1,3x0,5x1,0,1,0,3x1,0,1,0,1,3x0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,3x1,0,1,0,1,0,1,0,1,0,1,0,1,3x0,1,0,1,0,3x1,0,1,0,3x1,0,1,2x0,1,2x0,1,5x0,2x1,0,1,0,2x1,0,6x1,0,1,2x0,1,0,1,0,1,0,2x1,0,2x1,0,1,0,1,0,1,0,2x1,0,1,2x0,1,3x0,1,0,2x1,0,1,0,2x1,0,1,0,1,0,2x1,0,1,4x0,1,0,1,0,2x1,0,1,2x0,3x1,0,1,0,2x1,0,2x1,0,1,0,1,0,1,0,1,3x0,1,0,1,3x0,1,0,1,0,1,0,1,0,3x1,0,1,0,1,0,1,7x0,1,0,1,0,7x1,3x0,1"
+							"width": 22,
+							"height": 13,
+							"max-width": 64,
+							"max-height": 29,
+							"data": "30x0,12x1,17x0,1,5x0,1,4x0,1,17x0,5x1,3x0,4x1,17x0,1,5x0,1,0,1,2x0,1,17x0,1,0,1,0,1,0,1,0,1,0,2x1,17x0,1,0,1,0,1,0,1,3x0,2x1,17x0,1,0,1,0,5x1,0,2x1,17x0,3x1,3x0,1,3x0,2x1,17x0,1,0,3x1,3x0,1,2x0,1,17x0,1,0,1,3x0,1,0,4x1,17x0,1,0,1,0,3x1,4x0,1,17x0,1,7x0,1,0,2x1,17x0,1,0,1,0,5x1,2x0,1,17x0,1,0,1,5x0,2x1,0,1,17x0,1,0,3x1,0,1,2x0,1,0,1,17x0,1,5x0,1,2x0,1,0,1,17x0,1,0,2x1,0,3x1,0,1,0,1,17x0,1,0,2x1,3x0,1,3x0,1,17x0,1,4x0,1,3x0,1,0,1,16x0,13x1,1263x0"
 						},
-						"tile-width": 32,
-						"tile-height": 32,
+						"tile-width": 64,
+						"tile-height": 64,
 						"tile-x-offset": 0,
 						"tile-y-offset": 0,
 						"tile-x-spacing": 0,
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": 0,
-						"y": 0,
-						"width": 640,
-						"height": 384,
+						"x": -64,
+						"y": -64,
+						"width": 1440,
+						"height": 864,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -165,12 +172,12 @@
 					"behaviors": {
 						"TileMovement": {
 							"properties": {
-								"grid-width": 32,
-								"grid-height": 32,
-								"grid-offset-x": 16,
-								"grid-offset-y": 16,
-								"speed-x": 96,
-								"speed-y": 96,
+								"grid-width": 64,
+								"grid-height": 64,
+								"grid-offset-x": 32,
+								"grid-offset-y": 32,
+								"speed-x": 192,
+								"speed-y": 192,
 								"enabled": true,
 								"default-controls": true,
 								"isometric": false
@@ -178,10 +185,10 @@
 						}
 					},
 					"world": {
-						"x": 336,
-						"y": 144,
-						"width": 32,
-						"height": 32,
+						"x": 288,
+						"y": 224,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -218,13 +225,118 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"global": false
+		},
+		{
+			"name": "Light",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Lantern",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 6,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 288,
+						"y": 224,
+						"width": 288,
+						"height": 288,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "destination-out"
+					}
+				},
+				{
+					"type": "ShadowLight",
+					"properties": {
+						"light-height": 0,
+						"light-radius": 20,
+						"shadow-color": [
+							0,
+							0,
+							0,
+							0
+						],
+						"cast-from": "all",
+						"tag": "",
+						"live-preview": false
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 288,
+						"y": 224,
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 965146452517515,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0,
+				0,
+				0,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": true,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
 		}
 	],
 	"sid": 560872678358289,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 640,
-	"height": 360,
+	"width": 1280,
+	"height": 720,
 	"unboundedScrolling": false,
 	"eventSheet": "Event sheet 1"
 }

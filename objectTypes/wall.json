@@ -9,18 +9,23 @@
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 744867678305678
+		},
+		{
+			"behaviorId": "shadowcaster",
+			"name": "ShadowCaster",
+			"sid": 388443864164059
 		}
 	],
 	"effectTypes": [],
 	"image": {
-		"width": 32,
-		"height": 32,
+		"width": 64,
+		"height": 64,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 1942267,
+		"imageSpriteId": 8074951,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {}
