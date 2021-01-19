@@ -105,133 +105,141 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 339820217651870,
+					"id": "is-moving-direction",
+					"objectClass": "Player",
+					"sid": 558154145333605,
+					"behaviorType": "TileMovement",
 					"parameters": {
-						"key": 38
+						"direction": "up"
 					}
 				},
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 212675848238776,
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 846101082903894,
 					"parameters": {
-						"key": 87
-					}
+						"animation": "\"up\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-angle",
+					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 722158408096344,
+					"sid": 692263829843165,
 					"parameters": {
-						"angle": "0"
+						"animation": "\"up\"",
+						"from": "beginning"
 					}
 				}
 			],
-			"sid": 226118321249554,
-			"isOrBlock": true
+			"sid": 226118321249554
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 684495187050937,
+					"id": "is-moving-direction",
+					"objectClass": "Player",
+					"sid": 360017326153763,
+					"behaviorType": "TileMovement",
 					"parameters": {
-						"key": 37
+						"direction": "left"
 					}
 				},
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 913813146244664,
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 254259049951724,
 					"parameters": {
-						"key": 65
-					}
+						"animation": "\"left\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-angle",
+					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 814972130719630,
+					"sid": 395249172290248,
 					"parameters": {
-						"angle": "270"
+						"animation": "\"left\"",
+						"from": "beginning"
 					}
 				}
 			],
-			"sid": 722919668222263,
-			"isOrBlock": true
+			"sid": 773118915142128
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 113264812618416,
+					"id": "is-moving-direction",
+					"objectClass": "Player",
+					"sid": 968868376906243,
+					"behaviorType": "TileMovement",
 					"parameters": {
-						"key": 40
+						"direction": "down"
 					}
 				},
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 368486874198575,
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 121341055611599,
 					"parameters": {
-						"key": 83
-					}
+						"animation": "\"down\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-angle",
+					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 928662862272210,
+					"sid": 521772872232054,
 					"parameters": {
-						"angle": "180"
+						"animation": "\"down\"",
+						"from": "beginning"
 					}
 				}
 			],
-			"sid": 945227213367718,
-			"isOrBlock": true
+			"sid": 762865356093500
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 962305881585921,
+					"id": "is-moving-direction",
+					"objectClass": "Player",
+					"sid": 763268957514603,
+					"behaviorType": "TileMovement",
 					"parameters": {
-						"key": 39
+						"direction": "right"
 					}
 				},
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 607542641137382,
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 856181077617444,
 					"parameters": {
-						"key": 68
-					}
+						"animation": "\"right\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-angle",
+					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 162663161597880,
+					"sid": 649716763169118,
 					"parameters": {
-						"angle": "90"
+						"animation": "\"right\"",
+						"from": "beginning"
 					}
 				}
 			],
-			"sid": 663793757204335,
-			"isOrBlock": true
+			"sid": 509269806875047
 		},
 		{
 			"eventType": "block",

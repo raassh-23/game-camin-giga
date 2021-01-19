@@ -162,7 +162,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "up",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -181,6 +181,11 @@
 								"enabled": true,
 								"default-controls": true,
 								"isometric": false
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},
@@ -337,6 +342,6 @@
 	"effectTypes": [],
 	"width": 1280,
 	"height": 720,
-	"unboundedScrolling": false,
+	"unboundedScrolling": true,
 	"eventSheet": "Event sheet 1"
 }
