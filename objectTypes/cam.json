@@ -1,0 +1,43 @@
+{
+	"name": "cam",
+	"plugin-id": "Sprite",
+	"sid": 886392786741653,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 438452449185317
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7346597,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 392309878032327,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

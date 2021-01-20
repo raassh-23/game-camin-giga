@@ -56,14 +56,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"version": "r225",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -77,6 +69,22 @@
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Persist",
+			"name": "Persist",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
 		}
 	],
 	"uniqueId": "rk8wewjd75n",
@@ -87,25 +95,40 @@
 			"Keyboard",
 			"Wall",
 			"Lantern",
-			"ShadowLight"
+			"Marker",
+			"Teleporter",
+			"Sprite",
+			"Goal",
+			"ShadowLight",
+			"cam"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
-		"subfolders": []
-	},
-	"layouts": {
 		"items": [
-			"Layout 1"
+			"Activable"
 		],
 		"subfolders": []
 	},
+	"layouts": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Template",
+					"0",
+					"1"
+				],
+				"subfolders": [],
+				"name": "Levels"
+			}
+		]
+	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Level_ES"
 		],
 		"subfolders": []
 	},
@@ -209,8 +232,8 @@
 		"description": "",
 		"version": "1.0.0.0",
 		"author": "Raassh",
-		"authorEmail": "rasshgames@gmail.com",
-		"authorWebsite": "rushhourdream.itch.io",
+		"authorEmail": "",
+		"authorWebsite": "",
 		"appId": "",
 		"pixelRounding": true,
 		"useLoaderLayout": false,
@@ -245,7 +268,7 @@
 		"sampling": "trilinear",
 		"downscaling": "medium",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "progress",
 		"preloadSounds": true,
 		"clearBackground": true,
 		"enhancedAccelerationPrecision": true,
@@ -253,5 +276,5 @@
 	},
 	"viewportWidth": 1280,
 	"viewportHeight": 720,
-	"firstLayout": null
+	"firstLayout": "0"
 }

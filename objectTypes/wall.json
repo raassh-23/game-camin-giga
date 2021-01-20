@@ -13,7 +13,7 @@
 		{
 			"behaviorId": "shadowcaster",
 			"name": "ShadowCaster",
-			"sid": 388443864164059
+			"sid": 449227743556540
 		}
 	],
 	"effectTypes": [],
@@ -28,5 +28,55 @@
 		"imageSpriteId": 8074951,
 		"useCollisionPoly": true
 	},
-	"tile-collision-polys": {}
+	"tile-collision-polys": {
+		"1": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0.25,
+					1,
+					0.25,
+					1,
+					0.75,
+					0,
+					0.75
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"2": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0.25,
+					0.75,
+					0.25,
+					0.75,
+					0.75,
+					0,
+					0.75
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"3": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0.25,
+					0.75,
+					0.25,
+					0.75,
+					1,
+					0.25,
+					1,
+					0.24999999999999997,
+					0.75,
+					0,
+					0.75
+				]
+			},
+			"useCollisionPoly": true
+		}
+	}
 }

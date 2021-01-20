@@ -1,0 +1,56 @@
+{
+	"name": "Activable",
+	"plugin-id": "Sprite",
+	"sid": 916718329121434,
+	"instanceVariables": [
+		{
+			"name": "isActive",
+			"type": "boolean",
+			"desc": "",
+			"sid": 488366772200541
+		},
+		{
+			"name": "Route",
+			"type": "number",
+			"desc": "",
+			"sid": 629509420770840
+		},
+		{
+			"name": "Node",
+			"type": "number",
+			"desc": "",
+			"sid": 421606296515585
+		},
+		{
+			"name": "CollisionDir",
+			"type": "number",
+			"desc": "",
+			"sid": 647276340020785
+		},
+		{
+			"name": "TargetNode",
+			"type": "number",
+			"desc": "",
+			"sid": 313497472908254
+		},
+		{
+			"name": "TargetRoute",
+			"type": "number",
+			"desc": "",
+			"sid": 627134591619872
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 886956350157484
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Marker",
+		"Teleporter",
+		"Goal"
+	]
+}

@@ -1,6 +1,16 @@
 {
-	"name": "Event sheet 1",
+	"name": "Level_ES",
 	"events": [
+		{
+			"eventType": "variable",
+			"name": "Level",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 363290896692426
+		},
 		{
 			"eventType": "group",
 			"disabled": false,
@@ -394,8 +404,8 @@
 					"actions": [
 						{
 							"id": "set-position-to-another-object",
-							"objectClass": "ShadowLight",
-							"sid": 542349018453246,
+							"objectClass": "Lantern",
+							"sid": 314481009298850,
 							"parameters": {
 								"object": "Player",
 								"image-point-optional": "0"
@@ -403,8 +413,17 @@
 						},
 						{
 							"id": "set-position-to-another-object",
-							"objectClass": "Lantern",
-							"sid": 314481009298850,
+							"objectClass": "cam",
+							"sid": 891508076177713,
+							"parameters": {
+								"object": "Player",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "ShadowLight",
+							"sid": 525667879179279,
 							"parameters": {
 								"object": "Player",
 								"image-point-optional": "0"
@@ -415,6 +434,207 @@
 				}
 			],
 			"sid": 183106290452206
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 438798315626805,
+					"parameters": {
+						"object": "Goal"
+					}
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 215476328129380,
+					"behaviorType": "TileMovement",
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Goal",
+					"sid": 598116884821688,
+					"parameters": {
+						"instance-variable": "isActive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 564137932616080,
+					"parameters": {
+						"variable": "Level",
+						"value": "1"
+					}
+				},
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 707380838488318,
+					"parameters": {
+						"layout": "str(Level)"
+					}
+				}
+			],
+			"sid": 540894650978701
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 720008324981738,
+					"parameters": {
+						"object": "Teleporter"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 499354483351382,
+					"parameters": {
+						"instance-variable": "teleported"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 441030549208498,
+					"behaviorType": "TileMovement",
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Teleporter",
+					"sid": 766596045492170,
+					"parameters": {
+						"instance-variable": "isActive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "MovePlayerTo",
+					"sid": 161428029515931,
+					"parameters": [
+						"Teleporter.TargetRoute",
+						"Teleporter.TargetNode"
+					]
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 625462386350329,
+					"parameters": {
+						"instance-variable": "teleported",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 850357247372589
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 120310423648115,
+					"parameters": {
+						"object": "Teleporter"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 350716583895320,
+					"parameters": {
+						"instance-variable": "teleported",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 794889556500066
+		},
+		{
+			"functionName": "MovePlayerTo",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "TargetRoute",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 891669288344333
+				},
+				{
+					"name": "TargetNode",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 621069578242684
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 167606784899205,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 275020731053303,
+							"parameters": {
+								"object": "Teleporter",
+								"expression": "Teleporter.Route",
+								"comparison": 0,
+								"value": "TargetRoute"
+							}
+						},
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 693806042098965,
+							"parameters": {
+								"object": "Teleporter",
+								"expression": "Teleporter.Node",
+								"comparison": 0,
+								"value": "TargetNode"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-grid-position",
+							"objectClass": "Player",
+							"sid": 107295801322082,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"x": "(Teleporter.X - 32) / 64",
+								"y": "(Teleporter.Y - 32) / 64",
+								"instant": "instant"
+							}
+						}
+					],
+					"sid": 519002297172200
+				}
+			]
 		}
 	],
 	"sid": 626257349159799

@@ -9,6 +9,12 @@
 			"type": "number",
 			"desc": "0 up, 1 left, 2 down, 3 right",
 			"sid": 288937417766578
+		},
+		{
+			"name": "teleported",
+			"type": "boolean",
+			"desc": "",
+			"sid": 396562925759010
 		}
 	],
 	"behaviorTypes": [
@@ -16,11 +22,6 @@
 			"behaviorId": "TileMovement",
 			"name": "TileMovement",
 			"sid": 823645115326580
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 617163487161645
 		}
 	],
 	"effectTypes": [],
