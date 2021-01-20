@@ -2,287 +2,419 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Control",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 516771964361684,
-					"parameters": {
-						"key": 87
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "Player",
-					"sid": 919989226108058,
-					"behaviorType": "TileMovement",
-					"parameters": {
-						"control": "up"
-					}
-				}
-			],
-			"sid": 353086305605784
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 974056162445574,
-					"parameters": {
-						"key": 65
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "Player",
-					"sid": 529186693811606,
-					"behaviorType": "TileMovement",
-					"parameters": {
-						"control": "left"
-					}
-				}
-			],
-			"sid": 839100806443856
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 683092806870280,
-					"parameters": {
-						"key": 83
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "Player",
-					"sid": 232241978184885,
-					"behaviorType": "TileMovement",
-					"parameters": {
-						"control": "down"
-					}
-				}
-			],
-			"sid": 831118724657824
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 565829110928492,
-					"parameters": {
-						"key": 68
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "Player",
-					"sid": 579600031490164,
-					"behaviorType": "TileMovement",
-					"parameters": {
-						"control": "right"
-					}
-				}
-			],
-			"sid": 382954104051380
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-moving-direction",
-					"objectClass": "Player",
-					"sid": 558154145333605,
-					"behaviorType": "TileMovement",
-					"parameters": {
-						"direction": "up"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 223167521689111,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 521704977743176,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 956794042910558
 				},
 				{
-					"id": "is-animation-playing",
-					"objectClass": "Player",
-					"sid": 846101082903894,
-					"parameters": {
-						"animation": "\"up\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 692263829843165,
-					"parameters": {
-						"animation": "\"up\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 226118321249554
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-moving-direction",
-					"objectClass": "Player",
-					"sid": 360017326153763,
-					"behaviorType": "TileMovement",
-					"parameters": {
-						"direction": "left"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 844811939054137,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 638383886110321,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 117526204150184
 				},
 				{
-					"id": "is-animation-playing",
-					"objectClass": "Player",
-					"sid": 254259049951724,
-					"parameters": {
-						"animation": "\"left\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 395249172290248,
-					"parameters": {
-						"animation": "\"left\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 773118915142128
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-moving-direction",
-					"objectClass": "Player",
-					"sid": 968868376906243,
-					"behaviorType": "TileMovement",
-					"parameters": {
-						"direction": "down"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 382971217266246,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 561182761593728,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 755603548655519
 				},
 				{
-					"id": "is-animation-playing",
-					"objectClass": "Player",
-					"sid": 121341055611599,
-					"parameters": {
-						"animation": "\"down\""
-					},
-					"isInverted": true
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 702876896151128,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 637340215863348,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 389689968490907
 				}
 			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 521772872232054,
-					"parameters": {
-						"animation": "\"down\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 762865356093500
+			"sid": 560219984425904
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Animation",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "is-moving-direction",
-					"objectClass": "Player",
-					"sid": 763268957514603,
-					"behaviorType": "TileMovement",
-					"parameters": {
-						"direction": "right"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 233274293566386,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "up"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player",
+							"sid": 972391373556740,
+							"parameters": {
+								"animation": "\"up\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 282911000630464,
+							"parameters": {
+								"animation": "\"up\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 542330335758553
 				},
 				{
-					"id": "is-animation-playing",
-					"objectClass": "Player",
-					"sid": 856181077617444,
-					"parameters": {
-						"animation": "\"right\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 600220092882429,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "left"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player",
+							"sid": 355458501513775,
+							"parameters": {
+								"animation": "\"left\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 804352244064773,
+							"parameters": {
+								"animation": "\"left\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 989499103524625
+				},
 				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 649716763169118,
-					"parameters": {
-						"animation": "\"right\"",
-						"from": "beginning"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 426918602794134,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "down"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player",
+							"sid": 137027054045710,
+							"parameters": {
+								"animation": "\"down\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 138551574581371,
+							"parameters": {
+								"animation": "\"down\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 486130086045692
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 386564629290091,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "right"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player",
+							"sid": 915728820586557,
+							"parameters": {
+								"animation": "\"right\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 512837176660645,
+							"parameters": {
+								"animation": "\"right\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 684405391191111
 				}
 			],
-			"sid": 509269806875047
+			"sid": 987422654244722
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 871146426033724
-				}
-			],
-			"actions": [
-				{
-					"id": "pin-to-object-properties",
-					"objectClass": "Lantern",
-					"sid": 158350454507299,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "Player",
-						"x": true,
-						"y": true,
-						"angle": false,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 406007941803373,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "up"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 980416415516549,
+							"parameters": {
+								"instance-variable": "dir",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 190194401432196
 				},
 				{
-					"id": "pin-to-object-properties",
-					"objectClass": "ShadowLight",
-					"sid": 213693666917339,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "Lantern",
-						"x": true,
-						"y": true,
-						"angle": false,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 755374267870306,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "left"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 304009658687019,
+							"parameters": {
+								"instance-variable": "dir",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 588009195615664
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 821954490029122,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "down"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 324689328286139,
+							"parameters": {
+								"instance-variable": "dir",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 236243225626585
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 723247402423097,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "right"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 177793573103274,
+							"parameters": {
+								"instance-variable": "dir",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 342676518257416
 				}
 			],
-			"sid": 300752771669654
+			"sid": 731431442821985
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Light",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 784012402975232
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "ShadowLight",
+							"sid": 542349018453246,
+							"parameters": {
+								"object": "Player",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Lantern",
+							"sid": 314481009298850,
+							"parameters": {
+								"object": "Player",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 368993206000995
+				}
+			],
+			"sid": 183106290452206
 		}
 	],
 	"sid": 626257349159799

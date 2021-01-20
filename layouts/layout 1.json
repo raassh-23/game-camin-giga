@@ -168,7 +168,9 @@
 						"live-preview": false
 					},
 					"uid": 3,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"dir": 0
+					},
 					"behaviors": {
 						"TileMovement": {
 							"properties": {
@@ -190,8 +192,8 @@
 						}
 					},
 					"world": {
-						"x": 288,
-						"y": 224,
+						"x": 544,
+						"y": 352,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -246,13 +248,7 @@
 					},
 					"uid": 6,
 					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 288,
 						"y": 224,
@@ -288,13 +284,7 @@
 					},
 					"uid": 7,
 					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 288,
 						"y": 224,
