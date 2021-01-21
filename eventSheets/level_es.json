@@ -504,6 +504,16 @@
 					"isInverted": true
 				},
 				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 561171965074078,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "Teleporter.CollisionDir"
+					}
+				},
+				{
 					"id": "is-moving",
 					"objectClass": "Player",
 					"sid": 441030549208498,

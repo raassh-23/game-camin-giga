@@ -1,5 +1,5 @@
 {
-	"name": "Template",
+	"name": "2",
 	"layers": [
 		{
 			"name": "Background",
@@ -18,7 +18,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 17,
+					"uid": 2,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -39,7 +39,7 @@
 					}
 				}
 			],
-			"sid": 124384871082801,
+			"sid": 191890863150319,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -81,7 +81,7 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 19,
+					"uid": 3,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -104,7 +104,7 @@
 							"height": 45,
 							"max-width": 90,
 							"max-height": 76,
-							"data": "45x1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,45x1,3451x0"
+							"data": "45x1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,3x0,3x1,37x0,1,31x0,1,3x0,1,39x0,1,31x0,1,3x0,1,0,1,37x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,45x1,3451x0"
 						},
 						"tile-width": 64,
 						"tile-height": 64,
@@ -130,7 +130,7 @@
 					}
 				}
 			],
-			"sid": 114830723774588,
+			"sid": 191558213382035,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -167,7 +167,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 21,
+					"uid": 6,
 					"instanceVariables": {
 						"isActive": false,
 						"Route": 0,
@@ -207,7 +207,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 22,
+					"uid": 8,
 					"instanceVariables": {
 						"isActive": false,
 						"Route": 0,
@@ -247,7 +247,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 57,
+					"uid": 5,
 					"instanceVariables": {
 						"isActive": true,
 						"Route": 0,
@@ -279,7 +279,7 @@
 					}
 				}
 			],
-			"sid": 797316693456180,
+			"sid": 873105150611241,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -316,7 +316,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 23,
+					"uid": 9,
 					"instanceVariables": {
 						"dir": 0,
 						"teleported": false
@@ -337,8 +337,8 @@
 						}
 					},
 					"world": {
-						"x": 864,
-						"y": 672,
+						"x": 608,
+						"y": 928,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -362,7 +362,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 83,
+					"uid": 10,
 					"instanceVariables": {},
 					"behaviors": {
 						"ScrollTo": {
@@ -389,7 +389,7 @@
 					}
 				}
 			],
-			"sid": 990364768453816,
+			"sid": 977630986643424,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -426,7 +426,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 24,
+					"uid": 11,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -462,7 +462,7 @@
 						"tag": "",
 						"live-preview": false
 					},
-					"uid": 20,
+					"uid": 12,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -490,7 +490,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 82,
+					"uid": 13,
 					"instanceVariables": {},
 					"behaviors": {
 						"ScrollTo": {
@@ -517,7 +517,7 @@
 					}
 				}
 			],
-			"sid": 435928764830286,
+			"sid": 979150199791781,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -542,7 +542,7 @@
 			"global": false
 		}
 	],
-	"sid": 354151691861898,
+	"sid": 923852340795013,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2880,

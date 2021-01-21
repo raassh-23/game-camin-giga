@@ -329,7 +329,7 @@
 					},
 					"uid": 75,
 					"instanceVariables": {
-						"isActive": true,
+						"isActive": false,
 						"Route": 0,
 						"Node": 2,
 						"CollisionDir": 0,
@@ -372,7 +372,7 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 3,
-						"CollisionDir": 0,
+						"CollisionDir": 1,
 						"TargetNode": 4,
 						"TargetRoute": 0
 					},
@@ -409,10 +409,10 @@
 					},
 					"uid": 86,
 					"instanceVariables": {
-						"isActive": true,
+						"isActive": false,
 						"Route": 0,
 						"Node": 4,
-						"CollisionDir": 0,
+						"CollisionDir": 1,
 						"TargetNode": 3,
 						"TargetRoute": 0
 					},
@@ -452,7 +452,7 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 6,
-						"CollisionDir": 0,
+						"CollisionDir": 3,
 						"TargetNode": 5,
 						"TargetRoute": 0
 					},
@@ -489,10 +489,10 @@
 					},
 					"uid": 88,
 					"instanceVariables": {
-						"isActive": true,
+						"isActive": false,
 						"Route": 0,
 						"Node": 5,
-						"CollisionDir": 0,
+						"CollisionDir": 3,
 						"TargetNode": 6,
 						"TargetRoute": 0
 					},
@@ -529,7 +529,7 @@
 					},
 					"uid": 89,
 					"instanceVariables": {
-						"isActive": true,
+						"isActive": false,
 						"Route": 0,
 						"Node": 7,
 						"CollisionDir": 0,
@@ -609,10 +609,10 @@
 					},
 					"uid": 91,
 					"instanceVariables": {
-						"isActive": true,
+						"isActive": false,
 						"Route": 0,
 						"Node": 9,
-						"CollisionDir": 0,
+						"CollisionDir": 1,
 						"TargetNode": 10,
 						"TargetRoute": 0
 					},
@@ -652,7 +652,7 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 10,
-						"CollisionDir": 0,
+						"CollisionDir": 1,
 						"TargetNode": 9,
 						"TargetRoute": 0
 					},
