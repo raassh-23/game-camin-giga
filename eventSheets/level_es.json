@@ -514,13 +514,6 @@
 					}
 				},
 				{
-					"id": "is-moving",
-					"objectClass": "Player",
-					"sid": 441030549208498,
-					"behaviorType": "TileMovement",
-					"isInverted": true
-				},
-				{
 					"id": "is-boolean-instance-variable-set",
 					"objectClass": "Teleporter",
 					"sid": 766596045492170,
@@ -530,6 +523,14 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 541695614592927,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
 				{
 					"callFunction": "MovePlayerTo",
 					"sid": 161428029515931,
@@ -639,6 +640,15 @@
 								"x": "(Teleporter.X - 32) / 64",
 								"y": "(Teleporter.Y - 32) / 64",
 								"instant": "instant"
+							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 504146812939617,
+							"parameters": {
+								"type": "log",
+								"message": "\"teleported\""
 							}
 						}
 					],

@@ -28,16 +28,16 @@
 			"sid": 647276340020785
 		},
 		{
-			"name": "TargetNode",
-			"type": "number",
-			"desc": "",
-			"sid": 313497472908254
-		},
-		{
 			"name": "TargetRoute",
 			"type": "number",
 			"desc": "",
 			"sid": 627134591619872
+		},
+		{
+			"name": "TargetNode",
+			"type": "number",
+			"desc": "",
+			"sid": 313497472908254
 		}
 	],
 	"behaviorTypes": [

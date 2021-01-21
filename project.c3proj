@@ -47,6 +47,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
@@ -100,7 +108,8 @@
 			"Sprite",
 			"Goal",
 			"ShadowLight",
-			"cam"
+			"cam",
+			"Browser"
 		],
 		"subfolders": []
 	},
