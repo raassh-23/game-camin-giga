@@ -1,0 +1,27 @@
+{
+	"name": "TextUI",
+	"plugin-id": "Spritefont2",
+	"sid": 978227645318944,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "id",
+			"type": "number",
+			"desc": "",
+			"sid": 422758531253863
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7603745,
+		"useCollisionPoly": true
+	}
+}

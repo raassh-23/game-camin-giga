@@ -173,8 +173,8 @@
 						"Route": 0,
 						"Node": 0,
 						"CollisionDir": 0,
-						"TargetNode": 0,
-						"TargetRoute": 0
+						"TargetRoute": 0,
+						"TargetNode": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -213,8 +213,8 @@
 						"Route": 0,
 						"Node": 0,
 						"CollisionDir": 0,
-						"TargetNode": 0,
-						"TargetRoute": 0
+						"TargetRoute": 0,
+						"TargetNode": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -253,8 +253,8 @@
 						"Route": 0,
 						"Node": 0,
 						"CollisionDir": 0,
-						"TargetNode": 0,
-						"TargetRoute": 0
+						"TargetRoute": 0,
+						"TargetNode": 0
 					},
 					"behaviors": {
 						"Persist": {

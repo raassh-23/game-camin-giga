@@ -55,6 +55,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
@@ -109,7 +117,11 @@
 			"Goal",
 			"ShadowLight",
 			"cam",
-			"Browser"
+			"Browser",
+			"Pin",
+			"PinIcon",
+			"Sprite2",
+			"TextUI"
 		],
 		"subfolders": []
 	},

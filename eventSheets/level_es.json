@@ -12,6 +12,16 @@
 			"sid": 363290896692426
 		},
 		{
+			"eventType": "variable",
+			"name": "pinOwned",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 662414082274110
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Control",
@@ -117,6 +127,106 @@
 						}
 					],
 					"sid": 389689968490907
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 480663474658453,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "Player",
+							"sid": 606332519890736,
+							"behaviorType": "TileMovement",
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 217313126828129,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 896167703222084,
+									"parameters": {
+										"object": "Pin"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Pin",
+									"sid": 208001346774697
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 484885074686219,
+									"parameters": {
+										"variable": "pinOwned",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 391448238996083
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 955418355383302,
+									"parameters": {
+										"variable": "pinOwned",
+										"comparison": 4,
+										"value": "0"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 592386340007586,
+									"parameters": {
+										"object": "Pin"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Player",
+									"sid": 698684115703071,
+									"parameters": {
+										"object": "Pin",
+										"layer": "\"Object\"",
+										"image-point": "0"
+									}
+								},
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 308851406339786,
+									"parameters": {
+										"variable": "pinOwned",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 258299668104682
+						}
+					]
 				}
 			],
 			"sid": 560219984425904
@@ -132,12 +242,13 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-moving-direction",
+							"id": "compare-instance-variable",
 							"objectClass": "Player",
-							"sid": 233274293566386,
-							"behaviorType": "TileMovement",
+							"sid": 935487166787805,
 							"parameters": {
-								"direction": "up"
+								"instance-variable": "dir",
+								"comparison": 0,
+								"value": "0"
 							}
 						},
 						{
@@ -167,12 +278,13 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-moving-direction",
+							"id": "compare-instance-variable",
 							"objectClass": "Player",
-							"sid": 600220092882429,
-							"behaviorType": "TileMovement",
+							"sid": 435436847539567,
 							"parameters": {
-								"direction": "left"
+								"instance-variable": "dir",
+								"comparison": 0,
+								"value": "1"
 							}
 						},
 						{
@@ -202,12 +314,13 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-moving-direction",
+							"id": "compare-instance-variable",
 							"objectClass": "Player",
-							"sid": 426918602794134,
-							"behaviorType": "TileMovement",
+							"sid": 512341942403137,
 							"parameters": {
-								"direction": "down"
+								"instance-variable": "dir",
+								"comparison": 0,
+								"value": "2"
 							}
 						},
 						{
@@ -237,12 +350,13 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-moving-direction",
+							"id": "compare-instance-variable",
 							"objectClass": "Player",
-							"sid": 386564629290091,
-							"behaviorType": "TileMovement",
+							"sid": 953783755378300,
 							"parameters": {
-								"direction": "right"
+								"instance-variable": "dir",
+								"comparison": 0,
+								"value": "3"
 							}
 						},
 						{
@@ -384,6 +498,42 @@
 				}
 			],
 			"sid": 731431442821985
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "UI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TextUI",
+							"sid": 593723066278692,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TextUI",
+							"sid": 563893773982703,
+							"parameters": {
+								"text": "pinOwned"
+							}
+						}
+					],
+					"sid": 731913951489394
+				}
+			],
+			"sid": 888452681072062
 		},
 		{
 			"eventType": "group",
@@ -640,15 +790,6 @@
 								"x": "(Teleporter.X - 32) / 64",
 								"y": "(Teleporter.Y - 32) / 64",
 								"instant": "instant"
-							}
-						},
-						{
-							"id": "log",
-							"objectClass": "Browser",
-							"sid": 504146812939617,
-							"parameters": {
-								"type": "log",
-								"message": "\"teleported\""
 							}
 						}
 					],
