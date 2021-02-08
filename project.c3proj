@@ -79,6 +79,22 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r234.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"version": "r234.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
@@ -141,7 +157,10 @@
 			"MobileButton",
 			"Touch",
 			"PlatformInfo",
-			"LevelButton"
+			"LevelButton",
+			"MenuButton",
+			"LevelData",
+			"AJAX"
 		],
 		"subfolders": []
 	},
@@ -172,7 +191,7 @@
 	"eventSheets": {
 		"items": [
 			"Level_ES",
-			"Event sheet 1"
+			"Menu_ES"
 		],
 		"subfolders": []
 	},
@@ -259,7 +278,13 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [],
+			"items": [
+				{
+					"name": "LevelData.json",
+					"type": "application/json",
+					"sid": 641942857901762
+				}
+			],
 			"subfolders": []
 		}
 	},
@@ -321,5 +346,5 @@
 	},
 	"viewportWidth": 1280,
 	"viewportHeight": 720,
-	"firstLayout": "0"
+	"firstLayout": "Menu"
 }

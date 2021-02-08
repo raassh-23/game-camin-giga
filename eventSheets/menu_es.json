@@ -1,0 +1,83 @@
+{
+	"name": "Menu_ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 155929555667998
+				}
+			],
+			"actions": [
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 960514636385022,
+					"parameters": {
+						"tag": "\"level\"",
+						"file": "LevelData.json"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 196919800674076
+				},
+				{
+					"id": "load",
+					"objectClass": "LevelData",
+					"sid": 401118512952675,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 167879830843517
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 916703342451186,
+					"parameters": {
+						"object": "MenuButton"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 939854013003416,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "MenuButton",
+							"sid": 562803329375887,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 397410178603311,
+							"parameters": {
+								"layout": "str(Level)"
+							}
+						}
+					],
+					"sid": 262428052610679
+				}
+			]
+		}
+	],
+	"sid": 526313237974341
+}
