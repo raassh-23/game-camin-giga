@@ -966,6 +966,14 @@
 										"layer": "\"MobileControl\"",
 										"visibility": "invisible"
 									}
+								},
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 667889890978902,
+									"parameters": {
+										"time-scale": "0"
+									}
 								}
 							],
 							"sid": 588812622107856
@@ -1000,6 +1008,14 @@
 									],
 									"actions": [
 										{
+											"id": "set-time-scale",
+											"objectClass": "System",
+											"sid": 821672405714016,
+											"parameters": {
+												"time-scale": "1"
+											}
+										},
+										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 280861543910830,
@@ -1025,6 +1041,17 @@
 												"layer": "\"MobileControl\"",
 												"visibility": "visible"
 											}
+										},
+										{
+											"id": "set-grid-position",
+											"objectClass": "Player",
+											"sid": 234697217857860,
+											"behaviorType": "TileMovement",
+											"parameters": {
+												"x": "Self.TileMovement.GridTargetX",
+												"y": "Self.TileMovement.GridTargetY",
+												"instant": "animate"
+											}
 										}
 									],
 									"sid": 686201345096620
@@ -1043,6 +1070,14 @@
 										}
 									],
 									"actions": [
+										{
+											"id": "set-time-scale",
+											"objectClass": "System",
+											"sid": 851305130213790,
+											"parameters": {
+												"time-scale": "1"
+											}
+										},
 										{
 											"id": "restart-layout",
 											"objectClass": "System",
@@ -1065,6 +1100,14 @@
 										}
 									],
 									"actions": [
+										{
+											"id": "set-time-scale",
+											"objectClass": "System",
+											"sid": 646944815919321,
+											"parameters": {
+												"time-scale": "1"
+											}
+										},
 										{
 											"id": "go-to-layout",
 											"objectClass": "System",
