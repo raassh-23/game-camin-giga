@@ -1,0 +1,201 @@
+{
+	"name": "EndScreen",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "TextUI",
+					"properties": {
+						"text": "YOU FINISHED THE GAME!",
+						"enable-bbcode": true,
+						"character-width": 35,
+						"character-height": 43,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[8,\" \"],[5,\"|\"],[6,\"'\"],[7,\"l\"],[8,\"Ii.:!\"],[9,\",;\"],[10,\"[]\"],[11,\"j`\"],[12,\"-\\\"(°\"],[13,\"rt1)\"],[15,\"f\"],[16,\"/\"],[17,\"<\"],[18,\"hnuz?\\\\=*>\"],[19,\"FLabckps56_\"],[20,\"EJdegqvxy03789+$€\"],[21,\"Bo24\"],[22,\"DPRSUZ~£\"],[23,\"HKN#\"],[24,\"CGOQTY&\"],[25,\"VX\"],[26,\"A%\"],[29,\"Mw\"],[30,\"m\"],[32,\"@\"],[33,\"W\"]]",
+						"scale": 2.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 79,
+					"instanceVariables": {
+						"id": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 133,
+						"width": 1154,
+						"height": 102,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TextUI",
+					"properties": {
+						"text": "CLEAR TIME:",
+						"enable-bbcode": true,
+						"character-width": 35,
+						"character-height": 43,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[8,\" \"],[5,\"|\"],[6,\"'\"],[7,\"l\"],[8,\"Ii.:!\"],[9,\",;\"],[10,\"[]\"],[11,\"j`\"],[12,\"-\\\"(°\"],[13,\"rt1)\"],[15,\"f\"],[16,\"/\"],[17,\"<\"],[18,\"hnuz?\\\\=*>\"],[19,\"FLabckps56_\"],[20,\"EJdegqvxy03789+$€\"],[21,\"Bo24\"],[22,\"DPRSUZ~£\"],[23,\"HKN#\"],[24,\"CGOQTY&\"],[25,\"VX\"],[26,\"A%\"],[29,\"Mw\"],[30,\"m\"],[32,\"@\"],[33,\"W\"]]",
+						"scale": 2,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 93,
+					"instanceVariables": {
+						"id": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 306,
+						"width": 1154,
+						"height": 102,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TextUI",
+					"properties": {
+						"text": "00:00:00",
+						"enable-bbcode": true,
+						"character-width": 35,
+						"character-height": 43,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[8,\" \"],[5,\"|\"],[6,\"'\"],[7,\"l\"],[8,\"Ii.:!\"],[9,\",;\"],[10,\"[]\"],[11,\"j`\"],[12,\"-\\\"(°\"],[13,\"rt1)\"],[15,\"f\"],[16,\"/\"],[17,\"<\"],[18,\"hnuz?\\\\=*>\"],[19,\"FLabckps56_\"],[20,\"EJdegqvxy03789+$€\"],[21,\"Bo24\"],[22,\"DPRSUZ~£\"],[23,\"HKN#\"],[24,\"CGOQTY&\"],[25,\"VX\"],[26,\"A%\"],[29,\"Mw\"],[30,\"m\"],[32,\"@\"],[33,\"W\"]]",
+						"scale": 2,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 94,
+					"instanceVariables": {
+						"id": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 394,
+						"width": 1154,
+						"height": 102,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TextUI",
+					"properties": {
+						"text": "CLICK/TAP ANYWHERE TO GO BACK TO MENU",
+						"enable-bbcode": true,
+						"character-width": 35,
+						"character-height": 43,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[8,\" \"],[5,\"|\"],[6,\"'\"],[7,\"l\"],[8,\"Ii.:!\"],[9,\",;\"],[10,\"[]\"],[11,\"j`\"],[12,\"-\\\"(°\"],[13,\"rt1)\"],[15,\"f\"],[16,\"/\"],[17,\"<\"],[18,\"hnuz?\\\\=*>\"],[19,\"FLabckps56_\"],[20,\"EJdegqvxy03789+$€\"],[21,\"Bo24\"],[22,\"DPRSUZ~£\"],[23,\"HKN#\"],[24,\"CGOQTY&\"],[25,\"VX\"],[26,\"A%\"],[29,\"Mw\"],[30,\"m\"],[32,\"@\"],[33,\"W\"]]",
+						"scale": 1.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 95,
+					"instanceVariables": {
+						"id": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 576,
+						"width": 967.9991912697737,
+						"height": 163,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.0001622356052364063,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 213350829801031,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0,
+				0,
+				0,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		}
+	],
+	"sid": 923744795392601,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 1280,
+	"height": 720,
+	"unboundedScrolling": false,
+	"eventSheet": "EndScreen"
+}

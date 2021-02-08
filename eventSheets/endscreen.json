@@ -1,0 +1,150 @@
+{
+	"name": "EndScreen",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 157342921453163
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 942443311022099,
+					"parameters": {
+						"layout": "Menu"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 691220423080037,
+					"parameters": {
+						"variable": "Level",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 169647724026252,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 478623085573522
+				}
+			],
+			"actions": [],
+			"sid": 792744509886930,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "hour",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 148182460045475
+				},
+				{
+					"eventType": "variable",
+					"name": "minute",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 458965312652920
+				},
+				{
+					"eventType": "variable",
+					"name": "second",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 140345479755503
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TextUI",
+							"sid": 757312562738484,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 552798852967955,
+							"parameters": {
+								"variable": "hour",
+								"value": "floor(clearTime/3600)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TextUI",
+							"sid": 330684278613840,
+							"parameters": {
+								"text": "hour < 10 ? \"0\"&hour : hour"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 486173246307618,
+							"parameters": {
+								"variable": "minute",
+								"value": "floor((clearTime-hour*3600)/60)"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "TextUI",
+							"sid": 288916032400995,
+							"parameters": {
+								"text": "minute < 10 ? \":0\"&minute : \":\"&minute"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 285821486292857,
+							"parameters": {
+								"variable": "second",
+								"value": "clearTime-hour*3600-minute*60"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "TextUI",
+							"sid": 493594567025075,
+							"parameters": {
+								"text": "second < 10 ? \":0\"&second : \":\"&second "
+							}
+						}
+					],
+					"sid": 494203987384292
+				}
+			]
+		}
+	],
+	"sid": 832488882025717
+}

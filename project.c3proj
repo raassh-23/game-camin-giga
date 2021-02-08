@@ -174,7 +174,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Menu"
+			"Menu",
+			"EndScreen"
 		],
 		"subfolders": [
 			{
@@ -191,7 +192,8 @@
 	"eventSheets": {
 		"items": [
 			"Level_ES",
-			"Menu_ES"
+			"Menu_ES",
+			"EndScreen"
 		],
 		"subfolders": []
 	},

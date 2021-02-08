@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "MaxLevel",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -30,6 +30,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 662414082274110
+		},
+		{
+			"eventType": "variable",
+			"name": "clearTime",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 205116137488921
 		},
 		{
 			"eventType": "group",
@@ -1233,9 +1243,9 @@
 						{
 							"id": "go-to-layout-by-name",
 							"objectClass": "System",
-							"sid": 945778587517735,
+							"sid": 336585972633144,
 							"parameters": {
-								"layout": "Level < MaxLevel ? str(Level) : \"Menu\""
+								"layout": "Level < MaxLevel ? str(Level) : \"EndScreen\""
 							}
 						}
 					],
@@ -1426,6 +1436,40 @@
 						}
 					],
 					"sid": 106978665708249
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 651616640411647,
+							"parameters": {
+								"layer": "\"Paused\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 570926824248570,
+							"parameters": {
+								"interval-seconds": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 996834487940248,
+							"parameters": {
+								"variable": "clearTime",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 870215644712756
 				}
 			],
 			"sid": 938949436717283
