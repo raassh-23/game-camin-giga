@@ -214,7 +214,8 @@
 						"Node": 0,
 						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -433,7 +434,8 @@
 						"Node": 1,
 						"CollisionDir": 2,
 						"TargetRoute": 1,
-						"TargetNode": 2
+						"TargetNode": 2,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -473,7 +475,8 @@
 						"Node": 2,
 						"CollisionDir": 0,
 						"TargetRoute": 1,
-						"TargetNode": 3
+						"TargetNode": 3,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -513,7 +516,8 @@
 						"Node": 3,
 						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -553,7 +557,8 @@
 						"Node": 1,
 						"CollisionDir": 1,
 						"TargetRoute": 2,
-						"TargetNode": 2
+						"TargetNode": 2,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -593,7 +598,8 @@
 						"Node": 2,
 						"CollisionDir": 1,
 						"TargetRoute": 2,
-						"TargetNode": 3
+						"TargetNode": 3,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -633,7 +639,8 @@
 						"Node": 3,
 						"CollisionDir": 1,
 						"TargetRoute": 2,
-						"TargetNode": 1
+						"TargetNode": 1,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -673,7 +680,8 @@
 						"Node": 1,
 						"CollisionDir": 3,
 						"TargetRoute": 3,
-						"TargetNode": 2
+						"TargetNode": 2,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -713,7 +721,8 @@
 						"Node": 2,
 						"CollisionDir": 3,
 						"TargetRoute": 3,
-						"TargetNode": 5
+						"TargetNode": 5,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -753,7 +762,8 @@
 						"Node": 3,
 						"CollisionDir": 1,
 						"TargetRoute": 3,
-						"TargetNode": 4
+						"TargetNode": 4,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -793,7 +803,8 @@
 						"Node": 4,
 						"CollisionDir": 1,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -833,7 +844,8 @@
 						"Node": 5,
 						"CollisionDir": 3,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -873,7 +885,8 @@
 						"Node": 6,
 						"CollisionDir": 3,
 						"TargetRoute": 3,
-						"TargetNode": 1
+						"TargetNode": 1,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -913,7 +926,8 @@
 						"Node": 6,
 						"CollisionDir": 1,
 						"TargetRoute": 3,
-						"TargetNode": 3
+						"TargetNode": 3,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -953,7 +967,8 @@
 						"Node": 1,
 						"CollisionDir": 2,
 						"TargetRoute": 5,
-						"TargetNode": 2
+						"TargetNode": 2,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -993,7 +1008,8 @@
 						"Node": 2,
 						"CollisionDir": 2,
 						"TargetRoute": 5,
-						"TargetNode": 4
+						"TargetNode": 4,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -1033,7 +1049,8 @@
 						"Node": 3,
 						"CollisionDir": 0,
 						"TargetRoute": 1,
-						"TargetNode": 2
+						"TargetNode": 2,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -1073,7 +1090,8 @@
 						"Node": 4,
 						"CollisionDir": 2,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -1246,6 +1264,34 @@
 			"parallaxY": 1,
 			"scaleRate": 1,
 			"forceOwnTexture": true,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Distortion",
+			"overriden": 1,
+			"instances": [],
+			"sid": 743020663919525,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"global": false

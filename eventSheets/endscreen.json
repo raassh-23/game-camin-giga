@@ -27,6 +27,15 @@
 						"variable": "Level",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 172831008028140,
+					"parameters": {
+						"variable": "clearTime",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 169647724026252,

@@ -199,6 +199,46 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "distortMark",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 98,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 96,
+						"y": 96,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Marker",
 					"properties": {
 						"initially-visible": true,
@@ -254,7 +294,8 @@
 						"Node": 0,
 						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"addDistortTime": 0.3
 					},
 					"behaviors": {
 						"Persist": {
@@ -294,7 +335,8 @@
 						"Node": 1,
 						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 2
+						"TargetNode": 2,
+						"addDistortTime": 0.3
 					},
 					"behaviors": {
 						"Persist": {
@@ -334,7 +376,8 @@
 						"Node": 2,
 						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 1
+						"TargetNode": 1,
+						"addDistortTime": 0.3
 					},
 					"behaviors": {
 						"Persist": {
@@ -374,7 +417,8 @@
 						"Node": 3,
 						"CollisionDir": 1,
 						"TargetRoute": 0,
-						"TargetNode": 4
+						"TargetNode": 4,
+						"addDistortTime": 0.3
 					},
 					"behaviors": {
 						"Persist": {
@@ -414,7 +458,8 @@
 						"Node": 4,
 						"CollisionDir": 1,
 						"TargetRoute": 0,
-						"TargetNode": 3
+						"TargetNode": 3,
+						"addDistortTime": 0.3
 					},
 					"behaviors": {
 						"Persist": {
@@ -454,7 +499,8 @@
 						"Node": 6,
 						"CollisionDir": 3,
 						"TargetRoute": 0,
-						"TargetNode": 5
+						"TargetNode": 5,
+						"addDistortTime": 0.3
 					},
 					"behaviors": {
 						"Persist": {
@@ -494,7 +540,8 @@
 						"Node": 5,
 						"CollisionDir": 3,
 						"TargetRoute": 0,
-						"TargetNode": 6
+						"TargetNode": 6,
+						"addDistortTime": 0.3
 					},
 					"behaviors": {
 						"Persist": {
@@ -534,7 +581,8 @@
 						"Node": 7,
 						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 8
+						"TargetNode": 8,
+						"addDistortTime": 0.3
 					},
 					"behaviors": {
 						"Persist": {
@@ -574,7 +622,8 @@
 						"Node": 8,
 						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 7
+						"TargetNode": 7,
+						"addDistortTime": 0.3
 					},
 					"behaviors": {
 						"Persist": {
@@ -614,7 +663,8 @@
 						"Node": 9,
 						"CollisionDir": 1,
 						"TargetRoute": 0,
-						"TargetNode": 10
+						"TargetNode": 10,
+						"addDistortTime": 0.3
 					},
 					"behaviors": {
 						"Persist": {
@@ -654,7 +704,8 @@
 						"Node": 10,
 						"CollisionDir": 1,
 						"TargetRoute": 0,
-						"TargetNode": 9
+						"TargetNode": 9,
+						"addDistortTime": 0.3
 					},
 					"behaviors": {
 						"Persist": {
@@ -695,6 +746,46 @@
 						"y": 928,
 						"width": 32,
 						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "distortMark",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 99,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": -32,
+						"y": 224,
+						"width": 24,
+						"height": 24,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -926,7 +1017,8 @@
 						"Node": 2,
 						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"addDistortTime": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -971,6 +1063,34 @@
 			"parallaxY": 1,
 			"scaleRate": 1,
 			"forceOwnTexture": true,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Distortion",
+			"overriden": 1,
+			"instances": [],
+			"sid": 885065461444267,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"global": false

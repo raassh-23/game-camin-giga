@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "MaxLevel",
 			"type": "number",
-			"initialValue": "1",
+			"initialValue": "2",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -1292,11 +1292,20 @@
 					],
 					"actions": [
 						{
+							"id": "set-ignoring-input",
+							"objectClass": "Player",
+							"sid": 590596421185815,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 394073586471118,
+							"sid": 698065210627323,
 							"parameters": {
-								"seconds": "0.2"
+								"seconds": "0.2 + Teleporter.addDistortTime"
 							}
 						},
 						{
@@ -1314,6 +1323,15 @@
 							"parameters": {
 								"instance-variable": "teleported",
 								"value": "true"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "Player",
+							"sid": 838630789358553,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"input": "stop-ignoring"
 							}
 						}
 					],
@@ -1344,6 +1362,75 @@
 						}
 					],
 					"sid": 788638564490418
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 990549668172677,
+							"parameters": {
+								"object": "distortMark"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 763595115379537,
+							"parameters": {
+								"instance-variable": "dir",
+								"comparison": 0,
+								"value": "distortMark.CollisionDir"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "distortMark",
+							"sid": 779770683343062,
+							"parameters": {
+								"instance-variable": "isActive"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 333862823397758,
+							"parameters": {
+								"layer": "\"Distortion\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 571796860210737
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 386877116361662,
+							"parameters": {
+								"object": "distortMark"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 355364765344417,
+							"parameters": {
+								"layer": "\"Distortion\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 872519149853770
 				},
 				{
 					"functionName": "MovePlayerTo",
@@ -1425,6 +1512,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 892239019958560,
+							"parameters": {
+								"layer": "\"Distortion\"",
+								"visibility": "invisible"
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",

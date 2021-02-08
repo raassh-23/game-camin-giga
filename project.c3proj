@@ -133,6 +133,22 @@
 			"author": "Scirra",
 			"version": "r234.2",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glass",
+			"name": "Glass",
+			"author": "Scirra",
+			"version": "r234.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "warpripple",
+			"name": "Warp ripple",
+			"author": "Scirra",
+			"version": "r234.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "rk8wewjd75n",
@@ -160,7 +176,9 @@
 			"LevelButton",
 			"MenuButton",
 			"LevelData",
-			"AJAX"
+			"AJAX",
+			"Distortion",
+			"distortMark"
 		],
 		"subfolders": []
 	},
