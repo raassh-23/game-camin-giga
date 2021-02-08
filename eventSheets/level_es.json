@@ -38,6 +38,14 @@
 							"parameters": {
 								"key": 87
 							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 380075664519158,
+							"parameters": {
+								"layer": "\"UI\""
+							}
 						}
 					],
 					"actions": [
@@ -51,8 +59,7 @@
 							}
 						}
 					],
-					"sid": 956794042910558,
-					"isOrBlock": true
+					"sid": 956794042910558
 				},
 				{
 					"eventType": "block",
@@ -63,6 +70,14 @@
 							"sid": 844811939054137,
 							"parameters": {
 								"key": 65
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 866332581731970,
+							"parameters": {
+								"layer": "\"UI\""
 							}
 						}
 					],
@@ -89,6 +104,14 @@
 							"parameters": {
 								"key": 83
 							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 242786764681946,
+							"parameters": {
+								"layer": "\"UI\""
+							}
 						}
 					],
 					"actions": [
@@ -114,6 +137,14 @@
 							"parameters": {
 								"key": 68
 							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 459685600596925,
+							"parameters": {
+								"layer": "\"UI\""
+							}
 						}
 					],
 					"actions": [
@@ -138,6 +169,14 @@
 							"sid": 853935600917529,
 							"parameters": {
 								"key": 32
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 455685348569929,
+							"parameters": {
+								"layer": "\"UI\""
 							}
 						},
 						{
@@ -239,6 +278,14 @@
 							"sid": 642321220687261,
 							"parameters": {
 								"object": "MobileButton"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 503812602711062,
+							"parameters": {
+								"layer": "\"MobileControl\""
 							}
 						},
 						{
@@ -365,6 +412,14 @@
 							"sid": 152558404003710,
 							"parameters": {
 								"object": "MobileButton"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 564540826588096,
+							"parameters": {
+								"layer": "\"MobileControl\""
 							}
 						},
 						{
@@ -496,7 +551,8 @@
 							}
 						}
 					],
-					"sid": 443275488102487
+					"sid": 443275488102487,
+					"disabled": true
 				}
 			],
 			"sid": 560219984425904
@@ -801,6 +857,228 @@
 						}
 					],
 					"sid": 731913951489394
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 430507466974175
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 199027873139059,
+							"parameters": {
+								"layer": "\"Paused\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 943147066022977,
+							"parameters": {
+								"layer": "\"UI\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 618659755773592,
+							"parameters": {
+								"layer": "\"MobileControl\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 467304619976130
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 748867553311387,
+							"parameters": {
+								"object": "LevelButton"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "LevelButton",
+							"sid": 244796717274775
+						}
+					],
+					"actions": [],
+					"sid": 159331353848498,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 185227602886096,
+									"parameters": {
+										"layer": "\"UI\""
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "LevelButton",
+									"sid": 140612450656407,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 426683816184028,
+									"parameters": {
+										"layer": "\"Paused\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 161179025391475,
+									"parameters": {
+										"layer": "\"UI\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 442953083928733,
+									"parameters": {
+										"layer": "\"MobileControl\"",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 588812622107856
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 426270874815787,
+									"parameters": {
+										"layer": "\"Paused\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 455154183127402,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-animation-frame",
+											"objectClass": "LevelButton",
+											"sid": 791667279901869,
+											"parameters": {
+												"comparison": 0,
+												"number": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 280861543910830,
+											"parameters": {
+												"layer": "\"Paused\"",
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 475738470579281,
+											"parameters": {
+												"layer": "\"UI\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 362298403847958,
+											"parameters": {
+												"layer": "\"MobileControl\"",
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 686201345096620
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-animation-frame",
+											"objectClass": "LevelButton",
+											"sid": 280631863733128,
+											"parameters": {
+												"comparison": 0,
+												"number": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "restart-layout",
+											"objectClass": "System",
+											"sid": 626381929110727
+										}
+									],
+									"sid": 218131635046901
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-animation-frame",
+											"objectClass": "LevelButton",
+											"sid": 188208240824261,
+											"parameters": {
+												"comparison": 0,
+												"number": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 308023560247932,
+											"parameters": {
+												"layout": "Menu"
+											}
+										}
+									],
+									"sid": 538355107940583
+								}
+							]
+						}
+					]
 				}
 			],
 			"sid": 888452681072062

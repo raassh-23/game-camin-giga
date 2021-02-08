@@ -140,7 +140,8 @@
 			"TextUI",
 			"MobileButton",
 			"Touch",
-			"PlatformInfo"
+			"PlatformInfo",
+			"LevelButton"
 		],
 		"subfolders": []
 	},
@@ -153,11 +154,12 @@
 		"subfolders": []
 	},
 	"layouts": {
-		"items": [],
+		"items": [
+			"Menu"
+		],
 		"subfolders": [
 			{
 				"items": [
-					"Template",
 					"0",
 					"1",
 					"2"
@@ -169,7 +171,8 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Level_ES"
+			"Level_ES",
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
