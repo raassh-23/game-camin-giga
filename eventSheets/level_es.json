@@ -51,7 +51,8 @@
 							}
 						}
 					],
-					"sid": 956794042910558
+					"sid": 956794042910558,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -134,7 +135,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-							"sid": 480663474658453,
+							"sid": 853935600917529,
 							"parameters": {
 								"key": 32
 							}
@@ -142,13 +143,13 @@
 						{
 							"id": "is-moving",
 							"objectClass": "Player",
-							"sid": 606332519890736,
+							"sid": 384030648432750,
 							"behaviorType": "TileMovement",
 							"isInverted": true
 						}
 					],
 					"actions": [],
-					"sid": 217313126828129,
+					"sid": 208412890879321,
 					"children": [
 						{
 							"eventType": "block",
@@ -156,7 +157,7 @@
 								{
 									"id": "is-overlapping-another-object",
 									"objectClass": "Player",
-									"sid": 896167703222084,
+									"sid": 298564446173666,
 									"parameters": {
 										"object": "Pin"
 									}
@@ -166,19 +167,19 @@
 								{
 									"id": "destroy",
 									"objectClass": "Pin",
-									"sid": 208001346774697
+									"sid": 444579683147388
 								},
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 484885074686219,
+									"sid": 280908911677477,
 									"parameters": {
 										"variable": "pinOwned",
 										"value": "1"
 									}
 								}
 							],
-							"sid": 391448238996083
+							"sid": 836712612222597
 						},
 						{
 							"eventType": "block",
@@ -186,7 +187,7 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 955418355383302,
+									"sid": 877479051230795,
 									"parameters": {
 										"variable": "pinOwned",
 										"comparison": 4,
@@ -196,7 +197,7 @@
 								{
 									"id": "is-overlapping-another-object",
 									"objectClass": "Player",
-									"sid": 592386340007586,
+									"sid": 867475860164102,
 									"parameters": {
 										"object": "Pin"
 									},
@@ -207,26 +208,295 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Player",
-									"sid": 698684115703071,
+									"sid": 372096058523930,
 									"parameters": {
 										"object": "Pin",
 										"layer": "\"Object\"",
-										"image-point": "0"
+										"image-point": "0",
+										"create-hierarchy": false
 									}
 								},
 								{
 									"id": "subtract-from-eventvar",
 									"objectClass": "System",
-									"sid": 308851406339786,
+									"sid": 519544257719749,
 									"parameters": {
 										"variable": "pinOwned",
 										"value": "1"
 									}
 								}
 							],
-							"sid": 258299668104682
+							"sid": 472278591493174
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 642321220687261,
+							"parameters": {
+								"object": "MobileButton"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "MobileButton",
+							"sid": 848019267538477
+						}
+					],
+					"actions": [],
+					"sid": 755714628425379,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "MobileButton",
+									"sid": 498578457211230,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player",
+									"sid": 338960841782996,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 905754419532650
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "MobileButton",
+									"sid": 864271836658746,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player",
+									"sid": 265834605143327,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 139423258305296
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "MobileButton",
+									"sid": 305714022478700,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player",
+									"sid": 522292552370641,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 634159393316642
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "MobileButton",
+									"sid": 146341510969236,
+									"parameters": {
+										"comparison": 0,
+										"number": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player",
+									"sid": 418009249165444,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 214922967957378
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 152558404003710,
+							"parameters": {
+								"object": "MobileButton"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "MobileButton",
+							"sid": 511947531772811
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "MobileButton",
+							"sid": 326085623117289,
+							"parameters": {
+								"comparison": 0,
+								"number": "4"
+							}
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "Player",
+							"sid": 794283145181723,
+							"behaviorType": "TileMovement",
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 659221552785257,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 746515392853264,
+									"parameters": {
+										"object": "Pin"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Pin",
+									"sid": 820882478157997
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 408597115807534,
+									"parameters": {
+										"variable": "pinOwned",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 827391546100120
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 150516182671848,
+									"parameters": {
+										"variable": "pinOwned",
+										"comparison": 4,
+										"value": "0"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 690624497859587,
+									"parameters": {
+										"object": "Pin"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Player",
+									"sid": 271476301617516,
+									"parameters": {
+										"object": "Pin",
+										"layer": "\"Object\"",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 797128496168476,
+									"parameters": {
+										"variable": "pinOwned",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 460049383734168
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 633006819714162
+						},
+						{
+							"id": "is-on-mobile",
+							"objectClass": "PlatformInfo",
+							"sid": 370250014511838,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "MobileButton",
+							"sid": 923340148322296,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 443275488102487
 				}
 			],
 			"sid": 560219984425904
