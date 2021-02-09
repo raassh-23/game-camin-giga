@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "Audio",
 			"type": "number",
-			"initialValue": "100",
+			"initialValue": "50",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "Music",
 			"type": "number",
-			"initialValue": "100",
+			"initialValue": "50",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -67,6 +67,10 @@
 							],
 							"actions": [
 								{
+									"callFunction": "playTapSFX",
+									"sid": 658789132077040
+								},
+								{
 									"id": "go-to-layout",
 									"objectClass": "System",
 									"sid": 780897299203491,
@@ -91,6 +95,10 @@
 								}
 							],
 							"actions": [
+								{
+									"callFunction": "playTapSFX",
+									"sid": 145502786112325
+								},
 								{
 									"id": "set-layer-visible",
 									"objectClass": "System",
@@ -134,6 +142,10 @@
 								}
 							],
 							"actions": [
+								{
+									"callFunction": "playTapSFX",
+									"sid": 258834298372831
+								},
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
@@ -196,6 +208,10 @@
 								}
 							],
 							"actions": [
+								{
+									"callFunction": "playTapSFX",
+									"sid": 665413061908930
+								},
 								{
 									"id": "set-layer-visible",
 									"objectClass": "System",

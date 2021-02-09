@@ -27,6 +27,10 @@
 			],
 			"actions": [
 				{
+					"callFunction": "playTapSFX",
+					"sid": 861937595824955
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 691220423080037,

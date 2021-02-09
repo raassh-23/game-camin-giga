@@ -260,7 +260,33 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "move.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 245390000773184
+				},
+				{
+					"name": "pick.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 542730179456331
+				},
+				{
+					"name": "drop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 336392613687466
+				},
+				{
+					"name": "tap.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 413578879210498
+				},
+				{
+					"name": "distortion.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 560123186819483
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

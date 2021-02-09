@@ -226,16 +226,20 @@
 								{
 									"id": "destroy",
 									"objectClass": "Pin",
-									"sid": 444579683147388
+									"sid": 340845449808854
 								},
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 280908911677477,
+									"sid": 263448729823819,
 									"parameters": {
 										"variable": "pinOwned",
 										"value": "1"
 									}
+								},
+								{
+									"callFunction": "playPickSFX",
+									"sid": 176610049600349
 								}
 							],
 							"sid": 836712612222597
@@ -267,7 +271,7 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Player",
-									"sid": 372096058523930,
+									"sid": 696251927598763,
 									"parameters": {
 										"object": "Pin",
 										"layer": "\"Object\"",
@@ -278,11 +282,15 @@
 								{
 									"id": "subtract-from-eventvar",
 									"objectClass": "System",
-									"sid": 519544257719749,
+									"sid": 261986982809639,
 									"parameters": {
 										"variable": "pinOwned",
 										"value": "1"
 									}
+								},
+								{
+									"callFunction": "playDropSFX",
+									"sid": 879649441074338
 								}
 							],
 							"sid": 472278591493174
@@ -483,16 +491,20 @@
 								{
 									"id": "destroy",
 									"objectClass": "Pin",
-									"sid": 820882478157997
+									"sid": 779529190302770
 								},
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 408597115807534,
+									"sid": 239417448567703,
 									"parameters": {
 										"variable": "pinOwned",
 										"value": "1"
 									}
+								},
+								{
+									"callFunction": "playPickSFX",
+									"sid": 850919556206409
 								}
 							],
 							"sid": 827391546100120
@@ -524,7 +536,7 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Player",
-									"sid": 271476301617516,
+									"sid": 696251927598763,
 									"parameters": {
 										"object": "Pin",
 										"layer": "\"Object\"",
@@ -535,11 +547,15 @@
 								{
 									"id": "subtract-from-eventvar",
 									"objectClass": "System",
-									"sid": 797128496168476,
+									"sid": 261986982809639,
 									"parameters": {
 										"variable": "pinOwned",
 										"value": "1"
 									}
+								},
+								{
+									"callFunction": "playDropSFX",
+									"sid": 879649441074338
 								}
 							],
 							"sid": 460049383734168
@@ -841,6 +857,32 @@
 						}
 					],
 					"sid": 342676518257416
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Player",
+							"sid": 418660006091211,
+							"behaviorType": "TileMovement"
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 491911749345954,
+							"parameters": {
+								"interval-seconds": "64/Player.TileMovement.SpeedX"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "playMoveSFX",
+							"sid": 570022868533104
+						}
+					],
+					"sid": 604548479665183
 				}
 			],
 			"sid": 731431442821985
@@ -961,6 +1003,10 @@
 							],
 							"actions": [
 								{
+									"callFunction": "playTapSFX",
+									"sid": 601944526761042
+								},
+								{
 									"id": "set-layer-visible",
 									"objectClass": "System",
 									"sid": 426683816184028,
@@ -1072,6 +1118,10 @@
 												"y": "Self.TileMovement.GridTargetY",
 												"instant": "animate"
 											}
+										},
+										{
+											"callFunction": "playTapSFX",
+											"sid": 419346363551120
 										}
 									],
 									"sid": 686201345096620
@@ -1097,6 +1147,10 @@
 											"parameters": {
 												"time-scale": "1"
 											}
+										},
+										{
+											"callFunction": "playTapSFX",
+											"sid": 533955451917158
 										},
 										{
 											"id": "restart-layout",
@@ -1127,6 +1181,10 @@
 											"parameters": {
 												"time-scale": "1"
 											}
+										},
+										{
+											"callFunction": "playTapSFX",
+											"sid": 333643503801191
 										},
 										{
 											"id": "go-to-layout",
@@ -1411,6 +1469,10 @@
 								"layer": "\"Distortion\"",
 								"visibility": "visible"
 							}
+						},
+						{
+							"callFunction": "playDistortionSFX",
+							"sid": 475179490160616
 						}
 					],
 					"sid": 571796860210737
@@ -1587,6 +1649,136 @@
 				}
 			],
 			"sid": 938949436717283
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "audio",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "playMoveSFX",
+					"functionDescription": "",
+					"functionCategory": "SFX",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 417742247075530,
+							"parameters": {
+								"audio-file": "move",
+								"loop": "not-looping",
+								"volume": "20*log10(Audio/100)",
+								"tag-optional": "\"sfx\""
+							}
+						}
+					],
+					"sid": 438446886151944
+				},
+				{
+					"functionName": "playDropSFX",
+					"functionDescription": "",
+					"functionCategory": "SFX",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 592925651713525,
+							"parameters": {
+								"audio-file": "drop",
+								"loop": "not-looping",
+								"volume": "20*log10(Audio/100)",
+								"tag-optional": "\"sfx\""
+							}
+						}
+					],
+					"sid": 186863115585043
+				},
+				{
+					"functionName": "playPickSFX",
+					"functionDescription": "",
+					"functionCategory": "SFX",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 360584395161649,
+							"parameters": {
+								"audio-file": "pick",
+								"loop": "not-looping",
+								"volume": "20*log10(Audio/100)",
+								"tag-optional": "\"sfx\""
+							}
+						}
+					],
+					"sid": 249899308468194
+				},
+				{
+					"functionName": "playTapSFX",
+					"functionDescription": "",
+					"functionCategory": "SFX",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 193692835449386,
+							"parameters": {
+								"audio-file": "tap",
+								"loop": "not-looping",
+								"volume": "20*log10(Audio/100)",
+								"tag-optional": "\"sfx\""
+							}
+						}
+					],
+					"sid": 930694007336562
+				},
+				{
+					"functionName": "playDistortionSFX",
+					"functionDescription": "",
+					"functionCategory": "SFX",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 547364597195695,
+							"parameters": {
+								"audio-file": "distortion",
+								"loop": "not-looping",
+								"volume": "20*log10(Audio/100)",
+								"tag-optional": "\"sfx\""
+							}
+						}
+					],
+					"sid": 760361694955003
+				}
+			],
+			"sid": 984994999910453
 		}
 	],
 	"sid": 626257349159799

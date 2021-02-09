@@ -98,6 +98,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playTapSFX",
+							"sid": 159477124451088
+						},
+						{
 							"id": "go-to-layout-by-name",
 							"objectClass": "System",
 							"sid": 443939216212497,
@@ -122,6 +126,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playTapSFX",
+							"sid": 738173750150382
+						},
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
