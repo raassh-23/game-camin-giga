@@ -75,6 +75,31 @@
 						}
 					],
 					"sid": 262428052610679
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "MenuButton",
+							"sid": 476310336047757,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 469383853160475,
+							"parameters": {
+								"layout": "Setting"
+							}
+						}
+					],
+					"sid": 556120393969631
 				}
 			]
 		}

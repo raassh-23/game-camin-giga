@@ -1,0 +1,369 @@
+{
+	"name": "Setting_ES",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Audio",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 297602929865121
+		},
+		{
+			"eventType": "variable",
+			"name": "Music",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 625749346894156
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 549910973025559,
+					"parameters": {
+						"object": "MenuButton"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 860731421602302,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 229393040097557,
+							"parameters": {
+								"layer": "\"confirmation\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 251324356627693,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "MenuButton",
+									"sid": 449985954739966,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 780897299203491,
+									"parameters": {
+										"layout": "Menu"
+									}
+								}
+							],
+							"sid": 360513885470777
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "MenuButton",
+									"sid": 381208679023792,
+									"parameters": {
+										"comparison": 0,
+										"number": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 160789771059556,
+									"parameters": {
+										"layer": "\"confirmation\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 100561786680720
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 402771299888607,
+							"parameters": {
+								"layer": "\"confirmation\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 549892457024451,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "MenuButton",
+									"sid": 615244827895823,
+									"parameters": {
+										"comparison": 0,
+										"number": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 532709515124396,
+									"parameters": {
+										"variable": "Level",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 138790051318263,
+									"parameters": {
+										"layer": "\"confirmation\"",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 271976961263692
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "MenuButton",
+									"sid": 965537343978608,
+									"parameters": {
+										"comparison": 0,
+										"number": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 952525598279858,
+									"parameters": {
+										"layer": "\"confirmation\"",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 697041169658624
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 563173147167216,
+					"parameters": {
+						"object": "SliderBG",
+						"expression": "SliderBG.id",
+						"comparison": 0,
+						"value": "Slider.id"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Slider",
+					"sid": 862528084393336,
+					"parameters": {
+						"x": "clamp(Self.X, SliderBG.X, SliderBG.X + SliderBG.Width - Self.Width)"
+					}
+				}
+			],
+			"sid": 489756639388366,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Slider",
+							"sid": 771205250416386,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 120708314545587,
+							"parameters": {
+								"variable": "Music",
+								"value": "round((Slider.X-SliderBG.X)/(SliderBG.Width - Slider.Width)*100)"
+							}
+						}
+					],
+					"sid": 589671244197129
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Slider",
+							"sid": 475599595597358,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 313088819921087,
+							"parameters": {
+								"variable": "Audio",
+								"value": "round((Slider.X-SliderBG.X)/(SliderBG.Width - Slider.Width)*100)"
+							}
+						}
+					],
+					"sid": 310289232580209
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 415588209323363
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 753862742572850,
+					"parameters": {
+						"layer": "\"confirmation\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 731731506976912,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 413205642463707,
+							"parameters": {
+								"object": "SliderBG",
+								"expression": "SliderBG.id",
+								"comparison": 0,
+								"value": "Slider.id"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 692797068947927,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Slider",
+									"sid": 848164474693649,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "Slider",
+									"sid": 663790023865955,
+									"parameters": {
+										"x": "Music * (SliderBG.Width - Slider.Width) / 100 + SliderBG.X"
+									}
+								}
+							],
+							"sid": 813456602366467
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Slider",
+									"sid": 474924204197470,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "Slider",
+									"sid": 378102752392187,
+									"parameters": {
+										"x": "Audio * (SliderBG.Width - Slider.Width) / 100 + SliderBG.X"
+									}
+								}
+							],
+							"sid": 413420377422447
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 326544107879332
+}

@@ -95,6 +95,22 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r234.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"version": "r234.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
@@ -122,6 +138,14 @@
 			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r234.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
 			"author": "Scirra",
 			"version": "r234.3",
 			"bundled": false
@@ -178,7 +202,10 @@
 			"LevelData",
 			"AJAX",
 			"Distortion",
-			"distortMark"
+			"distortMark",
+			"Audio",
+			"SliderBG",
+			"Slider"
 		],
 		"subfolders": []
 	},
@@ -193,7 +220,8 @@
 	"layouts": {
 		"items": [
 			"Menu",
-			"EndScreen"
+			"EndScreen",
+			"Setting"
 		],
 		"subfolders": [
 			{
@@ -212,7 +240,8 @@
 		"items": [
 			"Level_ES",
 			"Menu_ES",
-			"EndScreen"
+			"EndScreen",
+			"Setting_ES"
 		],
 		"subfolders": []
 	},

@@ -1,0 +1,27 @@
+{
+	"name": "SliderBG",
+	"plugin-id": "NinePatch",
+	"sid": 887165320636806,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "id",
+			"type": "number",
+			"desc": "",
+			"sid": 571619110124387
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 234,
+		"height": 64,
+		"originX": 0.4696969696969697,
+		"originY": 0.3888888888888889,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 471432,
+		"useCollisionPoly": true
+	}
+}
