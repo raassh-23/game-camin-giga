@@ -42,6 +42,16 @@
 			"sid": 205116137488921
 		},
 		{
+			"eventType": "variable",
+			"name": "distortion",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "0 disabled, 1 enabled",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 514426868374992
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Control",
@@ -1370,9 +1380,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 698065210627323,
+							"sid": 939373823608366,
 							"parameters": {
-								"seconds": "0.2 + Teleporter.addDistortTime"
+								"seconds": "0.2 + Teleporter.addDistortTime * distortion"
 							}
 						},
 						{
@@ -1475,7 +1485,8 @@
 							"sid": 475179490160616
 						}
 					],
-					"sid": 571796860210737
+					"sid": 571796860210737,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1501,7 +1512,8 @@
 							}
 						}
 					],
-					"sid": 872519149853770
+					"sid": 872519149853770,
+					"disabled": true
 				},
 				{
 					"functionName": "MovePlayerTo",
