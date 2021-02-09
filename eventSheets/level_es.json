@@ -1247,6 +1247,15 @@
 							"parameters": {
 								"layout": "Level < MaxLevel ? str(Level) : \"EndScreen\""
 							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 329133912127173,
+							"parameters": {
+								"key": "\"level\"",
+								"value": "Level"
+							}
 						}
 					],
 					"sid": 583223563715453
@@ -1562,6 +1571,15 @@
 							"parameters": {
 								"variable": "clearTime",
 								"value": "1"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 747665550794028,
+							"parameters": {
+								"key": "\"time\"",
+								"value": "clearTime"
 							}
 						}
 					],

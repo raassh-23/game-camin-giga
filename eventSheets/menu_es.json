@@ -32,6 +32,38 @@
 					"parameters": {
 						"json": "AJAX.LastData"
 					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 209835226886450,
+					"parameters": {
+						"key": "\"level\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 686994233828074,
+					"parameters": {
+						"key": "\"time\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 204126179222926,
+					"parameters": {
+						"key": "\"audiosetting\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 446785000805901,
+					"parameters": {
+						"key": "\"musicsetting\""
+					}
 				}
 			],
 			"sid": 167879830843517
@@ -68,9 +100,9 @@
 						{
 							"id": "go-to-layout-by-name",
 							"objectClass": "System",
-							"sid": 397410178603311,
+							"sid": 443939216212497,
 							"parameters": {
-								"layout": "str(Level)"
+								"layout": "Level < MaxLevel ? str(Level) : \"EndScreen\""
 							}
 						}
 					],
@@ -102,6 +134,206 @@
 					"sid": 556120393969631
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 874605211260026,
+					"parameters": {
+						"key": "\"level\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 972883317008509,
+					"parameters": {
+						"variable": "Level",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 603524612563594
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 410973502976720,
+					"parameters": {
+						"key": "\"level\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 615385312195553,
+					"parameters": {
+						"key": "\"level\"",
+						"value": "Level"
+					}
+				}
+			],
+			"sid": 120260179522528
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 460766379277043,
+					"parameters": {
+						"key": "\"time\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 520731879992802,
+					"parameters": {
+						"variable": "clearTime",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 775240593575626
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 185319497910407,
+					"parameters": {
+						"key": "\"time\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 708686259830875,
+					"parameters": {
+						"key": "\"time\"",
+						"value": "clearTime"
+					}
+				}
+			],
+			"sid": 315174878611128
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 636251942002752,
+					"parameters": {
+						"key": "\"audiosetting\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 587775494885620,
+					"parameters": {
+						"variable": "Audio",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 312968700381519
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 143143842284838,
+					"parameters": {
+						"key": "\"audiosetting\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 356715321231868,
+					"parameters": {
+						"key": "\"audiosetting\"",
+						"value": "Audio"
+					}
+				}
+			],
+			"sid": 667983882482526
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 129887866082249,
+					"parameters": {
+						"key": "\"musicsetting\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 647949665013571,
+					"parameters": {
+						"variable": "Music",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 372983022330636
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 978505136067434,
+					"parameters": {
+						"key": "\"musicsetting\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 783803496342672,
+					"parameters": {
+						"key": "\"musicsetting\"",
+						"value": "Music"
+					}
+				}
+			],
+			"sid": 661029020861535
 		}
 	],
 	"sid": 526313237974341

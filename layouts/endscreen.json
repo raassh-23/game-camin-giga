@@ -140,12 +140,12 @@
 						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "center"
 					},
 					"uid": 95,
 					"instanceVariables": {
-						"id": 1
+						"id": 3
 					},
 					"behaviors": {},
 					"world": {

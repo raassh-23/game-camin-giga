@@ -144,6 +144,33 @@
 									}
 								},
 								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 939000521152900,
+									"parameters": {
+										"variable": "clearTime",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 989168571840229,
+									"parameters": {
+										"key": "\"level\"",
+										"value": "Level"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 409207957021441,
+									"parameters": {
+										"key": "\"time\"",
+										"value": "clearTime"
+									}
+								},
+								{
 									"id": "set-layer-visible",
 									"objectClass": "System",
 									"sid": 138790051318263,
@@ -363,6 +390,38 @@
 					]
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Slider",
+					"sid": 796118323822955,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 732936548699733,
+					"parameters": {
+						"key": "\"musicsetting\"",
+						"value": "Music"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 893826494231600,
+					"parameters": {
+						"key": "\"audiosetting\"",
+						"value": "Audio"
+					}
+				}
+			],
+			"sid": 464302111645365
 		}
 	],
 	"sid": 326544107879332

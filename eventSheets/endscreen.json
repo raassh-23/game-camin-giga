@@ -8,17 +8,24 @@
 					"id": "on-any-touch-end",
 					"objectClass": "Touch",
 					"sid": 157342921453163
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "TextUI",
+					"sid": 387581942043042,
+					"parameters": {
+						"instance-variable": "id",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "TextUI",
+					"sid": 527899070857367
 				}
 			],
 			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 942443311022099,
-					"parameters": {
-						"layout": "Menu"
-					}
-				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
@@ -36,10 +43,35 @@
 						"variable": "clearTime",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 307651512647933,
+					"parameters": {
+						"key": "\"level\"",
+						"value": "Level"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 907434268780240,
+					"parameters": {
+						"key": "\"time\"",
+						"value": "clearTime"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 278757181859344,
+					"parameters": {
+						"layout": "Menu"
+					}
 				}
 			],
-			"sid": 169647724026252,
-			"isOrBlock": true
+			"sid": 169647724026252
 		},
 		{
 			"eventType": "block",
@@ -151,6 +183,40 @@
 						}
 					],
 					"sid": 494203987384292
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TextUI",
+							"sid": 727875362476266,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 505141907541930,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TextUI",
+							"sid": 814719517966282,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 358490081580701
 				}
 			]
 		}
