@@ -104,7 +104,7 @@
 							"height": 45,
 							"max-width": 90,
 							"max-height": 76,
-							"data": "45x1,31x0,1,0,1,7x0,1,33x0,1,31x0,1,0,5x1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,3x0,1,0,1,33x0,1,31x0,1,0,1,0,3x1,0,1,0,1,33x0,1,31x0,1,0,1,3x0,1,0,3x1,33x0,1,31x0,3x1,0,1,5x0,1,33x0,1,31x0,1,3x0,1,0,3x1,0,1,33x0,1,31x0,1,0,3x1,0,3x1,0,1,33x0,1,31x0,1,0,1,7x0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,0,1,3x0,1,3x0,1,33x0,1,31x0,1,0,3x1,0,1,0,3x1,33x0,1,31x0,1,0,1,3x0,1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,3x0,1,0,1,33x0,1,31x0,1,3x0,1,0,1,0,1,0,1,33x0,1,31x0,5x1,0,1,3x0,1,33x0,1,31x0,1,5x0,1,0,1,0,1,33x0,1,31x0,1,0,5x1,0,1,0,1,33x0,1,31x0,1,0,1,7x0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,45x1,3451x0"
+							"data": "45x1,31x0,1,0,1,5x0,1,0,1,33x0,1,31x0,1,0,5x1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,3x0,1,0,1,33x0,1,31x0,1,0,1,0,1,0,1,0,1,0,1,33x0,1,31x0,1,0,1,3x0,1,3x0,1,33x0,1,31x0,1,0,1,0,3x1,0,3x1,33x0,1,31x0,1,0,1,7x0,1,33x0,1,31x0,3x1,0,5x1,0,1,33x0,1,31x0,1,7x0,1,0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,3x0,1,5x0,1,33x0,1,31x0,1,0,3x1,0,1,0,3x1,33x0,1,31x0,1,0,1,3x0,1,3x0,1,33x0,1,31x0,1,0,1,0,3x1,0,3x1,33x0,1,31x0,1,3x0,1,3x0,1,0,1,33x0,1,31x0,3x1,0,5x1,0,1,33x0,1,31x0,1,3x0,1,3x0,1,0,1,33x0,1,31x0,1,0,1,0,1,0,3x1,0,1,33x0,1,31x0,1,0,1,7x0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,3x0,1,5x0,1,33x0,1,31x0,3x1,0,3x1,0,3x1,33x0,1,31x0,1,0,1,3x0,1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,0,1,0,1,0,1,33x0,1,31x0,1,3x0,1,0,1,3x0,1,33x0,1,31x0,1,0,1,0,3x1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,3x0,1,0,1,33x0,1,31x0,1,0,3x1,0,3x1,0,1,33x0,1,31x0,1,3x0,1,0,1,3x0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,45x1,3451x0"
 						},
 						"tile-width": 64,
 						"tile-height": 64,
@@ -126,46 +126,6 @@
 							1,
 							1
 						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Goal",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 85,
-					"instanceVariables": {
-						"isActive": true,
-						"Route": 0,
-						"Node": 0,
-						"CollisionDir": 0,
-						"TargetRoute": 0,
-						"TargetNode": 0
-					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": -160,
-						"y": 864,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -266,70 +226,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				}
-			],
-			"sid": 474328887135493,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"global": false
-		},
-		{
-			"name": "Player",
-			"overriden": 0,
-			"instances": [
+				},
 				{
-					"type": "Player",
+					"type": "distortMark",
 					"properties": {
-						"initially-visible": true,
-						"initial-animation": "right",
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 98,
+					"uid": 90,
 					"instanceVariables": {
-						"dir": 0,
-						"teleported": false
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 3,
+						"TargetRoute": 0,
+						"TargetNode": 0
 					},
 					"behaviors": {
-						"TileMovement": {
-							"properties": {
-								"grid-width": 64,
-								"grid-height": 64,
-								"grid-offset-x": 32,
-								"grid-offset-y": 32,
-								"speed-x": 192,
-								"speed-y": 192,
-								"enabled": true,
-								"default-controls": true,
-								"isometric": false
-							}
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": -96,
-						"y": -32,
-						"width": 64,
-						"height": 64,
+						"x": 480,
+						"y": 96,
+						"width": 24,
+						"height": 24,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -343,7 +268,7 @@
 					}
 				},
 				{
-					"type": "cam",
+					"type": "distortMark",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -351,18 +276,183 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 100,
-					"instanceVariables": {},
+					"uid": 92,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 1,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
 					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 96,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "distortMark",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 103,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 2,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 608,
+						"y": 480,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "distortMark",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 106,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 2,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 736,
+						"y": 224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "distortMark",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 109,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 1,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
 						"x": 992,
-						"y": 1184,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Goal",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 85,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1376,
+						"y": 96,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -402,8 +492,8 @@
 						}
 					},
 					"world": {
-						"x": -288,
-						"y": 416,
+						"x": 736,
+						"y": 864,
 						"width": 24,
 						"height": 24,
 						"originX": 0.5,
@@ -427,7 +517,47 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 110,
+					"uid": 112,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 2,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1120,
+						"y": 480,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "distortMark",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 113,
 					"instanceVariables": {
 						"isActive": true,
 						"Route": 0,
@@ -442,10 +572,1141 @@
 						}
 					},
 					"world": {
-						"x": -160,
-						"y": 288,
+						"x": 992,
+						"y": 352,
 						"width": 24,
 						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "distortMark",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 135,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 1,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1504,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "distortMark",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 139,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 3,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1632,
+						"y": 352,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "distortMark",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 140,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 3,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1760,
+						"y": 224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 142,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 1,
+						"Node": 0,
+						"CollisionDir": 1,
+						"TargetRoute": 1,
+						"TargetNode": 1,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1504,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 143,
+					"instanceVariables": {
+						"isActive": false,
+						"Route": 1,
+						"Node": 1,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1504,
+						"y": 96,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "distortMark",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 141,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 0,
+						"Node": 0,
+						"CollisionDir": 1,
+						"TargetRoute": 0,
+						"TargetNode": 0
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 96,
+						"y": 224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 110,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 2,
+						"Node": 0,
+						"CollisionDir": 1,
+						"TargetRoute": 2,
+						"TargetNode": 1,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 992,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 144,
+					"instanceVariables": {
+						"isActive": false,
+						"Route": 2,
+						"Node": 1,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 96,
+						"y": 96,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 107,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 3,
+						"Node": 0,
+						"CollisionDir": 3,
+						"TargetRoute": 3,
+						"TargetNode": 1,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 480,
+						"y": 96,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 145,
+					"instanceVariables": {
+						"isActive": false,
+						"Route": 3,
+						"Node": 1,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1248,
+						"y": 96,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 111,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 4,
+						"Node": 0,
+						"CollisionDir": 3,
+						"TargetRoute": 4,
+						"TargetNode": 1,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1760,
+						"y": 224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 137,
+					"instanceVariables": {
+						"isActive": false,
+						"Route": 5,
+						"Node": 1,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 608,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 146,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 5,
+						"Node": 0,
+						"CollisionDir": 3,
+						"TargetRoute": 5,
+						"TargetNode": 1,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1632,
+						"y": 352,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 102,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 6,
+						"Node": 0,
+						"CollisionDir": 2,
+						"TargetRoute": 6,
+						"TargetNode": 1,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1120,
+						"y": 480,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 138,
+					"instanceVariables": {
+						"isActive": false,
+						"Route": 6,
+						"Node": 1,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1888,
+						"y": 224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 105,
+					"instanceVariables": {
+						"isActive": false,
+						"Route": 7,
+						"Node": 1,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 608,
+						"y": 96,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 147,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 7,
+						"Node": 0,
+						"CollisionDir": 0,
+						"TargetRoute": 7,
+						"TargetNode": 1,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 992,
+						"y": 352,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 108,
+					"instanceVariables": {
+						"isActive": false,
+						"Route": 8,
+						"Node": 1,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 736,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 148,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 8,
+						"Node": 0,
+						"CollisionDir": 2,
+						"TargetRoute": 8,
+						"TargetNode": 1,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 608,
+						"y": 480,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 134,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 9,
+						"Node": 0,
+						"CollisionDir": 0,
+						"TargetRoute": 9,
+						"TargetNode": 1,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 96,
+						"y": 224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 136,
+					"instanceVariables": {
+						"isActive": false,
+						"Route": 9,
+						"Node": 1,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1888,
+						"y": 480,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 149,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 10,
+						"Node": 0,
+						"CollisionDir": 2,
+						"TargetRoute": 10,
+						"TargetNode": 1,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 736,
+						"y": 224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 133,
+					"instanceVariables": {
+						"isActive": false,
+						"Route": 10,
+						"Node": 1,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1376,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 104,
+					"instanceVariables": {
+						"isActive": false,
+						"Route": 11,
+						"Node": 1,
+						"CollisionDir": 0,
+						"TargetRoute": 0,
+						"TargetNode": 0,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 224,
+						"y": 224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 150,
+					"instanceVariables": {
+						"isActive": true,
+						"Route": 11,
+						"Node": 0,
+						"CollisionDir": 1,
+						"TargetRoute": 11,
+						"TargetNode": 1,
+						"addDistortTime": 0.3
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 96,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 474328887135493,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Player",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "down",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 98,
+					"instanceVariables": {
+						"dir": 0,
+						"teleported": false
+					},
+					"behaviors": {
+						"TileMovement": {
+							"properties": {
+								"grid-width": 64,
+								"grid-height": 64,
+								"grid-offset-x": 32,
+								"grid-offset-y": 32,
+								"speed-x": 192,
+								"speed-y": 192,
+								"enabled": true,
+								"default-controls": true,
+								"isometric": false
+							}
+						}
+					},
+					"world": {
+						"x": 288,
+						"y": 96,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cam",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 100,
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 992,
+						"y": 1184,
+						"width": 32,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
