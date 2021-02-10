@@ -40,13 +40,7 @@
 			"sid": 647276340020785
 		}
 	],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Persist",
-			"name": "Persist",
-			"sid": 886956350157484
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
 		"Marker",

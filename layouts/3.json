@@ -172,15 +172,11 @@
 						"isActive": false,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": -96,
 						"y": 608,
@@ -241,15 +237,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 3,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 480,
 						"y": 96,
@@ -281,15 +273,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 1,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 1
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 96,
 						"y": 608,
@@ -321,15 +309,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 2,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 2
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 608,
 						"y": 480,
@@ -361,15 +345,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 2,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 2
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 736,
 						"y": 224,
@@ -401,15 +381,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 1,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 1
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 992,
 						"y": 608,
@@ -441,15 +417,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1376,
 						"y": 96,
@@ -481,16 +453,12 @@
 						"isActive": false,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 736,
 						"y": 864,
@@ -522,15 +490,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 2,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 2
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1120,
 						"y": 480,
@@ -562,15 +526,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 992,
 						"y": 352,
@@ -602,15 +562,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 1,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 1
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1504,
 						"y": 608,
@@ -642,15 +598,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 3,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1632,
 						"y": 352,
@@ -682,15 +634,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 3,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1760,
 						"y": 224,
@@ -722,16 +670,12 @@
 						"isActive": true,
 						"Route": 1,
 						"Node": 0,
-						"CollisionDir": 1,
 						"TargetRoute": 1,
 						"TargetNode": 1,
+						"CollisionDir": 1,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1504,
 						"y": 608,
@@ -763,16 +707,12 @@
 						"isActive": false,
 						"Route": 1,
 						"Node": 1,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1504,
 						"y": 96,
@@ -804,15 +744,11 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 1,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 1
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 96,
 						"y": 224,
@@ -844,16 +780,12 @@
 						"isActive": true,
 						"Route": 2,
 						"Node": 0,
-						"CollisionDir": 1,
 						"TargetRoute": 2,
 						"TargetNode": 1,
+						"CollisionDir": 1,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 992,
 						"y": 608,
@@ -885,16 +817,12 @@
 						"isActive": false,
 						"Route": 2,
 						"Node": 1,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 96,
 						"y": 96,
@@ -926,16 +854,12 @@
 						"isActive": true,
 						"Route": 3,
 						"Node": 0,
-						"CollisionDir": 3,
 						"TargetRoute": 3,
 						"TargetNode": 1,
+						"CollisionDir": 3,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 480,
 						"y": 96,
@@ -967,16 +891,12 @@
 						"isActive": false,
 						"Route": 3,
 						"Node": 1,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1248,
 						"y": 96,
@@ -1008,16 +928,12 @@
 						"isActive": true,
 						"Route": 4,
 						"Node": 0,
-						"CollisionDir": 3,
 						"TargetRoute": 4,
 						"TargetNode": 1,
+						"CollisionDir": 3,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1760,
 						"y": 224,
@@ -1049,16 +965,12 @@
 						"isActive": false,
 						"Route": 5,
 						"Node": 1,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 608,
 						"y": 608,
@@ -1090,16 +1002,12 @@
 						"isActive": true,
 						"Route": 5,
 						"Node": 0,
-						"CollisionDir": 3,
 						"TargetRoute": 5,
 						"TargetNode": 1,
+						"CollisionDir": 3,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1632,
 						"y": 352,
@@ -1131,16 +1039,12 @@
 						"isActive": true,
 						"Route": 6,
 						"Node": 0,
-						"CollisionDir": 2,
 						"TargetRoute": 6,
 						"TargetNode": 1,
+						"CollisionDir": 2,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1120,
 						"y": 480,
@@ -1172,16 +1076,12 @@
 						"isActive": false,
 						"Route": 6,
 						"Node": 1,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1888,
 						"y": 224,
@@ -1213,16 +1113,12 @@
 						"isActive": false,
 						"Route": 7,
 						"Node": 1,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 608,
 						"y": 96,
@@ -1254,16 +1150,12 @@
 						"isActive": true,
 						"Route": 7,
 						"Node": 0,
-						"CollisionDir": 0,
 						"TargetRoute": 7,
 						"TargetNode": 1,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 992,
 						"y": 352,
@@ -1295,16 +1187,12 @@
 						"isActive": false,
 						"Route": 8,
 						"Node": 1,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 736,
 						"y": 608,
@@ -1336,16 +1224,12 @@
 						"isActive": true,
 						"Route": 8,
 						"Node": 0,
-						"CollisionDir": 2,
 						"TargetRoute": 8,
 						"TargetNode": 1,
+						"CollisionDir": 2,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 608,
 						"y": 480,
@@ -1377,16 +1261,12 @@
 						"isActive": true,
 						"Route": 9,
 						"Node": 0,
-						"CollisionDir": 0,
 						"TargetRoute": 9,
 						"TargetNode": 1,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 96,
 						"y": 224,
@@ -1418,16 +1298,12 @@
 						"isActive": false,
 						"Route": 9,
 						"Node": 1,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1888,
 						"y": 480,
@@ -1459,16 +1335,12 @@
 						"isActive": true,
 						"Route": 10,
 						"Node": 0,
-						"CollisionDir": 2,
 						"TargetRoute": 10,
 						"TargetNode": 1,
+						"CollisionDir": 2,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 736,
 						"y": 224,
@@ -1500,16 +1372,12 @@
 						"isActive": false,
 						"Route": 10,
 						"Node": 1,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1376,
 						"y": 608,
@@ -1541,16 +1409,12 @@
 						"isActive": false,
 						"Route": 11,
 						"Node": 1,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 224,
 						"y": 224,
@@ -1582,16 +1446,12 @@
 						"isActive": true,
 						"Route": 11,
 						"Node": 0,
-						"CollisionDir": 1,
 						"TargetRoute": 11,
 						"TargetNode": 1,
+						"CollisionDir": 1,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 96,
 						"y": 608,
@@ -1826,16 +1686,12 @@
 						"isActive": false,
 						"Route": 0,
 						"Node": 2,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 608,
 						"y": 480,
