@@ -147,11 +147,7 @@
 						"TargetNode": 0,
 						"CollisionDir": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 736,
 						"y": 608,
@@ -216,11 +212,7 @@
 						"TargetNode": 0,
 						"CollisionDir": 3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 352,
 						"y": 96,
@@ -256,11 +248,7 @@
 						"TargetNode": 0,
 						"CollisionDir": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": -96,
 						"y": 608,
@@ -297,11 +285,7 @@
 						"CollisionDir": 3,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 352,
 						"y": 96,
@@ -395,11 +379,7 @@
 						"TargetNode": 0,
 						"CollisionDir": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 96,
 						"y": 224,
@@ -435,11 +415,7 @@
 						"TargetNode": 0,
 						"CollisionDir": 3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 608,
 						"y": 96,
@@ -475,11 +451,7 @@
 						"TargetNode": 0,
 						"CollisionDir": 1
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 736,
 						"y": 96,
@@ -515,11 +487,7 @@
 						"TargetNode": 0,
 						"CollisionDir": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1248,
 						"y": 224,
@@ -637,11 +605,7 @@
 						"CollisionDir": 3,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 288,
 						"y": 608,
@@ -678,11 +642,7 @@
 						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 608,
 						"y": 224,
@@ -719,11 +679,7 @@
 						"CollisionDir": 3,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 608,
 						"y": 96,
@@ -760,11 +716,7 @@
 						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 736,
 						"y": 224,
@@ -801,11 +753,7 @@
 						"CollisionDir": 1,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 736,
 						"y": 96,
@@ -842,11 +790,7 @@
 						"CollisionDir": 3,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1248,
 						"y": 96,
@@ -883,11 +827,7 @@
 						"CollisionDir": 1,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 224,
 						"y": 224,
@@ -924,11 +864,7 @@
 						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1248,
 						"y": 224,
@@ -965,11 +901,7 @@
 						"CollisionDir": 0,
 						"addDistortTime": 0.3
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 96,
 						"y": 224,
@@ -1099,11 +1031,7 @@
 						"CollisionDir": 0,
 						"addDistortTime": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 608,
 						"y": 480,

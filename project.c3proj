@@ -159,14 +159,6 @@
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "Persist",
-			"name": "Persist",
-			"author": "Scirra",
-			"version": "r234.3",
-			"bundled": false
-		},
-		{
 			"type": "effect",
 			"id": "glass",
 			"name": "Glass",
@@ -240,6 +232,7 @@
 					"2",
 					"3",
 					"4",
+					"5",
 					"99"
 				],
 				"subfolders": [],

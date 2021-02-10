@@ -176,11 +176,7 @@
 						"TargetNode": 0,
 						"CollisionDir": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 416,
 						"y": 544,
@@ -217,11 +213,7 @@
 						"CollisionDir": 0,
 						"addDistortTime": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 416,
 						"y": 672,
@@ -257,11 +249,7 @@
 						"TargetNode": 0,
 						"CollisionDir": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 736,
 						"y": 416,
@@ -326,11 +314,7 @@
 						"TargetNode": 0,
 						"CollisionDir": 0
 					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 416,
 						"y": 810,
