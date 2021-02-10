@@ -22,12 +22,6 @@
 			"sid": 421606296515585
 		},
 		{
-			"name": "CollisionDir",
-			"type": "number",
-			"desc": "",
-			"sid": 647276340020785
-		},
-		{
 			"name": "TargetRoute",
 			"type": "number",
 			"desc": "",
@@ -38,6 +32,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 313497472908254
+		},
+		{
+			"name": "CollisionDir",
+			"type": "number",
+			"desc": "",
+			"sid": 647276340020785
 		}
 	],
 	"behaviorTypes": [

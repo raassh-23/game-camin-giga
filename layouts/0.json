@@ -172,9 +172,9 @@
 						"isActive": false,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -212,9 +212,9 @@
 						"isActive": false,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
+						"CollisionDir": 0,
 						"addDistortTime": 0
 					},
 					"behaviors": {
@@ -253,9 +253,9 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 0
 					},
 					"behaviors": {
 						"Persist": {
@@ -322,9 +322,9 @@
 						"isActive": true,
 						"Route": 0,
 						"Node": 0,
-						"CollisionDir": 0,
 						"TargetRoute": 0,
-						"TargetNode": 0
+						"TargetNode": 0,
+						"CollisionDir": 0
 					},
 					"behaviors": {
 						"Persist": {

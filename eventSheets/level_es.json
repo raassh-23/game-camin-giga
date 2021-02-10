@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "MaxLevel",
 			"type": "number",
-			"initialValue": "3",
+			"initialValue": "4",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -1611,6 +1611,22 @@
 							"parameters": {
 								"variable": "pinOwned",
 								"value": "LevelData.At(Level)"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Activable",
+							"sid": 800454151641085,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Goal",
+							"sid": 395367749941969,
+							"parameters": {
+								"visibility": "visible"
 							}
 						}
 					],
