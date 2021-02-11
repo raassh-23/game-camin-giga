@@ -597,8 +597,31 @@
 							}
 						}
 					],
-					"sid": 443275488102487,
-					"disabled": true
+					"sid": 443275488102487
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 376586699496439,
+							"parameters": {
+								"key": 9
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "MobileButton",
+							"sid": 157378670262226,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 847141149630245
 				}
 			],
 			"sid": 560219984425904
