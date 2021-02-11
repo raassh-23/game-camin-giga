@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "MaxLevel",
 			"type": "number",
-			"initialValue": "8",
+			"initialValue": "9",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -1804,6 +1804,34 @@
 						}
 					],
 					"sid": 760361694955003
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 472925937749821,
+							"parameters": {
+								"tag": "\"bgm\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 501677986184553,
+							"parameters": {
+								"audio-file": "bgm",
+								"loop": "looping",
+								"volume": "20*log10(Music/100)",
+								"tag-optional": "\"bgm\""
+							}
+						}
+					],
+					"sid": 323381490003794
 				}
 			],
 			"sid": 984994999910453

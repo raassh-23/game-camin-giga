@@ -283,6 +283,11 @@
 					"name": "distortion.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 560123186819483
+				},
+				{
+					"name": "bgm.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 870102827838848
 				}
 			],
 			"subfolders": []

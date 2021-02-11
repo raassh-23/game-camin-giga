@@ -278,6 +278,15 @@
 								"variable": "Music",
 								"value": "round((Slider.X-SliderBG.X)/(SliderBG.Width - Slider.Width)*100)"
 							}
+						},
+						{
+							"id": "set-volume",
+							"objectClass": "Audio",
+							"sid": 629175319048402,
+							"parameters": {
+								"tag": "\"bgm\"",
+								"db": "20*log10(Music/100)"
+							}
 						}
 					],
 					"sid": 589671244197129
@@ -438,6 +447,34 @@
 				}
 			],
 			"sid": 464302111645365
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 173875271261293,
+					"parameters": {
+						"tag": "\"bgm\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 327790638120779,
+					"parameters": {
+						"audio-file": "bgm",
+						"loop": "looping",
+						"volume": "20*log10(Music/100)",
+						"tag-optional": "\"bgm\""
+					}
+				}
+			],
+			"sid": 532887226648654
 		}
 	],
 	"sid": 326544107879332
