@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "MaxLevel",
 			"type": "number",
-			"initialValue": "6",
+			"initialValue": "7",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
