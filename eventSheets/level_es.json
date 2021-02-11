@@ -1446,7 +1446,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
-							"sid": 990549668172677,
+							"sid": 129369924379784,
 							"parameters": {
 								"object": "distortMark"
 							}
@@ -1454,7 +1454,7 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "Player",
-							"sid": 763595115379537,
+							"sid": 855252078423609,
 							"parameters": {
 								"instance-variable": "dir",
 								"comparison": 0,
@@ -1464,7 +1464,7 @@
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "distortMark",
-							"sid": 779770683343062,
+							"sid": 567574070177718,
 							"parameters": {
 								"instance-variable": "isActive"
 							}
@@ -1474,7 +1474,7 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 333862823397758,
+							"sid": 923033764980774,
 							"parameters": {
 								"layer": "\"Distortion\"",
 								"visibility": "visible"
@@ -1482,10 +1482,10 @@
 						},
 						{
 							"callFunction": "playDistortionSFX",
-							"sid": 475179490160616
+							"sid": 894652683706964
 						}
 					],
-					"sid": 571796860210737,
+					"sid": 729052140376190,
 					"disabled": true
 				},
 				{
