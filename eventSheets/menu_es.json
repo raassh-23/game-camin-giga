@@ -44,6 +44,14 @@
 				{
 					"id": "check-item-exists",
 					"objectClass": "LocalStorage",
+					"sid": 138581831252394,
+					"parameters": {
+						"key": "\"tutorial\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
 					"sid": 686994233828074,
 					"parameters": {
 						"key": "\"time\""
@@ -192,6 +200,56 @@
 				}
 			],
 			"sid": 120260179522528
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 127978707056696,
+					"parameters": {
+						"key": "\"tutorial\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 499394619208506,
+					"parameters": {
+						"variable": "TutorialFinished",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 831523369168436
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 605238162851769,
+					"parameters": {
+						"key": "\"tutorial\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 150858138285647,
+					"parameters": {
+						"key": "\"tutorial\"",
+						"value": "TutorialFinished"
+					}
+				}
+			],
+			"sid": 394533099899167
 		},
 		{
 			"eventType": "block",

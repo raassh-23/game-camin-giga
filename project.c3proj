@@ -159,6 +159,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "glass",
 			"name": "Glass",
@@ -205,7 +213,8 @@
 			"Audio",
 			"SliderBG",
 			"Slider",
-			"LocalStorage"
+			"LocalStorage",
+			"TextTutorial"
 		],
 		"subfolders": []
 	},

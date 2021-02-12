@@ -52,6 +52,16 @@
 			"sid": 514426868374992
 		},
 		{
+			"eventType": "variable",
+			"name": "TutorialFinished",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 438450898426671
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Control",
@@ -224,6 +234,16 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 363215329739112,
+									"parameters": {
+										"first-value": "TutorialFinished*3 + TutorialNow",
+										"comparison": 4,
+										"second-value": "1"
+									}
+								},
+								{
 									"id": "is-overlapping-another-object",
 									"objectClass": "Player",
 									"sid": 298564446173666,
@@ -252,11 +272,58 @@
 									"sid": 176610049600349
 								}
 							],
-							"sid": 836712612222597
+							"sid": 836712612222597,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 422553433726260,
+											"parameters": {
+												"variable": "TutorialNow",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 487217074638570,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 387431161995689,
+											"parameters": {
+												"variable": "TutorialNow",
+												"value": "3"
+											}
+										}
+									],
+									"sid": 458205405936792
+								}
+							]
 						},
 						{
 							"eventType": "block",
 							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 765232760182545,
+									"parameters": {
+										"first-value": "TutorialFinished*3 + TutorialNow",
+										"comparison": 4,
+										"second-value": "0"
+									}
+								},
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
@@ -303,7 +370,44 @@
 									"sid": 879649441074338
 								}
 							],
-							"sid": 472278591493174
+							"sid": 472278591493174,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 404292494491049,
+											"parameters": {
+												"variable": "TutorialNow",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 456226125117549,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 828922762625500,
+											"parameters": {
+												"variable": "TutorialNow",
+												"value": "2"
+											}
+										}
+									],
+									"sid": 436136908423223
+								}
+							]
 						}
 					]
 				},
@@ -489,6 +593,16 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 561602778760725,
+									"parameters": {
+										"first-value": "TutorialFinished*3 + TutorialNow",
+										"comparison": 5,
+										"second-value": "2"
+									}
+								},
+								{
 									"id": "is-overlapping-another-object",
 									"objectClass": "Player",
 									"sid": 746515392853264,
@@ -517,11 +631,58 @@
 									"sid": 850919556206409
 								}
 							],
-							"sid": 827391546100120
+							"sid": 827391546100120,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 106101269994450,
+											"parameters": {
+												"variable": "TutorialNow",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 127284212401203,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 299982749198223,
+											"parameters": {
+												"variable": "TutorialNow",
+												"value": "3"
+											}
+										}
+									],
+									"sid": 919712218066862
+								}
+							]
 						},
 						{
 							"eventType": "block",
 							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 802733293763246,
+									"parameters": {
+										"first-value": "TutorialFinished*3 + TutorialNow",
+										"comparison": 5,
+										"second-value": "1"
+									}
+								},
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
@@ -568,7 +729,44 @@
 									"sid": 879649441074338
 								}
 							],
-							"sid": 460049383734168
+							"sid": 460049383734168,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 516353881270702,
+											"parameters": {
+												"variable": "TutorialNow",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 194699261126510,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 882037884817177,
+											"parameters": {
+												"variable": "TutorialNow",
+												"value": "1.5"
+											}
+										}
+									],
+									"sid": 985867239558544
+								}
+							]
 						}
 					]
 				},
@@ -1680,7 +1878,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "audio",
+			"title": "Audio",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -1836,9 +2034,539 @@
 			"sid": 984994999910453
 		},
 		{
+			"eventType": "variable",
+			"name": "TutorialNow",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": true,
+			"isConstant": false,
+			"sid": 979597917119529
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "ForTesting",
+			"title": "Tutorial",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 547178926405515
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 323635596926093,
+							"parameters": {
+								"variable": "TutorialFinished",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TextTutorial",
+							"sid": 407214207149889,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "TextTutorial",
+							"sid": 924213320903959,
+							"parameters": {
+								"x": "640",
+								"y": "210"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TextTutorial",
+							"sid": 445060308847530,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "1"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TextTutorial",
+							"sid": 974814345416301,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "0"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TextTutorial",
+							"sid": 585336403638347,
+							"behaviorType": "Fade"
+						}
+					],
+					"sid": 592096577740348
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Player",
+							"sid": 908146864681308,
+							"behaviorType": "TileMovement"
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 101582585804283,
+							"parameters": {
+								"variable": "TutorialNow",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 192666291663106,
+							"parameters": {
+								"variable": "TutorialFinished",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 951863790471568
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 645376493253378,
+							"parameters": {
+								"variable": "TutorialNow",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 463502297314692
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-out-finished",
+							"objectClass": "TextTutorial",
+							"sid": 743827035773877,
+							"behaviorType": "Fade"
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "TextTutorial",
+							"sid": 158131866206544
+						},
+						{
+							"callFunction": "nextTutorial",
+							"sid": 643324332648723
+						}
+					],
+					"sid": 513072221100571
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TextTutorial",
+							"sid": 581935053586376,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 724703324674906,
+							"parameters": {
+								"variable": "TutorialNow",
+								"comparison": 4,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 532330228194314,
+							"parameters": {
+								"variable": "TutorialFinished",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 379775267845699
+						}
+					],
+					"actions": [
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TextTutorial",
+							"sid": 124631829424950,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TextTutorial",
+							"sid": 302745121609881,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "1"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TextTutorial",
+							"sid": 563776509374683,
+							"behaviorType": "Fade"
+						}
+					],
+					"sid": 723783788829576
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TextTutorial",
+							"sid": 987524386185873,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 554203958761853,
+							"parameters": {
+								"object": "Pin"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 887234217028795,
+							"parameters": {
+								"variable": "TutorialNow",
+								"comparison": 4,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 473977643812530,
+							"parameters": {
+								"variable": "TutorialFinished",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 309048767267176
+						}
+					],
+					"actions": [
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TextTutorial",
+							"sid": 475592849181698,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TextTutorial",
+							"sid": 381544026615423,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "1"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TextTutorial",
+							"sid": 921863694050364,
+							"behaviorType": "Fade"
+						}
+					],
+					"sid": 487925972327543
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TextTutorial",
+							"sid": 157065374054860,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 791019069537922,
+							"parameters": {
+								"variable": "TutorialNow",
+								"comparison": 4,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 490722869048588,
+							"parameters": {
+								"variable": "TutorialFinished",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 499565460783681
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 986739689036004,
+							"parameters": {
+								"variable": "TutorialFinished",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 781181361652545,
+							"parameters": {
+								"variable": "TutorialNow",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 240939780473534,
+							"parameters": {
+								"key": "\"tutorial\"",
+								"value": "TutorialFinished"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TextTutorial",
+							"sid": 289443339695799,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TextTutorial",
+							"sid": 394976903342674,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "1"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TextTutorial",
+							"sid": 780164748409447,
+							"behaviorType": "Fade"
+						}
+					],
+					"sid": 906660398601697
+				},
+				{
+					"functionName": "nextTutorial",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 108096611748834,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "TextTutorial",
+									"sid": 646657696439360,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 996580908962851,
+									"parameters": {
+										"variable": "TutorialNow",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "TextTutorial",
+									"sid": 883259656894193,
+									"parameters": {
+										"x": "640",
+										"y": "210"
+									}
+								},
+								{
+									"id": "set-fade-in-time",
+									"objectClass": "TextTutorial",
+									"sid": 969278602300016,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-in-time": "1"
+									}
+								},
+								{
+									"id": "set-fade-out-time",
+									"objectClass": "TextTutorial",
+									"sid": 771010870675186,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-out-time": "0"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "TextTutorial",
+									"sid": 789341326201654,
+									"behaviorType": "Fade"
+								}
+							],
+							"sid": 244766932707654
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "TextTutorial",
+									"sid": 474445155850129,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 108380523118651,
+									"parameters": {
+										"variable": "TutorialNow",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "TextTutorial",
+									"sid": 881537288247802,
+									"parameters": {
+										"x": "640",
+										"y": "210"
+									}
+								},
+								{
+									"id": "set-fade-in-time",
+									"objectClass": "TextTutorial",
+									"sid": 598994436660025,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-in-time": "1"
+									}
+								},
+								{
+									"id": "set-fade-out-time",
+									"objectClass": "TextTutorial",
+									"sid": 449754112872707,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-out-time": "0"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "TextTutorial",
+									"sid": 321664050948174,
+									"behaviorType": "Fade"
+								}
+							],
+							"sid": 467449989497316
+						}
+					]
+				}
+			],
+			"sid": 442108389062471
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Testing",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [

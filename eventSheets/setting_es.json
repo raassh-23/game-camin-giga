@@ -165,6 +165,24 @@
 									}
 								},
 								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 896597470977385,
+									"parameters": {
+										"variable": "TutorialFinished",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 714939981605418,
+									"parameters": {
+										"key": "\"tutorial\"",
+										"value": "TutorialFinished"
+									}
+								},
+								{
 									"id": "set-item",
 									"objectClass": "LocalStorage",
 									"sid": 989168571840229,

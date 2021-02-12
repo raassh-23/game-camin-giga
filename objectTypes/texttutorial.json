@@ -1,0 +1,33 @@
+{
+	"name": "TextTutorial",
+	"plugin-id": "Spritefont2",
+	"sid": 280666728934131,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "id",
+			"type": "number",
+			"desc": "",
+			"sid": 133236940992048
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 120185708982783
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 512,
+		"height": 512,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5897049,
+		"useCollisionPoly": true
+	}
+}
