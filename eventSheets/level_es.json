@@ -598,30 +598,6 @@
 						}
 					],
 					"sid": 443275488102487
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 376586699496439,
-							"parameters": {
-								"key": 9
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "MobileButton",
-							"sid": 157378670262226,
-							"parameters": {
-								"visibility": "toggle"
-							}
-						}
-					],
-					"sid": 847141149630245
 				}
 			],
 			"sid": 560219984425904
@@ -1858,6 +1834,82 @@
 				}
 			],
 			"sid": 984994999910453
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ForTesting",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 588289056374749,
+							"parameters": {
+								"key": 9
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "MobileButton",
+							"sid": 807709229300417,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 349558877656981
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 883969675127690,
+							"parameters": {
+								"key": 192
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 768411134433587,
+							"parameters": {
+								"variable": "Level",
+								"value": "1"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 536888007476245,
+							"parameters": {
+								"layout": "Level < MaxLevel ? str(Level) : \"EndScreen\""
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 904063843942771,
+							"parameters": {
+								"key": "\"level\"",
+								"value": "Level"
+							}
+						}
+					],
+					"sid": 440647476592119
+				}
+			],
+			"sid": 829830143681033
 		}
 	],
 	"sid": 626257349159799
