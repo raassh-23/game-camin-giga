@@ -757,10 +757,10 @@
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 882037884817177,
+											"sid": 391123985498199,
 											"parameters": {
 												"variable": "TutorialNow",
-												"value": "1.5"
+												"value": "2"
 											}
 										}
 									],
@@ -1163,6 +1163,15 @@
 								"layer": "\"MobileControl\"",
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 531854210353957,
+							"parameters": {
+								"layer": "\"Tutorial\"",
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 467304619976130
@@ -1228,6 +1237,15 @@
 									"sid": 161179025391475,
 									"parameters": {
 										"layer": "\"UI\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 713091905409362,
+									"parameters": {
+										"layer": "\"Tutorial\"",
 										"visibility": "invisible"
 									}
 								},
@@ -1312,6 +1330,15 @@
 											"sid": 362298403847958,
 											"parameters": {
 												"layer": "\"MobileControl\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 410678204198916,
+											"parameters": {
+												"layer": "\"Tutorial\"",
 												"visibility": "visible"
 											}
 										},
@@ -2080,6 +2107,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 627507697145672,
+							"parameters": {
+								"variable": "TutorialNow",
+								"value": "0"
+							}
+						},
 						{
 							"id": "set-position",
 							"objectClass": "TextTutorial",
