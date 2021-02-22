@@ -1,0 +1,323 @@
+{
+	"name": "EndScreen_ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 157342921453163
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "TextUI",
+					"sid": 387581942043042,
+					"parameters": {
+						"instance-variable": "id",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "TextUI",
+					"sid": 527899070857367
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 787269818278209,
+					"parameters": {
+						"layout": "LevelPlaying+1 < MaxLevel ? str(LevelPlaying+1) : \"LevelSelect\""
+					}
+				},
+				{
+					"callFunction": "playTapSFX",
+					"sid": 861937595824955
+				}
+			],
+			"sid": 169647724026252
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 478623085573522
+				}
+			],
+			"actions": [],
+			"sid": 792744509886930,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "bestTime",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 951833727629834
+				},
+				{
+					"eventType": "variable",
+					"name": "hour",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 148182460045475
+				},
+				{
+					"eventType": "variable",
+					"name": "minute",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 458965312652920
+				},
+				{
+					"eventType": "variable",
+					"name": "second",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 140345479755503
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "LevelData",
+							"sid": 883583737475564,
+							"parameters": {
+								"x": "LevelPlaying",
+								"y": "1",
+								"value": "LevelData.At(LevelPlaying, 1) = -1 | clearTime < LevelData.At(LevelPlaying, 1) ? clearTime : LevelData.At(LevelPlaying, 1)"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 197282066505165,
+							"parameters": {
+								"key": "\"time\"",
+								"value": "LevelData.AsJSON"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 511308593001051,
+							"parameters": {
+								"variable": "bestTime",
+								"value": "LevelData.At(LevelPlaying, 1)"
+							}
+						}
+					],
+					"sid": 204010185001540
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TextUI",
+							"sid": 906231766551080,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TextUI",
+							"sid": 994946875334439,
+							"parameters": {
+								"text": "\"Time: \""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 552798852967955,
+							"parameters": {
+								"variable": "hour",
+								"value": "floor(clearTime/3600)"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "TextUI",
+							"sid": 300049482324806,
+							"parameters": {
+								"text": "(hour < 10 ? \"0\"&hour : hour) & \"H \""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 486173246307618,
+							"parameters": {
+								"variable": "minute",
+								"value": "floor((clearTime-hour*3600)/60)"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "TextUI",
+							"sid": 417171967937197,
+							"parameters": {
+								"text": "(minute < 10 ? \"0\"&minute : minute) & \"M \""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 285821486292857,
+							"parameters": {
+								"variable": "second",
+								"value": "clearTime-hour*3600-minute*60"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "TextUI",
+							"sid": 101474068065086,
+							"parameters": {
+								"text": "(second < 10 ? \"0\"&second : second) & \"S\""
+							}
+						}
+					],
+					"sid": 494203987384292
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TextUI",
+							"sid": 622972806101688,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TextUI",
+							"sid": 221261196552507,
+							"parameters": {
+								"text": "\"BEST: \""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 478293104513039,
+							"parameters": {
+								"variable": "hour",
+								"value": "floor(bestTime/3600)"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "TextUI",
+							"sid": 745587857296758,
+							"parameters": {
+								"text": "(hour < 10 ? \"0\"&hour : hour) & \"H \""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 728374062963972,
+							"parameters": {
+								"variable": "minute",
+								"value": "floor((bestTime-hour*3600)/60)"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "TextUI",
+							"sid": 962912383098289,
+							"parameters": {
+								"text": "(minute < 10 ? \"0\"&minute : minute) & \"M \""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 583090557576459,
+							"parameters": {
+								"variable": "second",
+								"value": "bestTime-hour*3600-minute*60"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "TextUI",
+							"sid": 613698384176963,
+							"parameters": {
+								"text": "(second < 10 ? \"0\"&second : second) & \"S\""
+							}
+						}
+					],
+					"sid": 942799581366657
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TextUI",
+							"sid": 727875362476266,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 505141907541930,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TextUI",
+							"sid": 814719517966282,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 358490081580701
+				}
+			]
+		}
+	],
+	"sid": 832488882025717
+}

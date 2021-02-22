@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 23404,
-	"name": "game-camin-giga",
+	"name": "a-totally-normal-maze",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -214,7 +214,8 @@
 			"SliderBG",
 			"Slider",
 			"LocalStorage",
-			"TextTutorial"
+			"TextTutorial",
+			"levelSelect"
 		],
 		"subfolders": []
 	},
@@ -230,7 +231,8 @@
 		"items": [
 			"Menu",
 			"EndScreen",
-			"Setting"
+			"Setting",
+			"LevelSelect"
 		],
 		"subfolders": [
 			{
@@ -253,10 +255,11 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Level_ES",
+			"Game_ES",
 			"Menu_ES",
-			"EndScreen",
-			"Setting_ES"
+			"EndScreen_ES",
+			"Setting_ES",
+			"LevelSelect_ES"
 		],
 		"subfolders": []
 	},

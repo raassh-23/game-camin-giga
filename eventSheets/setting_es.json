@@ -151,7 +151,7 @@
 									"objectClass": "System",
 									"sid": 532709515124396,
 									"parameters": {
-										"variable": "Level",
+										"variable": "LevelUnlocked",
 										"value": "0"
 									}
 								},
@@ -188,7 +188,7 @@
 									"sid": 989168571840229,
 									"parameters": {
 										"key": "\"level\"",
-										"value": "Level"
+										"value": "LevelUnlocked"
 									}
 								},
 								{

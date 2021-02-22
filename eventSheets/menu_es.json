@@ -113,8 +113,17 @@
 							"id": "go-to-layout-by-name",
 							"objectClass": "System",
 							"sid": 443939216212497,
+							"disabled": true,
 							"parameters": {
-								"layout": "Level < MaxLevel ? str(Level) : \"EndScreen\""
+								"layout": "LevelUnlocked < MaxLevel ? str(LevelUnlocked) : \"EndScreen\""
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 184418381667079,
+							"parameters": {
+								"layout": "LevelUnlocked = 0 ? \"0\" : \"LevelSelect\""
 							}
 						}
 					],
@@ -169,7 +178,7 @@
 					"objectClass": "System",
 					"sid": 972883317008509,
 					"parameters": {
-						"variable": "Level",
+						"variable": "LevelUnlocked",
 						"value": "LocalStorage.ItemValue"
 					}
 				}
@@ -195,7 +204,7 @@
 					"sid": 615385312195553,
 					"parameters": {
 						"key": "\"level\"",
-						"value": "Level"
+						"value": "LevelUnlocked"
 					}
 				}
 			],
@@ -265,12 +274,11 @@
 			],
 			"actions": [
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 520731879992802,
+					"id": "load",
+					"objectClass": "LevelData",
+					"sid": 456293775466953,
 					"parameters": {
-						"variable": "clearTime",
-						"value": "LocalStorage.ItemValue"
+						"json": "LocalStorage.ItemValue"
 					}
 				}
 			],
@@ -292,10 +300,10 @@
 				{
 					"id": "set-item",
 					"objectClass": "LocalStorage",
-					"sid": 708686259830875,
+					"sid": 384798128422991,
 					"parameters": {
 						"key": "\"time\"",
-						"value": "clearTime"
+						"value": "LevelData.AsJSON"
 					}
 				}
 			],

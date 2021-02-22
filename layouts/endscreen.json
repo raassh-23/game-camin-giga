@@ -8,7 +8,7 @@
 				{
 					"type": "TextUI",
 					"properties": {
-						"text": "YOU FINISHED THE GAME!",
+						"text": "LEVEL COMPLETED",
 						"enable-bbcode": true,
 						"character-width": 35,
 						"character-height": 43,
@@ -25,7 +25,7 @@
 					},
 					"uid": 79,
 					"instanceVariables": {
-						"id": 1
+						"id": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -48,7 +48,7 @@
 				{
 					"type": "TextUI",
 					"properties": {
-						"text": "CLEAR TIME:",
+						"text": "TIME: 00H 00M 00S",
 						"enable-bbcode": true,
 						"character-width": 35,
 						"character-height": 43,
@@ -88,7 +88,7 @@
 				{
 					"type": "TextUI",
 					"properties": {
-						"text": "00:00:00",
+						"text": "BEST: 00H 00M 00S",
 						"enable-bbcode": true,
 						"character-width": 35,
 						"character-height": 43,
@@ -128,7 +128,7 @@
 				{
 					"type": "TextUI",
 					"properties": {
-						"text": "CLICK/TAP ANYWHERE TO GO BACK TO MENU",
+						"text": "CLICK/TAP ANYWHERE TO GO TO NEXT LEVEL",
 						"enable-bbcode": true,
 						"character-width": 35,
 						"character-height": 43,
@@ -197,5 +197,5 @@
 	"width": 1280,
 	"height": 720,
 	"unboundedScrolling": false,
-	"eventSheet": "EndScreen"
+	"eventSheet": "EndScreen_ES"
 }

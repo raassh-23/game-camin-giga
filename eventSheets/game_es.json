@@ -1,15 +1,25 @@
 {
-	"name": "Level_ES",
+	"name": "Game_ES",
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "Level",
+			"name": "LevelUnlocked",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 363290896692426
+		},
+		{
+			"eventType": "variable",
+			"name": "LevelPlaying",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 447250724009104
 		},
 		{
 			"eventType": "variable",
@@ -1131,6 +1141,32 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-instance-variable",
+							"objectClass": "TextUI",
+							"sid": 735426332845380,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TextUI",
+							"sid": 777915247125738,
+							"parameters": {
+								"text": "\"Level \"&LevelPlaying+1"
+							}
+						}
+					],
+					"sid": 598858489891293
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
 							"sid": 430507466974175
@@ -1526,27 +1562,27 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 746908993414107,
+							"sid": 241853046821336,
 							"parameters": {
-								"variable": "Level",
-								"value": "1"
-							}
-						},
-						{
-							"id": "go-to-layout-by-name",
-							"objectClass": "System",
-							"sid": 336585972633144,
-							"parameters": {
-								"layout": "Level < MaxLevel ? str(Level) : \"EndScreen\""
+								"variable": "LevelUnlocked",
+								"value": "LevelUnlocked = LevelPlaying ? 1 : 0"
 							}
 						},
 						{
 							"id": "set-item",
 							"objectClass": "LocalStorage",
-							"sid": 329133912127173,
+							"sid": 860369554753084,
 							"parameters": {
 								"key": "\"level\"",
-								"value": "Level"
+								"value": "LevelUnlocked"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 889092179466288,
+							"parameters": {
+								"layout": "EndScreen"
 							}
 						}
 					],
@@ -1831,10 +1867,28 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 789727770053350,
+							"sid": 241540984930362,
+							"parameters": {
+								"variable": "clearTime",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 734795204190833,
 							"parameters": {
 								"variable": "pinOwned",
-								"value": "LevelData.At(Level)"
+								"value": "LevelData.At(LevelUnlocked, 0)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 510005109337224,
+							"parameters": {
+								"variable": "LevelPlaying",
+								"value": "int(LayoutName)"
 							}
 						},
 						{
@@ -1885,15 +1939,6 @@
 							"parameters": {
 								"variable": "clearTime",
 								"value": "1"
-							}
-						},
-						{
-							"id": "set-item",
-							"objectClass": "LocalStorage",
-							"sid": 747665550794028,
-							"parameters": {
-								"key": "\"time\"",
-								"value": "clearTime"
 							}
 						}
 					],
@@ -2628,8 +2673,7 @@
 							}
 						}
 					],
-					"sid": 349558877656981,
-					"disabled": true
+					"sid": 349558877656981
 				},
 				{
 					"eventType": "block",
@@ -2649,7 +2693,7 @@
 							"objectClass": "System",
 							"sid": 768411134433587,
 							"parameters": {
-								"variable": "Level",
+								"variable": "LevelUnlocked",
 								"value": "1"
 							}
 						},
@@ -2658,7 +2702,7 @@
 							"objectClass": "System",
 							"sid": 536888007476245,
 							"parameters": {
-								"layout": "Level < MaxLevel ? str(Level) : \"EndScreen\""
+								"layout": "LevelUnlocked < MaxLevel ? str(LevelUnlocked) : \"EndScreen\""
 							}
 						},
 						{
@@ -2667,12 +2711,11 @@
 							"sid": 904063843942771,
 							"parameters": {
 								"key": "\"level\"",
-								"value": "Level"
+								"value": "LevelUnlocked"
 							}
 						}
 					],
-					"sid": 440647476592119,
-					"disabled": true
+					"sid": 440647476592119
 				}
 			],
 			"sid": 829830143681033

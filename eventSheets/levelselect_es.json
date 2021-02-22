@@ -1,0 +1,180 @@
+{
+	"name": "LevelSelect_ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 639886595647843
+				}
+			],
+			"actions": [],
+			"sid": 562624910372138,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 879840391293288,
+							"parameters": {
+								"object": "levelSelect"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "levelSelect",
+							"sid": 992222038112816,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 3,
+								"value": "LevelUnlocked+1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "levelSelect",
+							"sid": 147554893332632,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 814715118929192,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "TextUI",
+									"sid": 791089534584341,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-text",
+									"objectClass": "TextUI",
+									"sid": 254475216127316,
+									"parameters": {
+										"text-to-compare": "str(levelSelect.id)",
+										"case-sensitivity": "ignore-case"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "TextUI",
+									"sid": 956380149730562,
+									"parameters": {
+										"instance-variable": "id",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-default-color",
+									"objectClass": "TextUI",
+									"sid": 251781928722206,
+									"parameters": {
+										"color": "rgbEx(64, 64, 64)"
+									}
+								}
+							],
+							"sid": 409132948938112
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 929350272390438,
+					"parameters": {
+						"object": "MenuButton"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 612512254820390,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "MenuButton",
+							"sid": 800997436871811,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "playTapSFX",
+							"sid": 306335357941163
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 489072433024839,
+							"parameters": {
+								"layout": "Menu"
+							}
+						}
+					],
+					"sid": 855728377488462
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 407522354049875,
+					"parameters": {
+						"object": "TextUI"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "TextUI",
+					"sid": 322835084897805,
+					"parameters": {
+						"instance-variable": "id",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 536290760533067,
+					"parameters": {
+						"layout": "str(int(TextUI.Text) - 1)"
+					}
+				}
+			],
+			"sid": 278775393658859
+		}
+	],
+	"sid": 205195289824945
+}

@@ -911,6 +911,46 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "TextUI",
+					"properties": {
+						"text": "Level",
+						"enable-bbcode": true,
+						"character-width": 35,
+						"character-height": 43,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[8,\" \"],[5,\"|\"],[6,\"'\"],[7,\"l\"],[8,\"Ii.:!\"],[9,\",;\"],[10,\"[]\"],[11,\"j`\"],[12,\"-\\\"(°\"],[13,\"rt1)\"],[15,\"f\"],[16,\"/\"],[17,\"<\"],[18,\"hnuz?\\\\=*>\"],[19,\"FLabckps56_\"],[20,\"EJdegqvxy03789+$€\"],[21,\"Bo24\"],[22,\"DPRSUZ~£\"],[23,\"HKN#\"],[24,\"CGOQTY&\"],[25,\"VX\"],[26,\"A%\"],[29,\"Mw\"],[30,\"m\"],[32,\"@\"],[33,\"W\"]]",
+						"scale": 1.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "right",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 39,
+					"instanceVariables": {
+						"id": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 988,
+						"y": 106,
+						"width": 288,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 159277562925217,
@@ -1293,5 +1333,5 @@
 	"width": 2880,
 	"height": 2880,
 	"unboundedScrolling": true,
-	"eventSheet": "Level_ES"
+	"eventSheet": "Game_ES"
 }
