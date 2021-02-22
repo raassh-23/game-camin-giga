@@ -1167,55 +1167,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 430507466974175
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 199027873139059,
-							"parameters": {
-								"layer": "\"Paused\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 943147066022977,
-							"parameters": {
-								"layer": "\"UI\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 618659755773592,
-							"parameters": {
-								"layer": "\"MobileControl\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 531854210353957,
-							"parameters": {
-								"layer": "\"Tutorial\"",
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 467304619976130
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-touched-object",
 							"objectClass": "Touch",
 							"sid": 748867553311387,
@@ -1571,10 +1522,10 @@
 						{
 							"id": "set-item",
 							"objectClass": "LocalStorage",
-							"sid": 860369554753084,
+							"sid": 801425757015608,
 							"parameters": {
-								"key": "\"level\"",
-								"value": "LevelUnlocked"
+								"key": "\"gameData\"",
+								"value": "LevelUnlocked&\",\"&TutorialFinished&\",\"&Audio&\",\"&Music"
 							}
 						},
 						{
@@ -1865,6 +1816,42 @@
 							}
 						},
 						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 359873336133939,
+							"parameters": {
+								"layer": "\"Paused\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 355968340025270,
+							"parameters": {
+								"layer": "\"UI\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 483341588499681,
+							"parameters": {
+								"layer": "\"MobileControl\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 344333116669164,
+							"parameters": {
+								"layer": "\"Tutorial\"",
+								"visibility": "visible"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 241540984930362,
@@ -1905,6 +1892,15 @@
 							"sid": 395367749941969,
 							"parameters": {
 								"visibility": "visible"
+							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 185260066593741,
+							"parameters": {
+								"type": "log",
+								"message": "LayoutName"
 							}
 						}
 					],
@@ -2472,10 +2468,10 @@
 						{
 							"id": "set-item",
 							"objectClass": "LocalStorage",
-							"sid": 240939780473534,
+							"sid": 923759130704064,
 							"parameters": {
-								"key": "\"tutorial\"",
-								"value": "TutorialFinished"
+								"key": "\"gameData\"",
+								"value": "LevelUnlocked&\",\"&TutorialFinished&\",\"&Audio&\",\"&Music"
 							}
 						},
 						{
@@ -2691,27 +2687,27 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 768411134433587,
+							"sid": 512343138323940,
 							"parameters": {
 								"variable": "LevelUnlocked",
-								"value": "1"
-							}
-						},
-						{
-							"id": "go-to-layout-by-name",
-							"objectClass": "System",
-							"sid": 536888007476245,
-							"parameters": {
-								"layout": "LevelUnlocked < MaxLevel ? str(LevelUnlocked) : \"EndScreen\""
+								"value": "LevelUnlocked = LevelPlaying ? 1 : 0"
 							}
 						},
 						{
 							"id": "set-item",
 							"objectClass": "LocalStorage",
-							"sid": 904063843942771,
+							"sid": 491772321722620,
 							"parameters": {
-								"key": "\"level\"",
-								"value": "LevelUnlocked"
+								"key": "\"gameData\"",
+								"value": "LevelUnlocked&\",\"&TutorialFinished&\",\"&Audio&\",\"&Music"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 191852044006425,
+							"parameters": {
+								"layout": "EndScreen"
 							}
 						}
 					],

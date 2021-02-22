@@ -158,15 +158,6 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 939000521152900,
-									"parameters": {
-										"variable": "clearTime",
-										"value": "0"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
 									"sid": 896597470977385,
 									"parameters": {
 										"variable": "TutorialFinished",
@@ -176,28 +167,10 @@
 								{
 									"id": "set-item",
 									"objectClass": "LocalStorage",
-									"sid": 714939981605418,
+									"sid": 654119714012102,
 									"parameters": {
-										"key": "\"tutorial\"",
-										"value": "TutorialFinished"
-									}
-								},
-								{
-									"id": "set-item",
-									"objectClass": "LocalStorage",
-									"sid": 989168571840229,
-									"parameters": {
-										"key": "\"level\"",
-										"value": "LevelUnlocked"
-									}
-								},
-								{
-									"id": "set-item",
-									"objectClass": "LocalStorage",
-									"sid": 409207957021441,
-									"parameters": {
-										"key": "\"time\"",
-										"value": "clearTime"
+										"key": "\"gameData\"",
+										"value": "LevelUnlocked&\",\"&TutorialFinished&\",\"&Audio&\",\"&Music"
 									}
 								},
 								{
@@ -448,19 +421,10 @@
 				{
 					"id": "set-item",
 					"objectClass": "LocalStorage",
-					"sid": 732936548699733,
+					"sid": 578697769280758,
 					"parameters": {
-						"key": "\"musicsetting\"",
-						"value": "Music"
-					}
-				},
-				{
-					"id": "set-item",
-					"objectClass": "LocalStorage",
-					"sid": 893826494231600,
-					"parameters": {
-						"key": "\"audiosetting\"",
-						"value": "Audio"
+						"key": "\"gameData\"",
+						"value": "LevelUnlocked&\",\"&TutorialFinished&\",\"&Audio&\",\"&Music"
 					}
 				}
 			],

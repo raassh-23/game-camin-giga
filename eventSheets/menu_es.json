@@ -36,41 +36,17 @@
 				{
 					"id": "check-item-exists",
 					"objectClass": "LocalStorage",
-					"sid": 209835226886450,
+					"sid": 531039917802965,
 					"parameters": {
-						"key": "\"level\""
+						"key": "\"gameData\""
 					}
 				},
 				{
 					"id": "check-item-exists",
 					"objectClass": "LocalStorage",
-					"sid": 138581831252394,
+					"sid": 453074517145430,
 					"parameters": {
-						"key": "\"tutorial\""
-					}
-				},
-				{
-					"id": "check-item-exists",
-					"objectClass": "LocalStorage",
-					"sid": 686994233828074,
-					"parameters": {
-						"key": "\"time\""
-					}
-				},
-				{
-					"id": "check-item-exists",
-					"objectClass": "LocalStorage",
-					"sid": 204126179222926,
-					"parameters": {
-						"key": "\"audiosetting\""
-					}
-				},
-				{
-					"id": "check-item-exists",
-					"objectClass": "LocalStorage",
-					"sid": 446785000805901,
-					"parameters": {
-						"key": "\"musicsetting\""
+						"key": "\"levelData\""
 					}
 				}
 			],
@@ -108,15 +84,6 @@
 						{
 							"callFunction": "playTapSFX",
 							"sid": 159477124451088
-						},
-						{
-							"id": "go-to-layout-by-name",
-							"objectClass": "System",
-							"sid": 443939216212497,
-							"disabled": true,
-							"parameters": {
-								"layout": "LevelUnlocked < MaxLevel ? str(LevelUnlocked) : \"EndScreen\""
-							}
 						},
 						{
 							"id": "go-to-layout-by-name",
@@ -166,9 +133,9 @@
 				{
 					"id": "on-item-exists",
 					"objectClass": "LocalStorage",
-					"sid": 874605211260026,
+					"sid": 404379914226446,
 					"parameters": {
-						"key": "\"level\""
+						"key": "\"gameData\""
 					}
 				}
 			],
@@ -176,64 +143,41 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 972883317008509,
+					"sid": 455756437301052,
 					"parameters": {
 						"variable": "LevelUnlocked",
-						"value": "LocalStorage.ItemValue"
+						"value": "tokenat(LocalStorage.ItemValue, 0, \",\")"
 					}
-				}
-			],
-			"sid": 603524612563594
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-item-missing",
-					"objectClass": "LocalStorage",
-					"sid": 410973502976720,
-					"parameters": {
-						"key": "\"level\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-item",
-					"objectClass": "LocalStorage",
-					"sid": 615385312195553,
-					"parameters": {
-						"key": "\"level\"",
-						"value": "LevelUnlocked"
-					}
-				}
-			],
-			"sid": 120260179522528
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-item-exists",
-					"objectClass": "LocalStorage",
-					"sid": 127978707056696,
-					"parameters": {
-						"key": "\"tutorial\""
-					}
-				}
-			],
-			"actions": [
+				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 499394619208506,
+					"sid": 219468216225780,
 					"parameters": {
 						"variable": "TutorialFinished",
-						"value": "LocalStorage.ItemValue"
+						"value": "tokenat(LocalStorage.ItemValue, 1, \",\")"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 994664624554292,
+					"parameters": {
+						"variable": "Audio",
+						"value": "tokenat(LocalStorage.ItemValue, 2, \",\")"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 366820904312787,
+					"parameters": {
+						"variable": "Music",
+						"value": "tokenat(LocalStorage.ItemValue, 3, \",\")"
 					}
 				}
 			],
-			"sid": 831523369168436
+			"sid": 340272011255139
 		},
 		{
 			"eventType": "block",
@@ -241,9 +185,9 @@
 				{
 					"id": "on-item-missing",
 					"objectClass": "LocalStorage",
-					"sid": 605238162851769,
+					"sid": 642220587227986,
 					"parameters": {
-						"key": "\"tutorial\""
+						"key": "\"gameData\""
 					}
 				}
 			],
@@ -251,14 +195,14 @@
 				{
 					"id": "set-item",
 					"objectClass": "LocalStorage",
-					"sid": 150858138285647,
+					"sid": 356085595944609,
 					"parameters": {
-						"key": "\"tutorial\"",
-						"value": "TutorialFinished"
+						"key": "\"gameData\"",
+						"value": "LevelUnlocked&\",\"&TutorialFinished&\",\"&Audio&\",\"&Music"
 					}
 				}
 			],
-			"sid": 394533099899167
+			"sid": 198992270562771
 		},
 		{
 			"eventType": "block",
@@ -266,9 +210,9 @@
 				{
 					"id": "on-item-exists",
 					"objectClass": "LocalStorage",
-					"sid": 460766379277043,
+					"sid": 487247958441676,
 					"parameters": {
-						"key": "\"time\""
+						"key": "\"levelData\""
 					}
 				}
 			],
@@ -276,13 +220,13 @@
 				{
 					"id": "load",
 					"objectClass": "LevelData",
-					"sid": 456293775466953,
+					"sid": 118575784439970,
 					"parameters": {
 						"json": "LocalStorage.ItemValue"
 					}
 				}
 			],
-			"sid": 775240593575626
+			"sid": 961658991643806
 		},
 		{
 			"eventType": "block",
@@ -290,9 +234,9 @@
 				{
 					"id": "on-item-missing",
 					"objectClass": "LocalStorage",
-					"sid": 185319497910407,
+					"sid": 817110366402450,
 					"parameters": {
-						"key": "\"time\""
+						"key": "\"levelData\""
 					}
 				}
 			],
@@ -300,114 +244,14 @@
 				{
 					"id": "set-item",
 					"objectClass": "LocalStorage",
-					"sid": 384798128422991,
+					"sid": 842271741032423,
 					"parameters": {
-						"key": "\"time\"",
+						"key": "\"levelData\"",
 						"value": "LevelData.AsJSON"
 					}
 				}
 			],
-			"sid": 315174878611128
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-item-exists",
-					"objectClass": "LocalStorage",
-					"sid": 636251942002752,
-					"parameters": {
-						"key": "\"audiosetting\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 587775494885620,
-					"parameters": {
-						"variable": "Audio",
-						"value": "LocalStorage.ItemValue"
-					}
-				}
-			],
-			"sid": 312968700381519
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-item-missing",
-					"objectClass": "LocalStorage",
-					"sid": 143143842284838,
-					"parameters": {
-						"key": "\"audiosetting\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-item",
-					"objectClass": "LocalStorage",
-					"sid": 356715321231868,
-					"parameters": {
-						"key": "\"audiosetting\"",
-						"value": "Audio"
-					}
-				}
-			],
-			"sid": 667983882482526
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-item-exists",
-					"objectClass": "LocalStorage",
-					"sid": 129887866082249,
-					"parameters": {
-						"key": "\"musicsetting\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 647949665013571,
-					"parameters": {
-						"variable": "Music",
-						"value": "LocalStorage.ItemValue"
-					}
-				}
-			],
-			"sid": 372983022330636
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-item-missing",
-					"objectClass": "LocalStorage",
-					"sid": 978505136067434,
-					"parameters": {
-						"key": "\"musicsetting\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-item",
-					"objectClass": "LocalStorage",
-					"sid": 783803496342672,
-					"parameters": {
-						"key": "\"musicsetting\"",
-						"value": "Music"
-					}
-				}
-			],
-			"sid": 661029020861535
+			"sid": 595782305667876
 		},
 		{
 			"eventType": "block",

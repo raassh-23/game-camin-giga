@@ -3214,7 +3214,7 @@
 			"instances": [],
 			"sid": 740188862313708,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,
@@ -3271,5 +3271,5 @@
 	"width": 2880,
 	"height": 2880,
 	"unboundedScrolling": true,
-	"eventSheet": "Level_ES"
+	"eventSheet": "Game_ES"
 }

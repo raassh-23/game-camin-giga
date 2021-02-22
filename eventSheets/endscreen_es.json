@@ -35,6 +35,14 @@
 					}
 				},
 				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 510179824185687,
+					"parameters": {
+						"layout": "str(LevelPlaying+1)"
+					}
+				},
+				{
 					"callFunction": "playTapSFX",
 					"sid": 861937595824955
 				}
@@ -110,9 +118,9 @@
 						{
 							"id": "set-item",
 							"objectClass": "LocalStorage",
-							"sid": 197282066505165,
+							"sid": 339747832262969,
 							"parameters": {
-								"key": "\"time\"",
+								"key": "\"levelData\"",
 								"value": "LevelData.AsJSON"
 							}
 						},
