@@ -246,8 +246,7 @@
 						"Node": 0,
 						"TargetRoute": 1,
 						"TargetNode": 1,
-						"CollisionDir": 3,
-						"addDistortTime": 0.3
+						"CollisionDir": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -422,8 +421,7 @@
 						"Node": 1,
 						"TargetRoute": 0,
 						"TargetNode": 0,
-						"CollisionDir": 3,
-						"addDistortTime": 0.3
+						"CollisionDir": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -459,8 +457,7 @@
 						"Node": 1,
 						"TargetRoute": 0,
 						"TargetNode": 0,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -496,8 +493,7 @@
 						"Node": 0,
 						"TargetRoute": 2,
 						"TargetNode": 1,
-						"CollisionDir": 3,
-						"addDistortTime": 0.3
+						"CollisionDir": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -533,8 +529,7 @@
 						"Node": 1,
 						"TargetRoute": 0,
 						"TargetNode": 0,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -570,8 +565,7 @@
 						"Node": 0,
 						"TargetRoute": 3,
 						"TargetNode": 1,
-						"CollisionDir": 1,
-						"addDistortTime": 0.3
+						"CollisionDir": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -607,8 +601,7 @@
 						"Node": 1,
 						"TargetRoute": 0,
 						"TargetNode": 0,
-						"CollisionDir": 3,
-						"addDistortTime": 0.3
+						"CollisionDir": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -644,8 +637,7 @@
 						"Node": 1,
 						"TargetRoute": 0,
 						"TargetNode": 0,
-						"CollisionDir": 1,
-						"addDistortTime": 0.3
+						"CollisionDir": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -681,8 +673,7 @@
 						"Node": 0,
 						"TargetRoute": 4,
 						"TargetNode": 1,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -718,8 +709,7 @@
 						"Node": 0,
 						"TargetRoute": 5,
 						"TargetNode": 1,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -848,8 +838,7 @@
 						"Node": 2,
 						"TargetRoute": 0,
 						"TargetNode": 0,
-						"CollisionDir": 0,
-						"addDistortTime": 0
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {

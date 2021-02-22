@@ -275,8 +275,7 @@
 						"Node": 0,
 						"TargetRoute": 0,
 						"TargetNode": 0,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -312,8 +311,7 @@
 						"Node": 0,
 						"TargetRoute": 4,
 						"TargetNode": 0,
-						"CollisionDir": 2,
-						"addDistortTime": 0.3
+						"CollisionDir": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -349,8 +347,7 @@
 						"Node": 0,
 						"TargetRoute": 1,
 						"TargetNode": 0,
-						"CollisionDir": 2,
-						"addDistortTime": 0.3
+						"CollisionDir": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -421,8 +418,7 @@
 						"Node": 1,
 						"TargetRoute": 1,
 						"TargetNode": 2,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -458,8 +454,7 @@
 						"Node": 2,
 						"TargetRoute": 1,
 						"TargetNode": 1,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -495,8 +490,7 @@
 						"Node": 3,
 						"TargetRoute": 1,
 						"TargetNode": 4,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -532,8 +526,7 @@
 						"Node": 4,
 						"TargetRoute": 1,
 						"TargetNode": 3,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -569,8 +562,7 @@
 						"Node": 5,
 						"TargetRoute": 2,
 						"TargetNode": 0,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -606,8 +598,7 @@
 						"Node": 0,
 						"TargetRoute": 1,
 						"TargetNode": 6,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -643,8 +634,7 @@
 						"Node": 6,
 						"TargetRoute": 0,
 						"TargetNode": 0,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -680,8 +670,7 @@
 						"Node": 7,
 						"TargetRoute": 2,
 						"TargetNode": 1,
-						"CollisionDir": 3,
-						"addDistortTime": 0.3
+						"CollisionDir": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -717,8 +706,7 @@
 						"Node": 1,
 						"TargetRoute": 1,
 						"TargetNode": 7,
-						"CollisionDir": 3,
-						"addDistortTime": 0.3
+						"CollisionDir": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -754,8 +742,7 @@
 						"Node": 8,
 						"TargetRoute": 3,
 						"TargetNode": 0,
-						"CollisionDir": 2,
-						"addDistortTime": 0.3
+						"CollisionDir": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -791,8 +778,7 @@
 						"Node": 0,
 						"TargetRoute": 1,
 						"TargetNode": 9,
-						"CollisionDir": 2,
-						"addDistortTime": 0.3
+						"CollisionDir": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -828,8 +814,7 @@
 						"Node": 9,
 						"TargetRoute": 3,
 						"TargetNode": 0,
-						"CollisionDir": 2,
-						"addDistortTime": 0.3
+						"CollisionDir": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -865,8 +850,7 @@
 						"Node": 2,
 						"TargetRoute": 3,
 						"TargetNode": 1,
-						"CollisionDir": 2,
-						"addDistortTime": 0.3
+						"CollisionDir": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -902,8 +886,7 @@
 						"Node": 1,
 						"TargetRoute": 4,
 						"TargetNode": 1,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -939,8 +922,7 @@
 						"Node": 1,
 						"TargetRoute": 2,
 						"TargetNode": 2,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -976,8 +958,7 @@
 						"Node": 2,
 						"TargetRoute": 4,
 						"TargetNode": 2,
-						"CollisionDir": 2,
-						"addDistortTime": 0.3
+						"CollisionDir": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1013,8 +994,7 @@
 						"Node": 2,
 						"TargetRoute": 3,
 						"TargetNode": 2,
-						"CollisionDir": 2,
-						"addDistortTime": 0.3
+						"CollisionDir": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1050,8 +1030,7 @@
 						"Node": 4,
 						"TargetRoute": 3,
 						"TargetNode": 0,
-						"CollisionDir": 2,
-						"addDistortTime": 0.3
+						"CollisionDir": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1087,8 +1066,7 @@
 						"Node": 3,
 						"TargetRoute": 2,
 						"TargetNode": 4,
-						"CollisionDir": 2,
-						"addDistortTime": 0.3
+						"CollisionDir": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1124,8 +1102,7 @@
 						"Node": 5,
 						"TargetRoute": 3,
 						"TargetNode": 3,
-						"CollisionDir": 1,
-						"addDistortTime": 0.3
+						"CollisionDir": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1161,8 +1138,7 @@
 						"Node": 3,
 						"TargetRoute": 2,
 						"TargetNode": 5,
-						"CollisionDir": 1,
-						"addDistortTime": 0.3
+						"CollisionDir": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1198,8 +1174,7 @@
 						"Node": 6,
 						"TargetRoute": 4,
 						"TargetNode": 3,
-						"CollisionDir": 1,
-						"addDistortTime": 0.3
+						"CollisionDir": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1235,8 +1210,7 @@
 						"Node": 3,
 						"TargetRoute": 2,
 						"TargetNode": 6,
-						"CollisionDir": 1,
-						"addDistortTime": 0.3
+						"CollisionDir": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1272,8 +1246,7 @@
 						"Node": 7,
 						"TargetRoute": 4,
 						"TargetNode": 4,
-						"CollisionDir": 1,
-						"addDistortTime": 0.3
+						"CollisionDir": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1309,8 +1282,7 @@
 						"Node": 4,
 						"TargetRoute": 2,
 						"TargetNode": 7,
-						"CollisionDir": 1,
-						"addDistortTime": 0.3
+						"CollisionDir": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1346,8 +1318,7 @@
 						"Node": 4,
 						"TargetRoute": 4,
 						"TargetNode": 5,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -1383,8 +1354,7 @@
 						"Node": 6,
 						"TargetRoute": 3,
 						"TargetNode": 4,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -1420,8 +1390,7 @@
 						"Node": 5,
 						"TargetRoute": 4,
 						"TargetNode": 6,
-						"CollisionDir": 0,
-						"addDistortTime": 0.3
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -1457,8 +1426,7 @@
 						"Node": 5,
 						"TargetRoute": 3,
 						"TargetNode": 6,
-						"CollisionDir": 1,
-						"addDistortTime": 0.3
+						"CollisionDir": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1494,8 +1462,7 @@
 						"Node": 6,
 						"TargetRoute": 4,
 						"TargetNode": 7,
-						"CollisionDir": 3,
-						"addDistortTime": 0.3
+						"CollisionDir": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -1531,8 +1498,7 @@
 						"Node": 7,
 						"TargetRoute": 3,
 						"TargetNode": 7,
-						"CollisionDir": 3,
-						"addDistortTime": 0.3
+						"CollisionDir": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -1568,8 +1534,7 @@
 						"Node": 7,
 						"TargetRoute": 2,
 						"TargetNode": 8,
-						"CollisionDir": 1,
-						"addDistortTime": 0.3
+						"CollisionDir": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1605,8 +1570,7 @@
 						"Node": 8,
 						"TargetRoute": 3,
 						"TargetNode": 6,
-						"CollisionDir": 1,
-						"addDistortTime": 0.3
+						"CollisionDir": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1810,8 +1774,7 @@
 						"Node": 2,
 						"TargetRoute": 0,
 						"TargetNode": 0,
-						"CollisionDir": 0,
-						"addDistortTime": 0
+						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {

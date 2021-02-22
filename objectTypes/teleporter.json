@@ -3,14 +3,7 @@
 	"plugin-id": "Sprite",
 	"sid": 820046077006636,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "addDistortTime",
-			"type": "number",
-			"desc": "",
-			"sid": 808810209695832
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

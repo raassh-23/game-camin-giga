@@ -1570,12 +1570,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-ignoring-input",
-							"objectClass": "Player",
-							"sid": 590596421185815,
-							"behaviorType": "TileMovement",
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 409720654875707,
 							"parameters": {
-								"input": "start-ignoring"
+								"seconds": "0.17"
 							}
 						},
 						{
@@ -1593,15 +1592,6 @@
 							"parameters": {
 								"instance-variable": "teleported",
 								"value": "true"
-							}
-						},
-						{
-							"id": "set-ignoring-input",
-							"objectClass": "Player",
-							"sid": 838630789358553,
-							"behaviorType": "TileMovement",
-							"parameters": {
-								"input": "stop-ignoring"
 							}
 						}
 					],
