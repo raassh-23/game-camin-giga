@@ -45,7 +45,6 @@
 	"members": [
 		"Marker",
 		"Teleporter",
-		"Goal",
-		"distortMark"
+		"Goal"
 	]
 }

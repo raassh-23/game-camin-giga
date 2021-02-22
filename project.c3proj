@@ -165,22 +165,6 @@
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "glass",
-			"name": "Glass",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "warpripple",
-			"name": "Warp ripple",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
 		}
 	],
 	"uniqueId": "rk8wewjd75n",
@@ -208,8 +192,6 @@
 			"MenuButton",
 			"LevelData",
 			"AJAX",
-			"Distortion",
-			"distortMark",
 			"Audio",
 			"SliderBG",
 			"Slider",
@@ -289,11 +271,6 @@
 					"name": "tap.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 413578879210498
-				},
-				{
-					"name": "distortion.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 560123186819483
 				},
 				{
 					"name": "bgm.webm",

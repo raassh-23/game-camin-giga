@@ -53,16 +53,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "distortion",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "0 disabled, 1 enabled",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 514426868374992
-		},
-		{
-			"eventType": "variable",
 			"name": "TutorialFinished",
 			"type": "number",
 			"initialValue": "0",
@@ -1589,14 +1579,6 @@
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 939373823608366,
-							"parameters": {
-								"seconds": "0.2 + Teleporter.addDistortTime * distortion"
-							}
-						},
-						{
 							"callFunction": "MovePlayerTo",
 							"sid": 496819732376070,
 							"parameters": [
@@ -1650,81 +1632,6 @@
 						}
 					],
 					"sid": 788638564490418
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player",
-							"sid": 129369924379784,
-							"parameters": {
-								"object": "distortMark"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Player",
-							"sid": 855252078423609,
-							"parameters": {
-								"instance-variable": "dir",
-								"comparison": 0,
-								"value": "distortMark.CollisionDir"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "distortMark",
-							"sid": 567574070177718,
-							"parameters": {
-								"instance-variable": "isActive"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 923033764980774,
-							"parameters": {
-								"layer": "\"Distortion\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"callFunction": "playDistortionSFX",
-							"sid": 894652683706964
-						}
-					],
-					"sid": 729052140376190,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Player",
-							"sid": 386877116361662,
-							"parameters": {
-								"object": "distortMark"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 355364765344417,
-							"parameters": {
-								"layer": "\"Distortion\"",
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 872519149853770,
-					"disabled": true
 				},
 				{
 					"functionName": "MovePlayerTo",
@@ -1806,15 +1713,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 892239019958560,
-							"parameters": {
-								"layer": "\"Distortion\"",
-								"visibility": "invisible"
-							}
-						},
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
@@ -2045,30 +1943,6 @@
 						}
 					],
 					"sid": 930694007336562
-				},
-				{
-					"functionName": "playDistortionSFX",
-					"functionDescription": "",
-					"functionCategory": "SFX",
-					"functionReturnType": "none",
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 547364597195695,
-							"parameters": {
-								"audio-file": "distortion",
-								"loop": "not-looping",
-								"volume": "20*log10(Audio/100)",
-								"tag-optional": "\"sfx\""
-							}
-						}
-					],
-					"sid": 760361694955003
 				},
 				{
 					"eventType": "block",
