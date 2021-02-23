@@ -10,25 +10,25 @@
 			"sid": 488366772200541
 		},
 		{
-			"name": "Route",
+			"name": "Maze",
 			"type": "number",
 			"desc": "",
 			"sid": 629509420770840
 		},
 		{
-			"name": "Node",
+			"name": "Point",
 			"type": "number",
 			"desc": "",
 			"sid": 421606296515585
 		},
 		{
-			"name": "TargetRoute",
+			"name": "TargetMaze",
 			"type": "number",
 			"desc": "",
 			"sid": 627134591619872
 		},
 		{
-			"name": "TargetNode",
+			"name": "TargetPoint",
 			"type": "number",
 			"desc": "",
 			"sid": 313497472908254

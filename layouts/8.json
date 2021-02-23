@@ -141,10 +141,10 @@
 					"uid": 501,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 0,
-						"Node": 0,
-						"TargetRoute": 0,
-						"TargetNode": 0,
+						"Maze": 0,
+						"Point": 0,
+						"TargetMaze": 0,
+						"TargetPoint": 0,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -206,10 +206,10 @@
 					"uid": 479,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 0,
-						"Node": 0,
-						"TargetRoute": 0,
-						"TargetNode": 0,
+						"Maze": 0,
+						"Point": 0,
+						"TargetMaze": 0,
+						"TargetPoint": 0,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -218,35 +218,6 @@
 						"y": 1248,
 						"width": 24,
 						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Pin",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 480,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 480,
-						"y": 1568,
-						"width": 18,
-						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -271,10 +242,10 @@
 					"uid": 538,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 2,
-						"Node": 4,
-						"TargetRoute": 2,
-						"TargetNode": 3,
+						"Maze": 2,
+						"Point": 4,
+						"TargetMaze": 2,
+						"TargetPoint": 3,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -307,10 +278,10 @@
 					"uid": 476,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 0,
-						"Node": 0,
-						"TargetRoute": 0,
-						"TargetNode": 0,
+						"Maze": 0,
+						"Point": 0,
+						"TargetMaze": 0,
+						"TargetPoint": 0,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -343,10 +314,10 @@
 					"uid": 486,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 1,
-						"Node": 0,
-						"TargetRoute": 1,
-						"TargetNode": 1,
+						"Maze": 1,
+						"Point": 0,
+						"TargetMaze": 1,
+						"TargetPoint": 1,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -379,10 +350,10 @@
 					"uid": 487,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 1,
-						"Node": 1,
-						"TargetRoute": 1,
-						"TargetNode": 0,
+						"Maze": 1,
+						"Point": 1,
+						"TargetMaze": 1,
+						"TargetPoint": 0,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -415,10 +386,10 @@
 					"uid": 514,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 1,
-						"Node": 2,
-						"TargetRoute": 4,
-						"TargetNode": 0,
+						"Maze": 1,
+						"Point": 2,
+						"TargetMaze": 4,
+						"TargetPoint": 0,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -451,10 +422,10 @@
 					"uid": 515,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 4,
-						"Node": 0,
-						"TargetRoute": 1,
-						"TargetNode": 2,
+						"Maze": 4,
+						"Point": 0,
+						"TargetMaze": 1,
+						"TargetPoint": 2,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -487,10 +458,10 @@
 					"uid": 516,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 1,
-						"Node": 4,
-						"TargetRoute": 3,
-						"TargetNode": 0,
+						"Maze": 1,
+						"Point": 4,
+						"TargetMaze": 3,
+						"TargetPoint": 0,
 						"CollisionDir": 2
 					},
 					"behaviors": {},
@@ -523,10 +494,10 @@
 					"uid": 518,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 3,
-						"Node": 0,
-						"TargetRoute": 1,
-						"TargetNode": 4,
+						"Maze": 3,
+						"Point": 0,
+						"TargetMaze": 1,
+						"TargetPoint": 4,
 						"CollisionDir": 2
 					},
 					"behaviors": {},
@@ -559,10 +530,10 @@
 					"uid": 517,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 3,
-						"Node": 1,
-						"TargetRoute": 1,
-						"TargetNode": 5,
+						"Maze": 3,
+						"Point": 1,
+						"TargetMaze": 1,
+						"TargetPoint": 5,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -595,10 +566,10 @@
 					"uid": 519,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 1,
-						"Node": 5,
-						"TargetRoute": 3,
-						"TargetNode": 1,
+						"Maze": 1,
+						"Point": 5,
+						"TargetMaze": 3,
+						"TargetPoint": 1,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -631,10 +602,10 @@
 					"uid": 520,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 1,
-						"Node": 3,
-						"TargetRoute": 2,
-						"TargetNode": 0,
+						"Maze": 1,
+						"Point": 3,
+						"TargetMaze": 2,
+						"TargetPoint": 0,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -667,10 +638,10 @@
 					"uid": 521,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 2,
-						"Node": 0,
-						"TargetRoute": 1,
-						"TargetNode": 3,
+						"Maze": 2,
+						"Point": 0,
+						"TargetMaze": 1,
+						"TargetPoint": 3,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -703,10 +674,10 @@
 					"uid": 522,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 2,
-						"Node": 1,
-						"TargetRoute": 1,
-						"TargetNode": 6,
+						"Maze": 2,
+						"Point": 1,
+						"TargetMaze": 1,
+						"TargetPoint": 6,
 						"CollisionDir": 2
 					},
 					"behaviors": {},
@@ -739,10 +710,10 @@
 					"uid": 523,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 1,
-						"Node": 6,
-						"TargetRoute": 2,
-						"TargetNode": 1,
+						"Maze": 1,
+						"Point": 6,
+						"TargetMaze": 2,
+						"TargetPoint": 1,
 						"CollisionDir": 2
 					},
 					"behaviors": {},
@@ -775,10 +746,10 @@
 					"uid": 524,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 1,
-						"Node": 7,
-						"TargetRoute": 2,
-						"TargetNode": 2,
+						"Maze": 1,
+						"Point": 7,
+						"TargetMaze": 2,
+						"TargetPoint": 2,
 						"CollisionDir": 1
 					},
 					"behaviors": {},
@@ -811,10 +782,10 @@
 					"uid": 525,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 2,
-						"Node": 2,
-						"TargetRoute": 1,
-						"TargetNode": 7,
+						"Maze": 2,
+						"Point": 2,
+						"TargetMaze": 1,
+						"TargetPoint": 7,
 						"CollisionDir": 1
 					},
 					"behaviors": {},
@@ -847,10 +818,10 @@
 					"uid": 526,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 2,
-						"Node": 3,
-						"TargetRoute": 1,
-						"TargetNode": 8,
+						"Maze": 2,
+						"Point": 3,
+						"TargetMaze": 1,
+						"TargetPoint": 8,
 						"CollisionDir": 1
 					},
 					"behaviors": {},
@@ -883,10 +854,10 @@
 					"uid": 527,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 2,
-						"Node": 5,
-						"TargetRoute": 3,
-						"TargetNode": 2,
+						"Maze": 2,
+						"Point": 5,
+						"TargetMaze": 3,
+						"TargetPoint": 2,
 						"CollisionDir": 1
 					},
 					"behaviors": {},
@@ -919,10 +890,10 @@
 					"uid": 528,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 1,
-						"Node": 8,
-						"TargetRoute": 2,
-						"TargetNode": 3,
+						"Maze": 1,
+						"Point": 8,
+						"TargetMaze": 2,
+						"TargetPoint": 3,
 						"CollisionDir": 1
 					},
 					"behaviors": {},
@@ -955,10 +926,10 @@
 					"uid": 529,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 3,
-						"Node": 2,
-						"TargetRoute": 2,
-						"TargetNode": 5,
+						"Maze": 3,
+						"Point": 2,
+						"TargetMaze": 2,
+						"TargetPoint": 5,
 						"CollisionDir": 1
 					},
 					"behaviors": {},
@@ -991,10 +962,10 @@
 					"uid": 530,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 3,
-						"Node": 3,
-						"TargetRoute": 3,
-						"TargetNode": 4,
+						"Maze": 3,
+						"Point": 3,
+						"TargetMaze": 3,
+						"TargetPoint": 4,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -1027,10 +998,10 @@
 					"uid": 531,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 2,
-						"Node": 8,
-						"TargetRoute": 3,
-						"TargetNode": 7,
+						"Maze": 2,
+						"Point": 8,
+						"TargetMaze": 3,
+						"TargetPoint": 7,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -1063,10 +1034,10 @@
 					"uid": 532,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 3,
-						"Node": 4,
-						"TargetRoute": 3,
-						"TargetNode": 3,
+						"Maze": 3,
+						"Point": 4,
+						"TargetMaze": 3,
+						"TargetPoint": 3,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -1099,10 +1070,10 @@
 					"uid": 534,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 3,
-						"Node": 5,
-						"TargetRoute": 4,
-						"TargetNode": 1,
+						"Maze": 3,
+						"Point": 5,
+						"TargetMaze": 4,
+						"TargetPoint": 1,
 						"CollisionDir": 2
 					},
 					"behaviors": {},
@@ -1135,10 +1106,10 @@
 					"uid": 533,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 4,
-						"Node": 1,
-						"TargetRoute": 2,
-						"TargetNode": 6,
+						"Maze": 4,
+						"Point": 1,
+						"TargetMaze": 2,
+						"TargetPoint": 6,
 						"CollisionDir": 1
 					},
 					"behaviors": {},
@@ -1171,10 +1142,10 @@
 					"uid": 535,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 2,
-						"Node": 6,
-						"TargetRoute": 4,
-						"TargetNode": 1,
+						"Maze": 2,
+						"Point": 6,
+						"TargetMaze": 4,
+						"TargetPoint": 1,
 						"CollisionDir": 2
 					},
 					"behaviors": {},
@@ -1207,10 +1178,10 @@
 					"uid": 536,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 3,
-						"Node": 6,
-						"TargetRoute": 4,
-						"TargetNode": 2,
+						"Maze": 3,
+						"Point": 6,
+						"TargetMaze": 4,
+						"TargetPoint": 2,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -1243,10 +1214,10 @@
 					"uid": 537,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 4,
-						"Node": 2,
-						"TargetRoute": 3,
-						"TargetNode": 6,
+						"Maze": 4,
+						"Point": 2,
+						"TargetMaze": 3,
+						"TargetPoint": 6,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -1279,10 +1250,10 @@
 					"uid": 539,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 4,
-						"Node": 3,
-						"TargetRoute": 3,
-						"TargetNode": 7,
+						"Maze": 4,
+						"Point": 3,
+						"TargetMaze": 3,
+						"TargetPoint": 7,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -1315,10 +1286,10 @@
 					"uid": 540,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 3,
-						"Node": 7,
-						"TargetRoute": 2,
-						"TargetNode": 7,
+						"Maze": 3,
+						"Point": 7,
+						"TargetMaze": 2,
+						"TargetPoint": 7,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -1351,10 +1322,10 @@
 					"uid": 541,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 2,
-						"Node": 7,
-						"TargetRoute": 4,
-						"TargetNode": 3,
+						"Maze": 2,
+						"Point": 7,
+						"TargetMaze": 4,
+						"TargetPoint": 3,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -1384,49 +1355,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 547,
-					"instanceVariables": {
-						"isActive": false,
-						"Route": 0,
-						"Node": 0,
-						"TargetRoute": 0,
-						"TargetNode": 0,
-						"CollisionDir": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 2464,
-						"y": 1120,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 548,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 2,
-						"Node": 9,
-						"TargetRoute": 4,
-						"TargetNode": 4,
+						"Maze": 2,
+						"Point": 9,
+						"TargetMaze": 4,
+						"TargetPoint": 4,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -1459,10 +1394,10 @@
 					"uid": 549,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 4,
-						"Node": 4,
-						"TargetRoute": 2,
-						"TargetNode": 9,
+						"Maze": 4,
+						"Point": 4,
+						"TargetMaze": 2,
+						"TargetPoint": 9,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -1495,10 +1430,10 @@
 					"uid": 551,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 4,
-						"Node": 5,
-						"TargetRoute": 4,
-						"TargetNode": 6,
+						"Maze": 4,
+						"Point": 5,
+						"TargetMaze": 4,
+						"TargetPoint": 6,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -1531,16 +1466,98 @@
 					"uid": 552,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 4,
-						"Node": 6,
-						"TargetRoute": 4,
-						"TargetNode": 5,
+						"Maze": 4,
+						"Point": 6,
+						"TargetMaze": 4,
+						"TargetPoint": 5,
 						"CollisionDir": 2
 					},
 					"behaviors": {},
 					"world": {
 						"x": 1504,
 						"y": 1824,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pointer",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 97,
+					"instanceVariables": {
+						"finding": 0
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 64,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 480,
+						"y": 1504,
+						"width": 32,
+						"height": 18,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 140,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 5,
+						"Point": 0,
+						"TargetMaze": 5,
+						"TargetPoint": 0,
+						"CollisionDir": 3
+					},
+					"behaviors": {},
+					"world": {
+						"x": 480,
+						"y": 672,
 						"width": 24,
 						"height": 24,
 						"originX": 0.5,
@@ -1770,10 +1787,10 @@
 					"uid": 546,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 0,
-						"Node": 2,
-						"TargetRoute": 0,
-						"TargetNode": 0,
+						"Maze": 0,
+						"Point": 2,
+						"TargetMaze": 0,
+						"TargetPoint": 0,
 						"CollisionDir": 0
 					},
 					"behaviors": {},

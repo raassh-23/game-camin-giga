@@ -104,7 +104,7 @@
 							"height": 45,
 							"max-width": 90,
 							"max-height": 76,
-							"data": "45x1,31x0,1,0,1,3x0,1,3x0,1,33x0,1,31x0,1,0,3x1,0,1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,3x0,1,0,1,33x0,1,31x0,1,0,1,0,1,0,3x1,0,1,33x0,1,31x0,1,0,1,0,1,0,1,0,1,0,1,33x0,1,31x0,3x1,0,1,0,1,0,3x1,33x0,1,31x0,1,9x0,1,33x0,1,31x0,5x1,0,3x1,0,1,33x0,1,31x0,1,7x0,1,0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,0,1,3x0,1,3x0,1,33x0,1,31x0,1,0,3x1,0,1,0,1,0,1,33x0,1,31x0,1,0,1,3x0,1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,3x0,3x1,33x0,1,31x0,1,3x0,1,0,1,0,1,0,1,33x0,1,31x0,1,0,3x1,0,1,0,1,0,1,33x0,1,31x0,1,0,1,3x0,1,3x0,1,33x0,1,31x0,1,0,5x1,0,1,0,1,33x0,1,31x0,1,0,1,5x0,1,0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,45x1,3451x0"
+							"data": "45x1,31x0,1,0,1,3x0,1,3x0,1,33x0,1,31x0,1,0,3x1,0,1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,3x0,1,0,1,33x0,1,31x0,1,0,1,0,1,0,3x1,0,1,33x0,1,31x0,1,0,1,0,1,0,1,0,1,0,1,33x0,1,31x0,3x1,0,1,0,1,0,3x1,33x0,1,31x0,1,9x0,1,33x0,1,31x0,5x1,0,3x1,0,1,33x0,1,31x0,1,7x0,1,0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,0,1,3x0,1,3x0,1,33x0,1,31x0,1,0,3x1,0,1,0,1,0,1,33x0,1,31x0,1,0,1,3x0,1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,3x0,1,0,1,33x0,1,31x0,1,3x0,1,0,1,0,1,0,1,33x0,1,31x0,1,0,3x1,0,1,0,3x1,33x0,1,31x0,1,0,1,3x0,1,3x0,1,33x0,1,31x0,1,0,5x1,0,1,0,1,33x0,1,31x0,1,0,1,5x0,1,0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,45x1,3451x0"
 						},
 						"tile-width": 64,
 						"tile-height": 64,
@@ -141,18 +141,54 @@
 					"uid": 69,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 0,
-						"Node": 0,
-						"TargetRoute": 0,
-						"TargetNode": 0,
+						"Maze": 0,
+						"Point": 0,
+						"TargetMaze": 0,
+						"TargetPoint": 0,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 864,
+						"x": 992,
 						"y": 608,
 						"width": 32,
 						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 106,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 3,
+						"Point": 0,
+						"TargetMaze": 3,
+						"TargetPoint": 0,
+						"CollisionDir": 3
+					},
+					"behaviors": {},
+					"world": {
+						"x": 672,
+						"y": 1056,
+						"width": 24,
+						"height": 24,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -206,10 +242,10 @@
 					"uid": 70,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 0,
-						"Node": 0,
-						"TargetRoute": 0,
-						"TargetNode": 0,
+						"Maze": 0,
+						"Point": 0,
+						"TargetMaze": 0,
+						"TargetPoint": 0,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -242,10 +278,10 @@
 					"uid": 71,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 1,
-						"Node": 0,
-						"TargetRoute": 1,
-						"TargetNode": 1,
+						"Maze": 1,
+						"Point": 0,
+						"TargetMaze": 1,
+						"TargetPoint": 1,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -267,7 +303,7 @@
 					}
 				},
 				{
-					"type": "Pin",
+					"type": "Pointer",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -276,13 +312,30 @@
 						"live-preview": false
 					},
 					"uid": 41,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"finding": 0
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 64,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": -160,
 						"y": 928,
-						"width": 18,
-						"height": 32,
+						"width": 32,
+						"height": 18,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -417,10 +470,10 @@
 					"uid": 17,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 1,
-						"Node": 1,
-						"TargetRoute": 1,
-						"TargetNode": 0,
+						"Maze": 1,
+						"Point": 1,
+						"TargetMaze": 1,
+						"TargetPoint": 0,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -453,10 +506,10 @@
 					"uid": 19,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 1,
-						"Node": 5,
-						"TargetRoute": 2,
-						"TargetNode": 3,
+						"Maze": 1,
+						"Point": 5,
+						"TargetMaze": 2,
+						"TargetPoint": 3,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -489,10 +542,10 @@
 					"uid": 20,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 1,
-						"Node": 2,
-						"TargetRoute": 2,
-						"TargetNode": 0,
+						"Maze": 1,
+						"Point": 2,
+						"TargetMaze": 2,
+						"TargetPoint": 0,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -525,10 +578,10 @@
 					"uid": 22,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 2,
-						"Node": 1,
-						"TargetRoute": 1,
-						"TargetNode": 3,
+						"Maze": 2,
+						"Point": 1,
+						"TargetMaze": 1,
+						"TargetPoint": 3,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -561,10 +614,10 @@
 					"uid": 57,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 2,
-						"Node": 2,
-						"TargetRoute": 1,
-						"TargetNode": 4,
+						"Maze": 2,
+						"Point": 2,
+						"TargetMaze": 1,
+						"TargetPoint": 4,
 						"CollisionDir": 1
 					},
 					"behaviors": {},
@@ -597,10 +650,10 @@
 					"uid": 74,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 2,
-						"Node": 0,
-						"TargetRoute": 1,
-						"TargetNode": 2,
+						"Maze": 2,
+						"Point": 0,
+						"TargetMaze": 1,
+						"TargetPoint": 2,
 						"CollisionDir": 3
 					},
 					"behaviors": {},
@@ -633,10 +686,10 @@
 					"uid": 75,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 1,
-						"Node": 4,
-						"TargetRoute": 2,
-						"TargetNode": 2,
+						"Maze": 1,
+						"Point": 4,
+						"TargetMaze": 2,
+						"TargetPoint": 2,
 						"CollisionDir": 1
 					},
 					"behaviors": {},
@@ -669,10 +722,10 @@
 					"uid": 82,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 2,
-						"Node": 3,
-						"TargetRoute": 1,
-						"TargetNode": 5,
+						"Maze": 2,
+						"Point": 3,
+						"TargetMaze": 1,
+						"TargetPoint": 5,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -705,10 +758,10 @@
 					"uid": 21,
 					"instanceVariables": {
 						"isActive": true,
-						"Route": 1,
-						"Node": 3,
-						"TargetRoute": 2,
-						"TargetNode": 1,
+						"Maze": 1,
+						"Point": 3,
+						"TargetMaze": 2,
+						"TargetPoint": 1,
 						"CollisionDir": 0
 					},
 					"behaviors": {},
@@ -834,10 +887,10 @@
 					"uid": 81,
 					"instanceVariables": {
 						"isActive": false,
-						"Route": 0,
-						"Node": 2,
-						"TargetRoute": 0,
-						"TargetNode": 0,
+						"Maze": 0,
+						"Point": 2,
+						"TargetMaze": 0,
+						"TargetPoint": 0,
 						"CollisionDir": 0
 					},
 					"behaviors": {},

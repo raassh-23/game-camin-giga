@@ -1,7 +1,7 @@
 {
-	"name": "Pin",
+	"name": "PointerIcon",
 	"plugin-id": "Sprite",
-	"sid": 401408974959659,
+	"sid": 888638076211485,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,14 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 18,
-						"height": 32,
+						"width": 72,
+						"height": 128,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9025650,
+						"imageSpriteId": 1551782,
 						"collisionPoly": {
 							"points": [
 								0.23,
@@ -35,7 +35,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 175007621241483,
+				"sid": 879088427712397,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

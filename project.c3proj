@@ -152,6 +152,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "DragnDrop",
 			"name": "Drag & Drop",
 			"author": "Scirra",
@@ -181,8 +189,8 @@
 			"ShadowLight",
 			"cam",
 			"Browser",
-			"Pin",
-			"PinIcon",
+			"Pointer",
+			"PointerIcon",
 			"Sprite2",
 			"TextUI",
 			"MobileButton",

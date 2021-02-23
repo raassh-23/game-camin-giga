@@ -1,41 +1,54 @@
 {
-	"name": "PinIcon",
+	"name": "Pointer",
 	"plugin-id": "Sprite",
-	"sid": 888638076211485,
+	"sid": 401408974959659,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "finding",
+			"type": "number",
+			"desc": "",
+			"sid": 317135439403604
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pathfinding",
+			"name": "Pathfinding",
+			"sid": 547776259258885
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 72,
-						"height": 128,
+						"width": 32,
+						"height": 18,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1991392,
+						"imageSpriteId": 8479804,
 						"collisionPoly": {
 							"points": [
-								0.23,
-								0.0375,
-								0.77,
-								0.0375,
-								0.77,
 								0.9625,
 								0.23,
-								0.9625
+								0.9625,
+								0.77,
+								0.03749999999999998,
+								0.77,
+								0.03749999999999998,
+								0.23
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 879088427712397,
+				"sid": 175007621241483,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

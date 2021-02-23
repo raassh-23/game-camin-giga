@@ -12,28 +12,6 @@
 			],
 			"actions": [
 				{
-					"id": "request-project-file",
-					"objectClass": "AJAX",
-					"sid": 960514636385022,
-					"parameters": {
-						"tag": "\"level\"",
-						"file": "LevelData.json"
-					}
-				},
-				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 196919800674076
-				},
-				{
-					"id": "load",
-					"objectClass": "LevelData",
-					"sid": 401118512952675,
-					"parameters": {
-						"json": "AJAX.LastData"
-					}
-				},
-				{
 					"id": "check-item-exists",
 					"objectClass": "LocalStorage",
 					"sid": 531039917802965,
@@ -241,6 +219,28 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 960514636385022,
+					"parameters": {
+						"tag": "\"level\"",
+						"file": "LevelData.json"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 196919800674076
+				},
+				{
+					"id": "load",
+					"objectClass": "LevelData",
+					"sid": 401118512952675,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				},
 				{
 					"id": "set-item",
 					"objectClass": "LocalStorage",

@@ -62,6 +62,16 @@
 			"sid": 438450898426671
 		},
 		{
+			"eventType": "variable",
+			"name": "mazeNow",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 826843216128899
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Control",
@@ -248,14 +258,14 @@
 									"objectClass": "Player",
 									"sid": 298564446173666,
 									"parameters": {
-										"object": "Pin"
+										"object": "Pointer"
 									}
 								}
 							],
 							"actions": [
 								{
 									"id": "destroy",
-									"objectClass": "Pin",
+									"objectClass": "Pointer",
 									"sid": 340845449808854
 								},
 								{
@@ -273,6 +283,7 @@
 								}
 							],
 							"sid": 836712612222597,
+							"disabled": true,
 							"children": [
 								{
 									"eventType": "block",
@@ -307,7 +318,8 @@
 											}
 										}
 									],
-									"sid": 458205405936792
+									"sid": 458205405936792,
+									"disabled": true
 								}
 							]
 						},
@@ -339,7 +351,7 @@
 									"objectClass": "Player",
 									"sid": 867475860164102,
 									"parameters": {
-										"object": "Pin"
+										"object": "Pointer"
 									},
 									"isInverted": true
 								}
@@ -350,7 +362,7 @@
 									"objectClass": "Player",
 									"sid": 696251927598763,
 									"parameters": {
-										"object": "Pin",
+										"object": "Pointer",
 										"layer": "\"Object\"",
 										"image-point": "0",
 										"create-hierarchy": false
@@ -607,14 +619,14 @@
 									"objectClass": "Player",
 									"sid": 746515392853264,
 									"parameters": {
-										"object": "Pin"
+										"object": "Pointer"
 									}
 								}
 							],
 							"actions": [
 								{
 									"id": "destroy",
-									"objectClass": "Pin",
+									"objectClass": "Pointer",
 									"sid": 779529190302770
 								},
 								{
@@ -632,6 +644,7 @@
 								}
 							],
 							"sid": 827391546100120,
+							"disabled": true,
 							"children": [
 								{
 									"eventType": "block",
@@ -666,7 +679,8 @@
 											}
 										}
 									],
-									"sid": 919712218066862
+									"sid": 919712218066862,
+									"disabled": true
 								}
 							]
 						},
@@ -698,7 +712,7 @@
 									"objectClass": "Player",
 									"sid": 690624497859587,
 									"parameters": {
-										"object": "Pin"
+										"object": "Pointer"
 									},
 									"isInverted": true
 								}
@@ -709,7 +723,7 @@
 									"objectClass": "Player",
 									"sid": 696251927598763,
 									"parameters": {
-										"object": "Pin",
+										"object": "Pointer",
 										"layer": "\"Object\"",
 										"image-point": "0",
 										"create-hierarchy": false
@@ -1570,6 +1584,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 941441692541988,
+							"parameters": {
+								"variable": "mazeNow",
+								"value": "Teleporter.TargetMaze"
+							}
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 409720654875707,
@@ -1581,8 +1604,8 @@
 							"callFunction": "MovePlayerTo",
 							"sid": 496819732376070,
 							"parameters": [
-								"Teleporter.TargetRoute",
-								"Teleporter.TargetNode"
+								"Teleporter.TargetMaze",
+								"Teleporter.TargetPoint"
 							]
 						},
 						{
@@ -1659,7 +1682,7 @@
 									"sid": 475280967320740,
 									"parameters": {
 										"object": "Teleporter",
-										"expression": "Teleporter.Route",
+										"expression": "Teleporter.Maze",
 										"comparison": 0,
 										"value": "TargetRoute"
 									}
@@ -1670,7 +1693,7 @@
 									"sid": 256061139720328,
 									"parameters": {
 										"object": "Teleporter",
-										"expression": "Teleporter.Node",
+										"expression": "Teleporter.Point",
 										"comparison": 0,
 										"value": "TargetNode"
 									}
@@ -1751,19 +1774,28 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 734795204190833,
+							"sid": 683095371429357,
 							"parameters": {
-								"variable": "pinOwned",
-								"value": "LevelData.At(LevelUnlocked, 0)"
+								"variable": "LevelPlaying",
+								"value": "int(LayoutName)"
 							}
 						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 510005109337224,
+							"sid": 638540588853183,
 							"parameters": {
-								"variable": "LevelPlaying",
-								"value": "int(LayoutName)"
+								"variable": "pinOwned",
+								"value": "LevelData.At(LevelPlaying, 0)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 965343669641812,
+							"parameters": {
+								"variable": "mazeNow",
+								"value": "1"
 							}
 						},
 						{
@@ -1783,13 +1815,9 @@
 							}
 						},
 						{
-							"id": "log",
-							"objectClass": "Browser",
-							"sid": 185260066593741,
-							"parameters": {
-								"type": "log",
-								"message": "LayoutName"
-							}
+							"id": "destroy",
+							"objectClass": "Pointer",
+							"sid": 850148417532519
 						}
 					],
 					"sid": 106978665708249
@@ -2213,7 +2241,7 @@
 							"objectClass": "Player",
 							"sid": 554203958761853,
 							"parameters": {
-								"object": "Pin"
+								"object": "Pointer"
 							},
 							"isInverted": true
 						},
@@ -2244,6 +2272,33 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 684676902936799,
+							"parameters": {
+								"variable": "TutorialFinished",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 198163234519114,
+							"parameters": {
+								"variable": "TutorialNow",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 954519135475519,
+							"parameters": {
+								"key": "\"gameData\"",
+								"value": "LevelUnlocked&\",\"&TutorialFinished&\",\"&Audio&\",\"&Music"
+							}
+						},
 						{
 							"id": "set-fade-in-time",
 							"objectClass": "TextTutorial",
@@ -2363,7 +2418,8 @@
 							"behaviorType": "Fade"
 						}
 					],
-					"sid": 906660398601697
+					"sid": 906660398601697,
+					"disabled": true
 				},
 				{
 					"functionName": "nextTutorial",
@@ -2497,12 +2553,204 @@
 									"behaviorType": "Fade"
 								}
 							],
-							"sid": 467449989497316
+							"sid": 467449989497316,
+							"disabled": true
 						}
 					]
 				}
 			],
 			"sid": 442108389062471
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pointer",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Pointer",
+							"sid": 315599737230256
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Pointer",
+							"sid": 430419687163209,
+							"parameters": {
+								"instance-variable": "finding",
+								"value": "0"
+							}
+						},
+						{
+							"id": "find-path",
+							"objectClass": "Pointer",
+							"sid": 690105369003501,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Goal.X",
+								"y": "Goal.Y"
+							}
+						}
+					],
+					"sid": 766838420254505
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "Pointer",
+							"sid": 467551446721233,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [],
+					"sid": 613010592388864,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Pointer",
+									"sid": 467865625615241,
+									"parameters": {
+										"instance-variable": "finding",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 243444367035059,
+									"parameters": {
+										"object": "Teleporter"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 416026605131455,
+									"parameters": {
+										"type": "log",
+										"message": "\"failed 1\""
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "Pointer",
+									"sid": 754267084292643,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "Teleporter.X",
+										"y": "Teleporter.Y"
+									}
+								}
+							],
+							"sid": 535317713622041
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Pointer",
+									"sid": 572165851615332,
+									"parameters": {
+										"instance-variable": "finding",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Teleporter",
+									"sid": 830265669895578,
+									"parameters": {
+										"instance-variable": "TargetMaze",
+										"comparison": 0,
+										"value": "mazeNow+1"
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "Teleporter",
+									"sid": 202600157173606,
+									"parameters": {
+										"which": "nearest",
+										"x": "Player.X",
+										"y": "Player.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 441253817111654,
+									"parameters": {
+										"type": "log",
+										"message": "\"failed 0\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Pointer",
+									"sid": 156655395771980,
+									"parameters": {
+										"instance-variable": "finding",
+										"value": "1"
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "Pointer",
+									"sid": 387222321326644,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "Teleporter.X",
+										"y": "Teleporter.Y"
+									}
+								}
+							],
+							"sid": 685974138702134
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "Pointer",
+							"sid": 819813693980786,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "Pointer",
+							"sid": 250332342119485,
+							"parameters": {
+								"x": "Pointer.Pathfinding.NodeXAt(0)",
+								"y": "Pointer.Pathfinding.NodeYAt(0)"
+							}
+						}
+					],
+					"sid": 240498269166865
+				}
+			],
+			"sid": 351610836545810
 		},
 		{
 			"eventType": "group",
