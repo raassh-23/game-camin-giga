@@ -1907,11 +1907,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Pointer",
-									"sid": 467865625615241,
+									"sid": 332203195628081,
 									"parameters": {
 										"instance-variable": "finding",
 										"comparison": 0,
-										"value": "1"
+										"value": "2"
 									}
 								},
 								{
@@ -1927,10 +1927,10 @@
 								{
 									"id": "log",
 									"objectClass": "Browser",
-									"sid": 416026605131455,
+									"sid": 479167532190734,
 									"parameters": {
 										"type": "log",
-										"message": "\"failed 1\""
+										"message": "\"failed 2\""
 									}
 								},
 								{
@@ -1942,9 +1942,123 @@
 										"x": "Teleporter.X",
 										"y": "Teleporter.Y"
 									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Teleporter",
+									"sid": 816569517778780,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 247421190013543,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Teleporter",
+									"sid": 825209624473469,
+									"parameters": {
+										"visibility": "invisible"
+									}
 								}
 							],
 							"sid": 535317713622041
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Pointer",
+									"sid": 645739199819855,
+									"parameters": {
+										"instance-variable": "finding",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Teleporter",
+									"sid": 132339541198879,
+									"parameters": {
+										"instance-variable": "TargetMaze",
+										"comparison": 0,
+										"value": "mazeNow"
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "Teleporter",
+									"sid": 724928816833605,
+									"parameters": {
+										"which": "nearest",
+										"x": "Player.X",
+										"y": "Player.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 181952000297844,
+									"parameters": {
+										"type": "log",
+										"message": "\"failed 1\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Pointer",
+									"sid": 963608623400397,
+									"parameters": {
+										"instance-variable": "finding",
+										"value": "2"
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "Pointer",
+									"sid": 340795778055503,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "Teleporter.X",
+										"y": "Teleporter.Y"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Teleporter",
+									"sid": 516455821101628,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 183598968821558,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Teleporter",
+									"sid": 455904279103590,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 392094889867778
 						},
 						{
 							"eventType": "block",
@@ -2007,6 +2121,30 @@
 									"parameters": {
 										"x": "Teleporter.X",
 										"y": "Teleporter.Y"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Teleporter",
+									"sid": 419616748570623,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 810285113593077,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Teleporter",
+									"sid": 183881825336181,
+									"parameters": {
+										"visibility": "invisible"
 									}
 								}
 							],
@@ -2860,6 +2998,94 @@
 						}
 					],
 					"sid": 769279646466628
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 795563224114026,
+							"parameters": {
+								"key": 67
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "CellMarker",
+							"sid": 216958579795403
+						}
+					],
+					"sid": 741684469257036
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 655031211322251,
+							"parameters": {
+								"key": 86
+							}
+						},
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 489380199723783,
+							"parameters": {
+								"name": "\"x\"",
+								"start-index": "0",
+								"end-index": "2880 / Pointer.Pathfinding.CellSize"
+							}
+						},
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 537995073864236,
+							"parameters": {
+								"name": "\"y\"",
+								"start-index": "0",
+								"end-index": "2880 / Pointer.Pathfinding.CellSize"
+							}
+						},
+						{
+							"id": "is-cell-obstacle",
+							"objectClass": "Pointer",
+							"sid": 974266743013754,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"cell-x": "loopindex(\"x\")",
+								"cell-y": "loopindex(\"y\")"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 383595725406771,
+							"parameters": {
+								"object-to-create": "CellMarker",
+								"layer": "\"Object\"",
+								"x": "loopindex(\"x\") * Pointer.Pathfinding.CellSize",
+								"y": "loopindex(\"y\") * Pointer.Pathfinding.CellSize",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "CellMarker",
+							"sid": 785344439217457,
+							"parameters": {
+								"width": "Pointer.Pathfinding.CellSize",
+								"height": "Pointer.Pathfinding.CellSize"
+							}
+						}
+					],
+					"sid": 714525247845255
 				}
 			],
 			"sid": 829830143681033

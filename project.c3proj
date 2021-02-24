@@ -205,7 +205,8 @@
 			"Slider",
 			"LocalStorage",
 			"TextTutorial",
-			"levelSelect"
+			"levelSelect",
+			"CellMarker"
 		],
 		"subfolders": []
 	},

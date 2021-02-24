@@ -1,7 +1,7 @@
 {
 	"name": "CellMarker",
 	"plugin-id": "Sprite",
-	"sid": 371274864520369,
+	"sid": 133125839103798,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9188343,
+						"imageSpriteId": 9028245,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 144363548876283,
+				"sid": 799102349972692,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

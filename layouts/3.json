@@ -128,6 +128,35 @@
 						],
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "CellMarker",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 155,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 480,
+						"y": -86,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							0.75
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 584798449687423,
@@ -247,7 +276,7 @@
 						"Pathfinding": {
 							"properties": {
 								"cell-size": 64,
-								"cell-border": -1,
+								"cell-border": -16,
 								"obstacles": "solids",
 								"max-speed": 200,
 								"acceleration": 1000,
@@ -1346,7 +1375,7 @@
 			],
 			"sid": 593068864653705,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,
