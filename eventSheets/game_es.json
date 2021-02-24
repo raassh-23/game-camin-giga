@@ -1855,6 +1855,187 @@
 						}
 					],
 					"sid": 870215644712756
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Pointer",
+							"sid": 315599737230256
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Pointer",
+							"sid": 430419687163209,
+							"parameters": {
+								"instance-variable": "finding",
+								"value": "0"
+							}
+						},
+						{
+							"id": "find-path",
+							"objectClass": "Pointer",
+							"sid": 690105369003501,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Goal.X",
+								"y": "Goal.Y"
+							}
+						}
+					],
+					"sid": 766838420254505
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "Pointer",
+							"sid": 467551446721233,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [],
+					"sid": 613010592388864,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Pointer",
+									"sid": 467865625615241,
+									"parameters": {
+										"instance-variable": "finding",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 243444367035059,
+									"parameters": {
+										"object": "Teleporter"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 416026605131455,
+									"parameters": {
+										"type": "log",
+										"message": "\"failed 1\""
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "Pointer",
+									"sid": 754267084292643,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "Teleporter.X",
+										"y": "Teleporter.Y"
+									}
+								}
+							],
+							"sid": 535317713622041
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Pointer",
+									"sid": 572165851615332,
+									"parameters": {
+										"instance-variable": "finding",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Teleporter",
+									"sid": 830265669895578,
+									"parameters": {
+										"instance-variable": "TargetMaze",
+										"comparison": 0,
+										"value": "mazeNow+1"
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "Teleporter",
+									"sid": 202600157173606,
+									"parameters": {
+										"which": "nearest",
+										"x": "Player.X",
+										"y": "Player.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 441253817111654,
+									"parameters": {
+										"type": "log",
+										"message": "\"failed 0\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Pointer",
+									"sid": 156655395771980,
+									"parameters": {
+										"instance-variable": "finding",
+										"value": "1"
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "Pointer",
+									"sid": 387222321326644,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "Teleporter.X",
+										"y": "Teleporter.Y"
+									}
+								}
+							],
+							"sid": 685974138702134
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "Pointer",
+							"sid": 819813693980786,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "Pointer",
+							"sid": 250332342119485,
+							"parameters": {
+								"x": "Pointer.Pathfinding.NodeXAt(0)",
+								"y": "Pointer.Pathfinding.NodeYAt(0)"
+							}
+						}
+					],
+					"sid": 240498269166865
 				}
 			],
 			"sid": 938949436717283
@@ -2564,197 +2745,6 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Pointer",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-created",
-							"objectClass": "Pointer",
-							"sid": 315599737230256
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Pointer",
-							"sid": 430419687163209,
-							"parameters": {
-								"instance-variable": "finding",
-								"value": "0"
-							}
-						},
-						{
-							"id": "find-path",
-							"objectClass": "Pointer",
-							"sid": 690105369003501,
-							"behaviorType": "Pathfinding",
-							"parameters": {
-								"x": "Goal.X",
-								"y": "Goal.Y"
-							}
-						}
-					],
-					"sid": 766838420254505
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-failed-to-find-path",
-							"objectClass": "Pointer",
-							"sid": 467551446721233,
-							"behaviorType": "Pathfinding"
-						}
-					],
-					"actions": [],
-					"sid": 613010592388864,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Pointer",
-									"sid": 467865625615241,
-									"parameters": {
-										"instance-variable": "finding",
-										"comparison": 0,
-										"value": "1"
-									}
-								},
-								{
-									"id": "pick-random-instance",
-									"objectClass": "System",
-									"sid": 243444367035059,
-									"parameters": {
-										"object": "Teleporter"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "log",
-									"objectClass": "Browser",
-									"sid": 416026605131455,
-									"parameters": {
-										"type": "log",
-										"message": "\"failed 1\""
-									}
-								},
-								{
-									"id": "find-path",
-									"objectClass": "Pointer",
-									"sid": 754267084292643,
-									"behaviorType": "Pathfinding",
-									"parameters": {
-										"x": "Teleporter.X",
-										"y": "Teleporter.Y"
-									}
-								}
-							],
-							"sid": 535317713622041
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Pointer",
-									"sid": 572165851615332,
-									"parameters": {
-										"instance-variable": "finding",
-										"comparison": 0,
-										"value": "0"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Teleporter",
-									"sid": 830265669895578,
-									"parameters": {
-										"instance-variable": "TargetMaze",
-										"comparison": 0,
-										"value": "mazeNow+1"
-									}
-								},
-								{
-									"id": "pick-nearestfurthest",
-									"objectClass": "Teleporter",
-									"sid": 202600157173606,
-									"parameters": {
-										"which": "nearest",
-										"x": "Player.X",
-										"y": "Player.Y"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "log",
-									"objectClass": "Browser",
-									"sid": 441253817111654,
-									"parameters": {
-										"type": "log",
-										"message": "\"failed 0\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "Pointer",
-									"sid": 156655395771980,
-									"parameters": {
-										"instance-variable": "finding",
-										"value": "1"
-									}
-								},
-								{
-									"id": "find-path",
-									"objectClass": "Pointer",
-									"sid": 387222321326644,
-									"behaviorType": "Pathfinding",
-									"parameters": {
-										"x": "Teleporter.X",
-										"y": "Teleporter.Y"
-									}
-								}
-							],
-							"sid": 685974138702134
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-path-found",
-							"objectClass": "Pointer",
-							"sid": 819813693980786,
-							"behaviorType": "Pathfinding"
-						}
-					],
-					"actions": [
-						{
-							"id": "set-angle-toward-position",
-							"objectClass": "Pointer",
-							"sid": 250332342119485,
-							"parameters": {
-								"x": "Pointer.Pathfinding.NodeXAt(0)",
-								"y": "Pointer.Pathfinding.NodeYAt(0)"
-							}
-						}
-					],
-					"sid": 240498269166865
-				}
-			],
-			"sid": 351610836545810
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
 			"title": "Testing",
 			"description": "",
 			"isActiveOnStart": true,
@@ -2824,6 +2814,52 @@
 						}
 					],
 					"sid": 440647476592119
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 717928624808634,
+							"parameters": {
+								"key": 90
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 695396227184302,
+							"parameters": {
+								"variable": "pinOwned",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 203354494004786
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 405709034104408,
+							"parameters": {
+								"key": 88
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Pointer",
+							"sid": 884393410548083
+						}
+					],
+					"sid": 769279646466628
 				}
 			],
 			"sid": 829830143681033
