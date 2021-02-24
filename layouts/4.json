@@ -18,7 +18,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 151,
+					"uid": 23,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -39,7 +39,7 @@
 					}
 				}
 			],
-			"sid": 475265602684181,
+			"sid": 263554875351456,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -81,7 +81,7 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 152,
+					"uid": 83,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -104,7 +104,7 @@
 							"height": 45,
 							"max-width": 90,
 							"max-height": 76,
-							"data": "45x1,31x0,1,5x0,1,3x0,1,33x0,1,31x0,7x1,0,1,0,1,33x0,1,31x0,1,0,1,5x0,1,0,1,33x0,1,31x0,1,0,1,0,3x1,0,3x1,33x0,1,31x0,1,0,1,3x0,1,3x0,1,33x0,1,31x0,1,0,1,0,5x1,0,1,33x0,1,31x0,1,3x0,1,0,1,3x0,1,33x0,1,31x0,1,0,1,0,1,0,1,0,1,0,1,33x0,1,31x0,1,0,1,5x0,1,0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,9x0,1,33x0,1,31x0,1,0,2x1,0,4x1,0,1,33x0,1,31x0,1,5x0,1,3x0,1,33x0,1,31x0,1,0,3x1,0,3x1,0,1,33x0,1,31x0,1,0,1,5x0,1,0,1,33x0,1,31x0,3x1,0,1,0,1,0,3x1,33x0,1,31x0,1,3x0,1,0,1,0,1,0,1,33x0,1,31x0,1,0,3x1,0,3x1,0,1,33x0,1,31x0,1,0,1,3x0,1,3x0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,0,1,7x0,1,33x0,1,31x0,1,0,5x1,0,1,0,1,33x0,1,31x0,1,5x0,1,0,1,0,1,33x0,1,31x0,1,0,3x1,0,1,0,3x1,33x0,1,31x0,1,3x0,1,0,1,3x0,1,33x0,1,31x0,1,0,1,0,5x1,0,1,33x0,1,31x0,1,0,1,7x0,1,33x0,1,31x0,3x1,0,5x1,0,1,33x0,1,31x0,1,3x0,1,5x0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,45x1,3451x0"
+							"data": "45x1,31x0,1,0,1,5x0,1,0,1,33x0,1,31x0,1,0,5x1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,5x0,1,33x0,1,31x0,1,0,1,0,1,0,1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,0,1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,0,3x1,0,1,33x0,1,31x0,1,0,1,5x0,1,0,1,33x0,1,31x0,3x1,0,1,0,3x1,0,1,33x0,1,31x0,1,3x0,1,3x0,1,0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,3x0,1,0,1,3x0,1,33x0,1,31x0,1,0,3x1,0,1,0,3x1,33x0,1,31x0,1,0,1,7x0,1,33x0,1,31x0,1,0,1,0,3x1,0,3x1,33x0,1,31x0,1,0,1,0,1,3x0,1,0,1,33x0,1,31x0,1,0,1,0,5x1,0,1,33x0,1,31x0,1,3x0,1,5x0,1,33x0,1,31x0,1,0,1,0,1,0,3x1,0,1,33x0,1,31x0,1,0,1,0,1,3x0,1,0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,3x0,1,0,1,3x0,1,33x0,1,31x0,3x1,0,1,0,1,0,3x1,33x0,1,31x0,1,0,1,3x0,1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,0,1,0,1,0,1,33x0,1,31x0,1,3x0,1,0,1,3x0,1,33x0,1,31x0,1,0,1,0,3x1,0,1,0,1,33x0,1,31x0,1,0,1,0,1,3x0,1,0,1,33x0,1,31x0,1,0,7x1,0,1,33x0,1,31x0,1,3x0,1,5x0,1,33x0,1,31x0,11x1,33x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,1,43x0,1,31x0,45x1,3451x0"
 						},
 						"tile-width": 64,
 						"tile-height": 64,
@@ -128,9 +128,38 @@
 						],
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "CellMarker",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 155,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 480,
+						"y": -86,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							0.75
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
-			"sid": 963522294022494,
+			"sid": 584798449687423,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -167,7 +196,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 153,
+					"uid": 89,
 					"instanceVariables": {
 						"isActive": false,
 						"Maze": 0,
@@ -203,7 +232,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 160,
+					"uid": 85,
 					"instanceVariables": {
 						"isActive": true,
 						"Maze": 0,
@@ -214,802 +243,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1888,
-						"y": 352,
+						"x": 1376,
+						"y": 96,
 						"width": 32,
 						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 175,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 1,
-						"Point": 0,
-						"TargetMaze": 1,
-						"TargetPoint": 1,
-						"CollisionDir": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 96,
-						"y": 96,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 179,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 1,
-						"Point": 1,
-						"TargetMaze": 1,
-						"TargetPoint": 0,
-						"CollisionDir": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1248,
-						"y": 480,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 180,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 2,
-						"Point": 0,
-						"TargetMaze": 2,
-						"TargetPoint": 1,
-						"CollisionDir": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1376,
-						"y": 96,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 181,
-					"instanceVariables": {
-						"isActive": false,
-						"Maze": 2,
-						"Point": 1,
-						"TargetMaze": 0,
-						"TargetPoint": 0,
-						"CollisionDir": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 224,
-						"y": 96,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 177,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 3,
-						"Point": 0,
-						"TargetMaze": 3,
-						"TargetPoint": 1,
-						"CollisionDir": 2
-					},
-					"behaviors": {},
-					"world": {
-						"x": 96,
-						"y": 352,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 182,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 3,
-						"Point": 1,
-						"TargetMaze": 3,
-						"TargetPoint": 0,
-						"CollisionDir": 2
-					},
-					"behaviors": {},
-					"world": {
-						"x": 352,
-						"y": 352,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 157,
-					"instanceVariables": {
-						"isActive": false,
-						"Maze": 4,
-						"Point": 1,
-						"TargetMaze": 0,
-						"TargetPoint": 0,
-						"CollisionDir": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 608,
-						"y": 96,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 183,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 4,
-						"Point": 0,
-						"TargetMaze": 4,
-						"TargetPoint": 1,
-						"CollisionDir": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1504,
-						"y": 608,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 186,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 5,
-						"Point": 0,
-						"TargetMaze": 5,
-						"TargetPoint": 1,
-						"CollisionDir": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 608,
-						"y": 608,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 167,
-					"instanceVariables": {
-						"isActive": false,
-						"Maze": 5,
-						"Point": 1,
-						"TargetMaze": 0,
-						"TargetPoint": 0,
-						"CollisionDir": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1632,
-						"y": 352,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 187,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 6,
-						"Point": 0,
-						"TargetMaze": 6,
-						"TargetPoint": 1,
-						"CollisionDir": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 224,
-						"y": 608,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 188,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 6,
-						"Point": 1,
-						"TargetMaze": 6,
-						"TargetPoint": 0,
-						"CollisionDir": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1248,
-						"y": 96,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 194,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 1,
-						"Point": 2,
-						"TargetMaze": 1,
-						"TargetPoint": 3,
-						"CollisionDir": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 480,
-						"y": 352,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 195,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 1,
-						"Point": 3,
-						"TargetMaze": 1,
-						"TargetPoint": 2,
-						"CollisionDir": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1120,
-						"y": 608,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 170,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 2,
-						"Point": 2,
-						"TargetMaze": 2,
-						"TargetPoint": 3,
-						"CollisionDir": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 864,
-						"y": 480,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 196,
-					"instanceVariables": {
-						"isActive": false,
-						"Maze": 2,
-						"Point": 3,
-						"TargetMaze": 0,
-						"TargetPoint": 0,
-						"CollisionDir": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1888,
-						"y": 96,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 197,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 3,
-						"Point": 2,
-						"TargetMaze": 3,
-						"TargetPoint": 3,
-						"CollisionDir": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 992,
-						"y": 608,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 198,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 3,
-						"Point": 3,
-						"TargetMaze": 3,
-						"TargetPoint": 2,
-						"CollisionDir": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 992,
-						"y": 96,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 168,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 4,
-						"Point": 2,
-						"TargetMaze": 4,
-						"TargetPoint": 3,
-						"CollisionDir": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1248,
-						"y": 224,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 199,
-					"instanceVariables": {
-						"isActive": false,
-						"Maze": 4,
-						"Point": 3,
-						"TargetMaze": 0,
-						"TargetPoint": 0,
-						"CollisionDir": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1376,
-						"y": 224,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 200,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 6,
-						"Point": 2,
-						"TargetMaze": 6,
-						"TargetPoint": 3,
-						"CollisionDir": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1120,
-						"y": 480,
-						"width": 24,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Teleporter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 201,
-					"instanceVariables": {
-						"isActive": true,
-						"Maze": 6,
-						"Point": 3,
-						"TargetMaze": 6,
-						"TargetPoint": 2,
-						"CollisionDir": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1760,
-						"y": 96,
-						"width": 24,
-						"height": 24,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1031,7 +268,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 90,
+					"uid": 63,
 					"instanceVariables": {
 						"finding": 0
 					},
@@ -1039,7 +276,7 @@
 						"Pathfinding": {
 							"properties": {
 								"cell-size": 64,
-								"cell-border": -1,
+								"cell-border": -16,
 								"obstacles": "solids",
 								"max-speed": 200,
 								"acceleration": 1000,
@@ -1071,13 +308,805 @@
 				{
 					"type": "Teleporter",
 					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 102,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 2,
+						"Point": 6,
+						"TargetMaze": 3,
+						"TargetPoint": 6,
+						"CollisionDir": 3
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1184,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 104,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 3,
+						"Point": 4,
+						"TargetMaze": 3,
+						"TargetPoint": 5,
+						"CollisionDir": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1568,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 105,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 3,
+						"Point": 5,
+						"TargetMaze": 3,
+						"TargetPoint": 4,
+						"CollisionDir": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1440,
+						"y": 352,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 107,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 2,
+						"Point": 0,
+						"TargetMaze": 1,
+						"TargetPoint": 0,
+						"CollisionDir": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1056,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 108,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 1,
+						"Point": 0,
+						"TargetMaze": 2,
+						"TargetPoint": 0,
+						"CollisionDir": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 160,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 110,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 1,
+						"Point": 1,
+						"TargetMaze": 1,
+						"TargetPoint": 2,
+						"CollisionDir": 3
+					},
+					"behaviors": {},
+					"world": {
+						"x": 416,
+						"y": 96,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 111,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 2,
+						"Point": 4,
+						"TargetMaze": 3,
+						"TargetPoint": 2,
+						"CollisionDir": 3
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1184,
+						"y": 224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 112,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 3,
+						"Point": 6,
+						"TargetMaze": 2,
+						"TargetPoint": 6,
+						"CollisionDir": 3
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1696,
+						"y": 224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 133,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 1,
+						"Point": 2,
+						"TargetMaze": 1,
+						"TargetPoint": 1,
+						"CollisionDir": 3
+					},
+					"behaviors": {},
+					"world": {
+						"x": 544,
+						"y": 608,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 134,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 3,
+						"Point": 2,
+						"TargetMaze": 2,
+						"TargetPoint": 4,
+						"CollisionDir": 3
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1568,
+						"y": 352,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 136,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 2,
+						"Point": 5,
+						"TargetMaze": 3,
+						"TargetPoint": 3,
+						"CollisionDir": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1248,
+						"y": 416,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 137,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 3,
+						"Point": 3,
+						"TargetMaze": 2,
+						"TargetPoint": 5,
+						"CollisionDir": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1888,
+						"y": 160,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 138,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 1,
+						"Point": 3,
+						"TargetMaze": 2,
+						"TargetPoint": 1,
+						"CollisionDir": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 608,
+						"y": 160,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 142,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 2,
+						"Point": 1,
+						"TargetMaze": 1,
+						"TargetPoint": 3,
+						"CollisionDir": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 992,
+						"y": 416,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 143,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 2,
+						"Point": 2,
+						"TargetMaze": 1,
+						"TargetPoint": 7,
+						"CollisionDir": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 864,
+						"y": 544,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 144,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 1,
+						"Point": 7,
+						"TargetMaze": 2,
+						"TargetPoint": 2,
+						"CollisionDir": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 480,
+						"y": 416,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 145,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 1,
+						"Point": 6,
+						"TargetMaze": 3,
+						"TargetPoint": 0,
+						"CollisionDir": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 96,
+						"y": 288,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 146,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 3,
+						"Point": 0,
+						"TargetMaze": 1,
+						"TargetPoint": 6,
+						"CollisionDir": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1888,
+						"y": 416,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 147,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 2,
+						"Point": 3,
+						"TargetMaze": 3,
+						"TargetPoint": 1,
+						"CollisionDir": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 736,
+						"y": 160,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 148,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 3,
+						"Point": 1,
+						"TargetMaze": 2,
+						"TargetPoint": 3,
+						"CollisionDir": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1376,
+						"y": 544,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 149,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 1,
+						"Point": 4,
+						"TargetMaze": 1,
+						"TargetPoint": 5,
+						"CollisionDir": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 288,
+						"y": 224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 150,
+					"instanceVariables": {
+						"isActive": true,
+						"Maze": 1,
+						"Point": 5,
+						"TargetMaze": 1,
+						"TargetPoint": 4,
+						"CollisionDir": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 160,
+						"y": 96,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 1,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 101,
+					"uid": 154,
 					"instanceVariables": {
 						"isActive": true,
 						"Maze": 4,
@@ -1088,8 +1117,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 864,
-						"y": 800,
+						"x": 800,
+						"y": 864,
 						"width": 24,
 						"height": 24,
 						"originX": 0.5,
@@ -1105,7 +1134,7 @@
 					}
 				}
 			],
-			"sid": 632296605806509,
+			"sid": 474328887135493,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1137,12 +1166,12 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "up",
+						"initial-animation": "down",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 189,
+					"uid": 98,
 					"instanceVariables": {
 						"dir": 0,
 						"teleported": false
@@ -1163,8 +1192,8 @@
 						}
 					},
 					"world": {
-						"x": 96,
-						"y": 352,
+						"x": 288,
+						"y": 96,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -1188,7 +1217,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 190,
+					"uid": 100,
 					"instanceVariables": {},
 					"behaviors": {
 						"ScrollTo": {
@@ -1215,7 +1244,7 @@
 					}
 				}
 			],
-			"sid": 398405729899346,
+			"sid": 943813023631449,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1252,7 +1281,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 191,
+					"uid": 114,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1288,7 +1317,7 @@
 						"tag": "",
 						"live-preview": false
 					},
-					"uid": 192,
+					"uid": 115,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1316,7 +1345,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 193,
+					"uid": 116,
 					"instanceVariables": {
 						"isActive": false,
 						"Maze": 0,
@@ -1344,9 +1373,9 @@
 					}
 				}
 			],
-			"sid": 831707229331947,
+			"sid": 593068864653705,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,
@@ -1372,7 +1401,7 @@
 			"name": "MobileControl",
 			"overriden": 1,
 			"instances": [],
-			"sid": 350253532197100,
+			"sid": 293247571559604,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1400,7 +1429,7 @@
 			"name": "UI",
 			"overriden": 1,
 			"instances": [],
-			"sid": 765693053183897,
+			"sid": 744220863617527,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1428,7 +1457,7 @@
 			"name": "Paused",
 			"overriden": 1,
 			"instances": [],
-			"sid": 977306258020836,
+			"sid": 159891740886612,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1453,7 +1482,7 @@
 			"global": false
 		}
 	],
-	"sid": 461607500868164,
+	"sid": 322550417942910,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2880,
