@@ -820,7 +820,7 @@
 					},
 					"uid": 215,
 					"instanceVariables": {
-						"dir": 0,
+						"dir": 1,
 						"teleported": false
 					},
 					"behaviors": {
