@@ -450,13 +450,13 @@
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-frame": 1,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 598,
 					"instanceVariables": {
-						"isActive": false,
+						"isActive": true,
 						"Maze": 1,
 						"Point": 4,
 						"TargetMaze": 1,
@@ -558,16 +558,16 @@
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-frame": 1,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 601,
 					"instanceVariables": {
-						"isActive": false,
+						"isActive": true,
 						"Maze": 1,
 						"Point": 6,
-						"TargetMaze": 0,
+						"TargetMaze": 2,
 						"TargetPoint": 0,
 						"CollisionDir": 0
 					},
@@ -738,13 +738,13 @@
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-frame": 1,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 606,
 					"instanceVariables": {
-						"isActive": false,
+						"isActive": true,
 						"Maze": 1,
 						"Point": 9,
 						"TargetMaze": 3,
