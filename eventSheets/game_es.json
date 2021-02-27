@@ -53,6 +53,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "step",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 277468613581002
+		},
+		{
+			"eventType": "variable",
 			"name": "TutorialFinished",
 			"type": "number",
 			"initialValue": "0",
@@ -825,6 +835,110 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 109765897011790,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "up"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 590909616010393,
+							"parameters": {
+								"instance-variable": "dir",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 388722591921829
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 662704476944458,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "left"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 594371493621613,
+							"parameters": {
+								"instance-variable": "dir",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 422871237838223
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 820182139517287,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "down"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 290827186385885,
+							"parameters": {
+								"instance-variable": "dir",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 677932808569854
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-direction",
+							"objectClass": "Player",
+							"sid": 729423985205029,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"direction": "right"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 767888046245234,
+							"parameters": {
+								"instance-variable": "dir",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 841103993031185
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "compare-instance-variable",
 							"objectClass": "Player",
 							"sid": 935487166787805,
@@ -967,146 +1081,6 @@
 				}
 			],
 			"sid": 987422654244722
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Player",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-moving-direction",
-							"objectClass": "Player",
-							"sid": 406007941803373,
-							"behaviorType": "TileMovement",
-							"parameters": {
-								"direction": "up"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 980416415516549,
-							"parameters": {
-								"instance-variable": "dir",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 190194401432196
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-moving-direction",
-							"objectClass": "Player",
-							"sid": 755374267870306,
-							"behaviorType": "TileMovement",
-							"parameters": {
-								"direction": "left"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 304009658687019,
-							"parameters": {
-								"instance-variable": "dir",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 588009195615664
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-moving-direction",
-							"objectClass": "Player",
-							"sid": 821954490029122,
-							"behaviorType": "TileMovement",
-							"parameters": {
-								"direction": "down"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 324689328286139,
-							"parameters": {
-								"instance-variable": "dir",
-								"value": "2"
-							}
-						}
-					],
-					"sid": 236243225626585
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-moving-direction",
-							"objectClass": "Player",
-							"sid": 723247402423097,
-							"behaviorType": "TileMovement",
-							"parameters": {
-								"direction": "right"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 177793573103274,
-							"parameters": {
-								"instance-variable": "dir",
-								"value": "3"
-							}
-						}
-					],
-					"sid": 342676518257416
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-moving",
-							"objectClass": "Player",
-							"sid": 418660006091211,
-							"behaviorType": "TileMovement"
-						},
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 491911749345954,
-							"parameters": {
-								"interval-seconds": "64/Player.TileMovement.SpeedX"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playMoveSFX",
-							"sid": 570022868533104
-						}
-					],
-					"sid": 604548479665183
-				}
-			],
-			"sid": 731431442821985
 		},
 		{
 			"eventType": "group",
@@ -1818,6 +1792,38 @@
 							"id": "destroy",
 							"objectClass": "Pointer",
 							"sid": 850148417532519
+						},
+						{
+							"id": "set-size",
+							"objectClass": "TraceArray",
+							"sid": 820082787043576,
+							"parameters": {
+								"width": "85",
+								"height": "3",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "TraceArray",
+							"sid": 906031767506604,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "TraceArray",
+							"sid": 800892507711669,
+							"parameters": {
+								"x": "0",
+								"y": "2",
+								"value": "255"
+							}
+						},
+						{
+							"callFunction": "updateTraceMap",
+							"sid": 858620334575466
 						}
 					],
 					"sid": 106978665708249
@@ -2174,6 +2180,306 @@
 						}
 					],
 					"sid": 240498269166865
+				},
+				{
+					"eventType": "variable",
+					"name": "dx",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 540562341933491
+				},
+				{
+					"eventType": "variable",
+					"name": "dy",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 795759376693145
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Player",
+							"sid": 237679698167288,
+							"behaviorType": "TileMovement"
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 851262275960529,
+							"parameters": {
+								"interval-seconds": "64/Player.TileMovement.SpeedX"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "playMoveSFX",
+							"sid": 116598657123520
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 208820119947902,
+							"parameters": {
+								"variable": "dx",
+								"value": "Player.dir = 1 ? -1 : (Player.dir = 3 ? 1 : 0)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 341135709640500,
+							"parameters": {
+								"variable": "dy",
+								"value": "Player.dir = 0 ? -1 : (Player.dir = 2 ? 1 : 0)"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 198982425618259,
+							"parameters": {
+								"variable": "step",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 646995487480681,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 402993488341718,
+									"parameters": {
+										"name": "\"i\"",
+										"start-index": "TraceArray.Width - 1",
+										"end-index": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-xy",
+									"objectClass": "TraceArray",
+									"sid": 875099366787966,
+									"parameters": {
+										"x": "loopindex(\"i\")",
+										"y": "0",
+										"value": "TraceArray.At(loopindex(\"i\") - 1, 0) + dx"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "TraceArray",
+									"sid": 717518534449903,
+									"parameters": {
+										"x": "loopindex(\"i\") ",
+										"y": "1",
+										"value": "TraceArray.At(loopindex(\"i\") - 1, 1) + dy"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "TraceArray",
+									"sid": 661050765518359,
+									"parameters": {
+										"x": "loopindex(\"i\") ",
+										"y": "2",
+										"value": "TraceArray.At(loopindex(\"i\") - 1, 2) - 3"
+									}
+								}
+							],
+							"sid": 222497784393238,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 783483929130759,
+											"parameters": {
+												"first-value": "loopindex(\"i\")",
+												"comparison": 0,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-at-xy",
+											"objectClass": "TraceArray",
+											"sid": 428869915462135,
+											"parameters": {
+												"x": "loopindex(\"i\")",
+												"y": "0",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-at-xy",
+											"objectClass": "TraceArray",
+											"sid": 777480109219511,
+											"parameters": {
+												"x": "loopindex(\"i\") ",
+												"y": "1",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-at-xy",
+											"objectClass": "TraceArray",
+											"sid": 500962879762441,
+											"parameters": {
+												"x": "loopindex(\"i\") ",
+												"y": "2",
+												"value": "255"
+											}
+										},
+										{
+											"callFunction": "updateTraceMap",
+											"sid": 286573521933479
+										}
+									],
+									"sid": 891059032240164
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "variable",
+					"name": "centerX",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 788245790975241
+				},
+				{
+					"eventType": "variable",
+					"name": "centerY",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 273910116590809
+				},
+				{
+					"functionName": "updateTraceMap",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 176292967046640,
+							"parameters": {
+								"variable": "centerX",
+								"value": "TraceMap.Width/2"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 298723484210113,
+							"parameters": {
+								"variable": "centerY",
+								"value": "TraceMap.Height/2"
+							}
+						},
+						{
+							"id": "clear-canvas",
+							"objectClass": "TraceMap",
+							"sid": 710217001324906,
+							"parameters": {
+								"color": "rgba(0, 0, 0, 255)"
+							}
+						},
+						{
+							"id": "outline-rect",
+							"objectClass": "TraceMap",
+							"sid": 688213616185882,
+							"parameters": {
+								"left": "0",
+								"top": "0",
+								"right": "TraceMap.Width-2",
+								"bottom": "TraceMap.Height - 2",
+								"color": "rgba(255, 255, 255, 100)",
+								"line-thickness": "1"
+							}
+						}
+					],
+					"sid": 610861234358298,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 896578470490491,
+									"parameters": {
+										"name": "\"i\"",
+										"start-index": "step < TraceArray.Width - 1 ? step : TraceArray.Width - 1",
+										"end-index": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "fill-rect",
+									"objectClass": "TraceMap",
+									"sid": 867245258105921,
+									"parameters": {
+										"left": "centerX - TraceArray.At(loopindex(\"i\"), 0) * 8 - 4",
+										"top": "centerY - TraceArray.At(loopindex(\"i\"), 1) * 8 - 4",
+										"right": "centerX - TraceArray.At(loopindex(\"i\"), 0) * 8 + 4",
+										"bottom": "centerY - TraceArray.At(loopindex(\"i\"), 1) * 8 + 4",
+										"color": "rgba(TraceArray.At(loopindex(\"i\"), 2), TraceArray.At(loopindex(\"i\"), 2), TraceArray.At(loopindex(\"i\"), 2), 100)"
+									}
+								}
+							],
+							"sid": 325075442808596
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "fill-rect",
+									"objectClass": "TraceMap",
+									"sid": 139751946970270,
+									"parameters": {
+										"left": "centerX - 4",
+										"top": "centerY - 4",
+										"right": "centerX + 4",
+										"bottom": "centerY + 4",
+										"color": "rgba(0, 255, 0, 100)"
+									}
+								}
+							],
+							"sid": 191841470446471
+						}
+					]
 				}
 			],
 			"sid": 938949436717283

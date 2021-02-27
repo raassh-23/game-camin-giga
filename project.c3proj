@@ -119,6 +119,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "DrawingCanvas",
+			"name": "Drawing canvas",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
@@ -206,7 +214,10 @@
 			"LocalStorage",
 			"TextTutorial",
 			"levelSelect",
-			"CellMarker"
+			"CellMarker",
+			"BlackBG",
+			"TraceArray",
+			"TraceMap"
 		],
 		"subfolders": []
 	},
