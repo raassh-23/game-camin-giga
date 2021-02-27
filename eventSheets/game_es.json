@@ -1913,11 +1913,29 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Pointer",
-									"sid": 332203195628081,
+									"sid": 745647398222629,
 									"parameters": {
 										"instance-variable": "finding",
 										"comparison": 0,
-										"value": "2"
+										"value": "6"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Teleporter",
+									"sid": 389530844276253,
+									"parameters": {
+										"instance-variable": "isActive"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Teleporter",
+									"sid": 564728345856161,
+									"parameters": {
+										"instance-variable": "Maze",
+										"comparison": 0,
+										"value": "mazeNow"
 									}
 								},
 								{
@@ -1933,10 +1951,10 @@
 								{
 									"id": "log",
 									"objectClass": "Browser",
-									"sid": 479167532190734,
+									"sid": 933052041165118,
 									"parameters": {
 										"type": "log",
-										"message": "\"failed 2\""
+										"message": "\"failed 6\""
 									}
 								},
 								{
@@ -1948,30 +1966,6 @@
 										"x": "Teleporter.X",
 										"y": "Teleporter.Y"
 									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Teleporter",
-									"sid": 816569517778780,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 247421190013543,
-									"parameters": {
-										"seconds": "1.0"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Teleporter",
-									"sid": 825209624473469,
-									"parameters": {
-										"visibility": "invisible"
-									}
 								}
 							],
 							"sid": 535317713622041
@@ -1982,31 +1976,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Pointer",
-									"sid": 645739199819855,
+									"sid": 452036662591492,
 									"parameters": {
 										"instance-variable": "finding",
 										"comparison": 0,
-										"value": "1"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Teleporter",
-									"sid": 132339541198879,
-									"parameters": {
-										"instance-variable": "TargetMaze",
-										"comparison": 0,
-										"value": "mazeNow"
-									}
-								},
-								{
-									"id": "pick-nearestfurthest",
-									"objectClass": "Teleporter",
-									"sid": 724928816833605,
-									"parameters": {
-										"which": "nearest",
-										"x": "Player.X",
-										"y": "Player.Y"
+										"value": "5"
 									}
 								}
 							],
@@ -2014,57 +1988,68 @@
 								{
 									"id": "log",
 									"objectClass": "Browser",
-									"sid": 181952000297844,
+									"sid": 817536947803948,
 									"parameters": {
 										"type": "log",
-										"message": "\"failed 1\""
+										"message": "\"failed 5\""
 									}
 								},
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Pointer",
-									"sid": 963608623400397,
-									"parameters": {
-										"instance-variable": "finding",
-										"value": "2"
-									}
-								},
-								{
-									"id": "find-path",
-									"objectClass": "Pointer",
-									"sid": 340795778055503,
-									"behaviorType": "Pathfinding",
-									"parameters": {
-										"x": "Teleporter.X",
-										"y": "Teleporter.Y"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Teleporter",
-									"sid": 516455821101628,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 183598968821558,
-									"parameters": {
-										"seconds": "1.0"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Teleporter",
-									"sid": 455904279103590,
-									"parameters": {
-										"visibility": "invisible"
-									}
+									"callFunction": "getNearestTeleporters",
+									"sid": 941325574537956,
+									"parameters": [
+										"0"
+									]
 								}
 							],
-							"sid": 392094889867778
+							"sid": 760171542652031,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-size",
+											"objectClass": "NearestTeleporters",
+											"sid": 376027701283115,
+											"parameters": {
+												"axis": "x",
+												"comparison": 4,
+												"value": "2"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Teleporter",
+											"sid": 130713217326654,
+											"parameters": {
+												"unique-id": "NearestTeleporters.At(2)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Pointer",
+											"sid": 985228097321650,
+											"parameters": {
+												"instance-variable": "finding",
+												"value": "6"
+											}
+										},
+										{
+											"id": "find-path",
+											"objectClass": "Pointer",
+											"sid": 677135624962818,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"x": "Teleporter.X",
+												"y": "Teleporter.Y"
+											}
+										}
+									],
+									"sid": 928574508258980
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -2072,31 +2057,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Pointer",
-									"sid": 572165851615332,
+									"sid": 280671349571862,
 									"parameters": {
 										"instance-variable": "finding",
 										"comparison": 0,
-										"value": "0"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Teleporter",
-									"sid": 830265669895578,
-									"parameters": {
-										"instance-variable": "TargetMaze",
-										"comparison": 0,
-										"value": "mazeNow+1"
-									}
-								},
-								{
-									"id": "pick-nearestfurthest",
-									"objectClass": "Teleporter",
-									"sid": 202600157173606,
-									"parameters": {
-										"which": "nearest",
-										"x": "Player.X",
-										"y": "Player.Y"
+										"value": "4"
 									}
 								}
 							],
@@ -2104,57 +2069,392 @@
 								{
 									"id": "log",
 									"objectClass": "Browser",
-									"sid": 441253817111654,
+									"sid": 963630362325017,
+									"parameters": {
+										"type": "log",
+										"message": "\"failed 4\""
+									}
+								},
+								{
+									"callFunction": "getNearestTeleporters",
+									"sid": 710685194422823,
+									"parameters": [
+										"0"
+									]
+								}
+							],
+							"sid": 940769594021096,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-size",
+											"objectClass": "NearestTeleporters",
+											"sid": 171918117167358,
+											"parameters": {
+												"axis": "x",
+												"comparison": 4,
+												"value": "1"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Teleporter",
+											"sid": 913976908110391,
+											"parameters": {
+												"unique-id": "NearestTeleporters.At(1)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Pointer",
+											"sid": 645084858640348,
+											"parameters": {
+												"instance-variable": "finding",
+												"value": "5"
+											}
+										},
+										{
+											"id": "find-path",
+											"objectClass": "Pointer",
+											"sid": 765230402676081,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"x": "Teleporter.X",
+												"y": "Teleporter.Y"
+											}
+										}
+									],
+									"sid": 619795731360495
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Pointer",
+									"sid": 661065743810605,
+									"parameters": {
+										"instance-variable": "finding",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 826303771975429,
+									"parameters": {
+										"type": "log",
+										"message": "\"failed 3\""
+									}
+								},
+								{
+									"callFunction": "getNearestTeleporters",
+									"sid": 174392100492051,
+									"parameters": [
+										"0"
+									]
+								}
+							],
+							"sid": 451597056694521,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-size",
+											"objectClass": "NearestTeleporters",
+											"sid": 567516332959188,
+											"parameters": {
+												"axis": "x",
+												"comparison": 4,
+												"value": "0"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Teleporter",
+											"sid": 175599933937194,
+											"parameters": {
+												"unique-id": "NearestTeleporters.At(0)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Pointer",
+											"sid": 407364102827795,
+											"parameters": {
+												"instance-variable": "finding",
+												"value": "4"
+											}
+										},
+										{
+											"id": "find-path",
+											"objectClass": "Pointer",
+											"sid": 303677956583597,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"x": "Teleporter.X",
+												"y": "Teleporter.Y"
+											}
+										}
+									],
+									"sid": 778714689720511
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Pointer",
+									"sid": 452725226154137,
+									"parameters": {
+										"instance-variable": "finding",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 641916901015582,
+									"parameters": {
+										"type": "log",
+										"message": "\"failed 2\""
+									}
+								},
+								{
+									"callFunction": "getNearestTeleporters",
+									"sid": 925091318351877,
+									"parameters": [
+										"1"
+									]
+								}
+							],
+							"sid": 685974138702134,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-size",
+											"objectClass": "NearestTeleporters",
+											"sid": 229942919632871,
+											"parameters": {
+												"axis": "x",
+												"comparison": 4,
+												"value": "2"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Teleporter",
+											"sid": 108549665515102,
+											"parameters": {
+												"unique-id": "NearestTeleporters.At(2)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Pointer",
+											"sid": 982263734299995,
+											"parameters": {
+												"instance-variable": "finding",
+												"value": "3"
+											}
+										},
+										{
+											"id": "find-path",
+											"objectClass": "Pointer",
+											"sid": 584931326548933,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"x": "Teleporter.X",
+												"y": "Teleporter.Y"
+											}
+										}
+									],
+									"sid": 788610412886288
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Pointer",
+									"sid": 434998711771718,
+									"parameters": {
+										"instance-variable": "finding",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 231637107283189,
+									"parameters": {
+										"type": "log",
+										"message": "\"failed 1\""
+									}
+								},
+								{
+									"callFunction": "getNearestTeleporters",
+									"sid": 249643895332729,
+									"parameters": [
+										"1"
+									]
+								}
+							],
+							"sid": 981619800507340,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-size",
+											"objectClass": "NearestTeleporters",
+											"sid": 933812565413818,
+											"parameters": {
+												"axis": "x",
+												"comparison": 4,
+												"value": "1"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Teleporter",
+											"sid": 874576434605979,
+											"parameters": {
+												"unique-id": "NearestTeleporters.At(1)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Pointer",
+											"sid": 307809902612810,
+											"parameters": {
+												"instance-variable": "finding",
+												"value": "2"
+											}
+										},
+										{
+											"id": "find-path",
+											"objectClass": "Pointer",
+											"sid": 968214294167556,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"x": "Teleporter.X",
+												"y": "Teleporter.Y"
+											}
+										}
+									],
+									"sid": 873540197065625
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Pointer",
+									"sid": 230828036419534,
+									"parameters": {
+										"instance-variable": "finding",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 313572854221906,
 									"parameters": {
 										"type": "log",
 										"message": "\"failed 0\""
 									}
 								},
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Pointer",
-									"sid": 156655395771980,
-									"parameters": {
-										"instance-variable": "finding",
-										"value": "1"
-									}
-								},
-								{
-									"id": "find-path",
-									"objectClass": "Pointer",
-									"sid": 387222321326644,
-									"behaviorType": "Pathfinding",
-									"parameters": {
-										"x": "Teleporter.X",
-										"y": "Teleporter.Y"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Teleporter",
-									"sid": 419616748570623,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 810285113593077,
-									"parameters": {
-										"seconds": "1.0"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Teleporter",
-									"sid": 183881825336181,
-									"parameters": {
-										"visibility": "invisible"
-									}
+									"callFunction": "getNearestTeleporters",
+									"sid": 571283393737441,
+									"parameters": [
+										"1"
+									]
 								}
 							],
-							"sid": 685974138702134
+							"sid": 811931841470359,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-size",
+											"objectClass": "NearestTeleporters",
+											"sid": 455904809371818,
+											"parameters": {
+												"axis": "x",
+												"comparison": 4,
+												"value": "0"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Teleporter",
+											"sid": 481538266558701,
+											"parameters": {
+												"unique-id": "NearestTeleporters.At(0)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Pointer",
+											"sid": 734479366799227,
+											"parameters": {
+												"instance-variable": "finding",
+												"value": "1"
+											}
+										},
+										{
+											"id": "find-path",
+											"objectClass": "Pointer",
+											"sid": 505037861801752,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"x": "Teleporter.X",
+												"y": "Teleporter.Y"
+											}
+										}
+									],
+									"sid": 627530033121999
+								}
+							]
 						}
 					]
 				},
@@ -2180,6 +2480,95 @@
 						}
 					],
 					"sid": 240498269166865
+				},
+				{
+					"functionName": "getNearestTeleporters",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "nextMaze",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 180751777389756
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "NearestTeleporters",
+							"sid": 717052649288543,
+							"parameters": {
+								"width": "0",
+								"height": "1",
+								"depth": "1"
+							}
+						}
+					],
+					"sid": 285034149782936,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Teleporter",
+									"sid": 342564990554581,
+									"parameters": {
+										"instance-variable": "isActive"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Teleporter",
+									"sid": 572141300997876,
+									"parameters": {
+										"instance-variable": "Maze",
+										"comparison": 0,
+										"value": "mazeNow"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Teleporter",
+									"sid": 915199175744777,
+									"parameters": {
+										"instance-variable": "TargetMaze",
+										"comparison": 0,
+										"value": "mazeNow + nextMaze"
+									}
+								},
+								{
+									"id": "for-each-ordered",
+									"objectClass": "System",
+									"sid": 727177057813218,
+									"parameters": {
+										"object": "Teleporter",
+										"expression": "distance(Player.X, Player.Y, Teleporter.X, Teleporter.Y)",
+										"order": "ascending"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "push",
+									"objectClass": "NearestTeleporters",
+									"sid": 700121332508188,
+									"parameters": {
+										"where": "back",
+										"value": "Teleporter.UID",
+										"axis": "x"
+									}
+								}
+							],
+							"sid": 630415136577198
+						}
+					]
 				},
 				{
 					"eventType": "variable",

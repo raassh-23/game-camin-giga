@@ -199,7 +199,6 @@
 			"Browser",
 			"Pointer",
 			"PointerIcon",
-			"Sprite2",
 			"TextUI",
 			"MobileButton",
 			"Touch",
@@ -217,7 +216,8 @@
 			"CellMarker",
 			"BlackBG",
 			"TraceArray",
-			"TraceMap"
+			"TraceMap",
+			"NearestTeleporters"
 		],
 		"subfolders": []
 	},
