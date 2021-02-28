@@ -16,6 +16,11 @@
 			"behaviorId": "Fade",
 			"name": "Fade",
 			"sid": 120185708982783
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 431079777679225
 		}
 	],
 	"effectTypes": [],

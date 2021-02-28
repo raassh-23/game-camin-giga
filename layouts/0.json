@@ -839,8 +839,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 296,
-						"y": 106,
+						"x": 284,
+						"y": 86,
 						"width": 43.199999999999996,
 						"height": 76.8,
 						"originX": 0.5,
@@ -879,8 +879,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 475.17777945449984,
-						"y": 109.33650841557136,
+						"x": 463,
+						"y": 89,
 						"width": 288,
 						"height": 96,
 						"originX": 0.5,
@@ -908,8 +908,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1189,
-						"y": 106,
+						"x": 1213,
+						"y": 86,
 						"width": 58,
 						"height": 67,
 						"originX": 0.5,
@@ -948,8 +948,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 988,
-						"y": 106,
+						"x": 1012,
+						"y": 86,
 						"width": 288,
 						"height": 96,
 						"originX": 0.5,
@@ -975,8 +975,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 50,
-						"y": 68.57610020781017,
+						"x": 34,
+						"y": 49,
 						"width": 200,
 						"height": 200,
 						"originX": 0,
@@ -1217,7 +1217,7 @@
 						"character-height": 43,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
 						"spacing-data": "[[8,\" \"],[5,\"|\"],[6,\"'\"],[7,\"l\"],[8,\"Ii.:!\"],[9,\",;\"],[10,\"[]\"],[11,\"j`\"],[12,\"-\\\"(°\"],[13,\"rt1)\"],[15,\"f\"],[16,\"/\"],[17,\"<\"],[18,\"hnuz?\\\\=*>\"],[19,\"FLabckps56_\"],[20,\"EJdegqvxy03789+$€\"],[21,\"Bo24\"],[22,\"DPRSUZ~£\"],[23,\"HKN#\"],[24,\"CGOQTY&\"],[25,\"VX\"],[26,\"A%\"],[29,\"Mw\"],[30,\"m\"],[32,\"@\"],[33,\"W\"]]",
-						"scale": 1.25,
+						"scale": 1,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -1240,13 +1240,18 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
 						"x": 640,
-						"y": -405,
-						"width": 861,
-						"height": 121,
+						"y": -111,
+						"width": 760,
+						"height": 160,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1262,13 +1267,13 @@
 				{
 					"type": "TextTutorial",
 					"properties": {
-						"text": "STOP AND PRESS SPACE OR ACTION BUTTON ON EMPTY TILE TO DROP A MARKER",
+						"text": "STOP AND PRESS SPACE OR ACTION BUTTON ON EMPTY TILE TO USE A POINTER",
 						"enable-bbcode": true,
 						"character-width": 35,
 						"character-height": 43,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
 						"spacing-data": "[[8,\" \"],[5,\"|\"],[6,\"'\"],[7,\"l\"],[8,\"Ii.:!\"],[9,\",;\"],[10,\"[]\"],[11,\"j`\"],[12,\"-\\\"(°\"],[13,\"rt1)\"],[15,\"f\"],[16,\"/\"],[17,\"<\"],[18,\"hnuz?\\\\=*>\"],[19,\"FLabckps56_\"],[20,\"EJdegqvxy03789+$€\"],[21,\"Bo24\"],[22,\"DPRSUZ~£\"],[23,\"HKN#\"],[24,\"CGOQTY&\"],[25,\"VX\"],[26,\"A%\"],[29,\"Mw\"],[30,\"m\"],[32,\"@\"],[33,\"W\"]]",
-						"scale": 1.25,
+						"scale": 1,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -1291,13 +1296,18 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
-						"x": 678.5,
-						"y": -257,
-						"width": 938,
-						"height": 121,
+						"x": 640,
+						"y": -559,
+						"width": 760,
+						"height": 160,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1313,13 +1323,13 @@
 				{
 					"type": "TextTutorial",
 					"properties": {
-						"text": "STOP AND PRESS SPACE OR ACTION BUTTON ON A TILE WITH MARKER TO PICK IT UP",
+						"text": "THE POINTER WILL POINT TOWARDS THE GOAL",
 						"enable-bbcode": true,
 						"character-width": 35,
 						"character-height": 43,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
 						"spacing-data": "[[8,\" \"],[5,\"|\"],[6,\"'\"],[7,\"l\"],[8,\"Ii.:!\"],[9,\",;\"],[10,\"[]\"],[11,\"j`\"],[12,\"-\\\"(°\"],[13,\"rt1)\"],[15,\"f\"],[16,\"/\"],[17,\"<\"],[18,\"hnuz?\\\\=*>\"],[19,\"FLabckps56_\"],[20,\"EJdegqvxy03789+$€\"],[21,\"Bo24\"],[22,\"DPRSUZ~£\"],[23,\"HKN#\"],[24,\"CGOQTY&\"],[25,\"VX\"],[26,\"A%\"],[29,\"Mw\"],[30,\"m\"],[32,\"@\"],[33,\"W\"]]",
-						"scale": 1.25,
+						"scale": 1,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -1342,13 +1352,74 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
-						"x": 678.5,
-						"y": -115,
-						"width": 938,
-						"height": 121,
+						"x": 640,
+						"y": -416,
+						"width": 638,
+						"height": 160,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TextTutorial",
+					"properties": {
+						"text": "USE THE MAP ON TOP LEFT TO HELP YOU TRACE YOUR PATH",
+						"enable-bbcode": true,
+						"character-width": 35,
+						"character-height": 43,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[8,\" \"],[5,\"|\"],[6,\"'\"],[7,\"l\"],[8,\"Ii.:!\"],[9,\",;\"],[10,\"[]\"],[11,\"j`\"],[12,\"-\\\"(°\"],[13,\"rt1)\"],[15,\"f\"],[16,\"/\"],[17,\"<\"],[18,\"hnuz?\\\\=*>\"],[19,\"FLabckps56_\"],[20,\"EJdegqvxy03789+$€\"],[21,\"Bo24\"],[22,\"DPRSUZ~£\"],[23,\"HKN#\"],[24,\"CGOQTY&\"],[25,\"VX\"],[26,\"A%\"],[29,\"Mw\"],[30,\"m\"],[32,\"@\"],[33,\"W\"]]",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 188,
+					"instanceVariables": {
+						"id": 4
+					},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 640,
+						"y": -283,
+						"width": 760,
+						"height": 160,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
