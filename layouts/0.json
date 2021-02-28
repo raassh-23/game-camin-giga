@@ -839,7 +839,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 284,
+						"x": 50,
 						"y": 86,
 						"width": 43.199999999999996,
 						"height": 76.8,
@@ -885,7 +885,7 @@
 						}
 					},
 					"world": {
-						"x": 463,
+						"x": 229,
 						"y": 89,
 						"width": 288,
 						"height": 96,
@@ -915,7 +915,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1213,
-						"y": 86,
+						"y": 642,
 						"width": 58,
 						"height": 67,
 						"originX": 0.5,
@@ -960,7 +960,7 @@
 						}
 					},
 					"world": {
-						"x": 1012,
+						"x": 1106,
 						"y": 86,
 						"width": 288,
 						"height": 96,
@@ -988,7 +988,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 34,
-						"y": 49,
+						"y": 478,
 						"width": 200,
 						"height": 200,
 						"originX": 0,
@@ -1229,7 +1229,7 @@
 				{
 					"type": "TextTutorial",
 					"properties": {
-						"text": "USE WASD(PC) OR MOVE BUTTONS(MOBILE) TO MOVE AROUND",
+						"text": "USE WASD OR ARROW KEYS TO MOVE AROUND",
 						"enable-bbcode": true,
 						"character-width": 35,
 						"character-height": 43,
@@ -1285,7 +1285,7 @@
 				{
 					"type": "TextTutorial",
 					"properties": {
-						"text": "STOP AND PRESS SPACE OR ACTION BUTTON ON EMPTY TILE TO USE A POINTER",
+						"text": "STOP AND PRESS SPACE ON EMPTY TILE TO USE A POINTER",
 						"enable-bbcode": true,
 						"character-width": 35,
 						"character-height": 43,
@@ -1397,7 +1397,7 @@
 				{
 					"type": "TextTutorial",
 					"properties": {
-						"text": "USE THE MAP ON TOP LEFT TO HELP YOU TRACE YOUR PATH",
+						"text": "USE THE MAP ON BOTTOM LEFT TO HELP YOU TRACE YOUR PATH",
 						"enable-bbcode": true,
 						"character-width": 35,
 						"character-height": 43,

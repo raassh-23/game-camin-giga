@@ -3153,6 +3153,23 @@
 								"variable": "TutorialNow",
 								"value": "0"
 							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "TextTutorial",
+							"sid": 117027279859986,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "TextTutorial",
+							"sid": 231757175020681,
+							"parameters": {
+								"x": "640",
+								"y": "200"
+							}
 						}
 					],
 					"sid": 592096577740348,
@@ -3175,17 +3192,10 @@
 										"x": "640",
 										"y": "220"
 									}
-								},
-								{
-									"id": "set-opacity",
-									"objectClass": "TextTutorial",
-									"sid": 323999154815206,
-									"parameters": {
-										"opacity": "0"
-									}
 								}
 							],
-							"sid": 578669880898012
+							"sid": 578669880898012,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3201,22 +3211,15 @@
 								{
 									"id": "set-position",
 									"objectClass": "TextTutorial",
-									"sid": 588472009559344,
+									"sid": 322985239977406,
 									"parameters": {
 										"x": "640",
 										"y": "610"
 									}
-								},
-								{
-									"id": "set-opacity",
-									"objectClass": "TextTutorial",
-									"sid": 220668690726989,
-									"parameters": {
-										"opacity": "0"
-									}
 								}
 							],
-							"sid": 109825370963981
+							"sid": 109825370963981,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
