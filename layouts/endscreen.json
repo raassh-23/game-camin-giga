@@ -146,7 +146,7 @@
 				{
 					"type": "TextUI",
 					"properties": {
-						"text": "CLICK/TAP ANYWHERE TO GO TO NEXT LEVEL",
+						"text": "CLICK ANYWHERE TO GO TO NEXT LEVEL",
 						"enable-bbcode": true,
 						"character-width": 35,
 						"character-height": 43,
