@@ -3711,101 +3711,6 @@
 					"sid": 274132193732479
 				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "TextTutorial",
-							"sid": 157065374054860,
-							"parameters": {
-								"instance-variable": "id",
-								"comparison": 0,
-								"value": "3"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 791019069537922,
-							"parameters": {
-								"variable": "TutorialNow",
-								"comparison": 4,
-								"value": "2"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 490722869048588,
-							"parameters": {
-								"variable": "TutorialFinished",
-								"comparison": 0,
-								"value": "0"
-							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 499565460783681
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 986739689036004,
-							"parameters": {
-								"variable": "TutorialFinished",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 781181361652545,
-							"parameters": {
-								"variable": "TutorialNow",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-item",
-							"objectClass": "LocalStorage",
-							"sid": 923759130704064,
-							"parameters": {
-								"key": "\"gameData\"",
-								"value": "LevelUnlocked&\",\"&TutorialFinished&\",\"&Audio&\",\"&Music"
-							}
-						},
-						{
-							"id": "set-fade-in-time",
-							"objectClass": "TextTutorial",
-							"sid": 289443339695799,
-							"behaviorType": "Fade",
-							"parameters": {
-								"fade-in-time": "0"
-							}
-						},
-						{
-							"id": "set-fade-out-time",
-							"objectClass": "TextTutorial",
-							"sid": 394976903342674,
-							"behaviorType": "Fade",
-							"parameters": {
-								"fade-out-time": "1"
-							}
-						},
-						{
-							"id": "start-fade",
-							"objectClass": "TextTutorial",
-							"sid": 780164748409447,
-							"behaviorType": "Fade"
-						}
-					],
-					"sid": 906660398601697,
-					"disabled": true
-				},
-				{
 					"functionName": "nextTutorial",
 					"functionDescription": "",
 					"functionCategory": "",
@@ -3985,7 +3890,7 @@
 			"disabled": false,
 			"title": "Testing",
 			"description": "",
-			"isActiveOnStart": true,
+			"isActiveOnStart": false,
 			"children": [
 				{
 					"eventType": "block",

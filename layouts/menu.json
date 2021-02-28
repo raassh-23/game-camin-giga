@@ -27,7 +27,13 @@
 					"instanceVariables": {
 						"id": 1
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 640,
 						"y": 157,
@@ -67,7 +73,13 @@
 					"instanceVariables": {
 						"id": 1
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 640,
 						"y": 252,

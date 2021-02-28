@@ -20,9 +20,13 @@
 					}
 				},
 				{
-					"id": "is-visible",
+					"id": "compare-opacity",
 					"objectClass": "TextUI",
-					"sid": 527899070857367
+					"sid": 325515952867671,
+					"parameters": {
+						"comparison": 4,
+						"opacity": "99"
+					}
 				}
 			],
 			"actions": [
@@ -306,19 +310,27 @@
 					],
 					"actions": [
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 505141907541930,
+							"id": "set-opacity",
+							"objectClass": "TextUI",
+							"sid": 622588267725852,
 							"parameters": {
-								"seconds": "1"
+								"opacity": "0"
 							}
 						},
 						{
-							"id": "set-visible",
+							"id": "tween-one-property",
 							"objectClass": "TextUI",
-							"sid": 814719517966282,
+							"sid": 696503716173269,
+							"behaviorType": "Tween",
 							"parameters": {
-								"visibility": "visible"
+								"tags": "\"fadeIn\"",
+								"property": "offsetOpacity",
+								"end-value": "100",
+								"time": "1",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
 							}
 						}
 					],

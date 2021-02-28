@@ -877,7 +877,13 @@
 					"instanceVariables": {
 						"id": 1
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 463,
 						"y": 89,
@@ -946,7 +952,13 @@
 					"instanceVariables": {
 						"id": 2
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 1012,
 						"y": 86,
@@ -1074,7 +1086,13 @@
 					"instanceVariables": {
 						"id": 0
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 641,
 						"y": 288.6154451229569,

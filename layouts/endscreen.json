@@ -27,7 +27,13 @@
 					"instanceVariables": {
 						"id": 0
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 640,
 						"y": 133,
@@ -67,7 +73,13 @@
 					"instanceVariables": {
 						"id": 1
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 640,
 						"y": 306,
@@ -107,7 +119,13 @@
 					"instanceVariables": {
 						"id": 2
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 640,
 						"y": 394,
@@ -140,14 +158,20 @@
 						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
-						"initially-visible": false,
+						"initially-visible": true,
 						"origin": "center"
 					},
 					"uid": 95,
 					"instanceVariables": {
 						"id": 3
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 640,
 						"y": 576,
