@@ -1399,6 +1399,179 @@
 							]
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 187210832914016,
+							"parameters": {
+								"key": 27
+							}
+						}
+					],
+					"actions": [],
+					"sid": 256537242009610,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 393981918376688,
+									"parameters": {
+										"layer": "\"Paused\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playTapSFX",
+									"sid": 785650738808431
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 757505303898726,
+									"parameters": {
+										"seconds": "0.01"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 768929805407186,
+									"parameters": {
+										"layer": "\"Paused\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 784880817853475,
+									"parameters": {
+										"layer": "\"UI\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 426177881182757,
+									"parameters": {
+										"layer": "\"Tutorial\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 939027889866155,
+									"parameters": {
+										"layer": "\"MobileControl\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 628839613766193,
+									"parameters": {
+										"time-scale": "0"
+									}
+								}
+							],
+							"sid": 795371947047474
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 457338130815125,
+									"parameters": {
+										"layer": "\"Paused\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 208613593858026,
+									"parameters": {
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 837690667830268,
+									"parameters": {
+										"seconds": "0.01"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 235176718775327,
+									"parameters": {
+										"layer": "\"Paused\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 876794649814122,
+									"parameters": {
+										"layer": "\"UI\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 632065660826876,
+									"parameters": {
+										"layer": "\"MobileControl\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 274651832533284,
+									"parameters": {
+										"layer": "\"Tutorial\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-grid-position",
+									"objectClass": "Player",
+									"sid": 968591130936613,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "Self.TileMovement.GridTargetX",
+										"y": "Self.TileMovement.GridTargetY",
+										"instant": "animate"
+									}
+								},
+								{
+									"callFunction": "playTapSFX",
+									"sid": 274161415789712
+								}
+							],
+							"sid": 648977144465010
+						}
+					]
 				}
 			],
 			"sid": 888452681072062
@@ -1569,9 +1742,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 839786729537103,
+							"sid": 221140381983056,
 							"parameters": {
-								"seconds": "0.2"
+								"seconds": "(Teleporter.Width/2+Player.Width/2)/Player.TileMovement.SpeedX"
 							}
 						},
 						{
