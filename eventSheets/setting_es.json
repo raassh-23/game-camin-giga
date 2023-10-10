@@ -483,6 +483,7 @@
 						"audio-file": "bgm",
 						"loop": "looping",
 						"volume": "20*log10(Music/100)",
+						"stereo-pan": "0",
 						"tag-optional": "\"bgm\""
 					}
 				}

@@ -401,363 +401,6 @@
 							"sid": 423694910128527
 						}
 					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-touching-object",
-							"objectClass": "Touch",
-							"sid": 642321220687261,
-							"parameters": {
-								"object": "MobileButton"
-							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 503812602711062,
-							"parameters": {
-								"layer": "\"MobileControl\""
-							}
-						},
-						{
-							"id": "is-visible",
-							"objectClass": "MobileButton",
-							"sid": 848019267538477
-						}
-					],
-					"actions": [],
-					"sid": 755714628425379,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-animation-frame",
-									"objectClass": "MobileButton",
-									"sid": 498578457211230,
-									"parameters": {
-										"comparison": 0,
-										"number": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player",
-									"sid": 338960841782996,
-									"behaviorType": "TileMovement",
-									"parameters": {
-										"control": "up"
-									}
-								}
-							],
-							"sid": 905754419532650
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-animation-frame",
-									"objectClass": "MobileButton",
-									"sid": 864271836658746,
-									"parameters": {
-										"comparison": 0,
-										"number": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player",
-									"sid": 265834605143327,
-									"behaviorType": "TileMovement",
-									"parameters": {
-										"control": "left"
-									}
-								}
-							],
-							"sid": 139423258305296
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-animation-frame",
-									"objectClass": "MobileButton",
-									"sid": 305714022478700,
-									"parameters": {
-										"comparison": 0,
-										"number": "2"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player",
-									"sid": 522292552370641,
-									"behaviorType": "TileMovement",
-									"parameters": {
-										"control": "down"
-									}
-								}
-							],
-							"sid": 634159393316642
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-animation-frame",
-									"objectClass": "MobileButton",
-									"sid": 146341510969236,
-									"parameters": {
-										"comparison": 0,
-										"number": "3"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player",
-									"sid": 418009249165444,
-									"behaviorType": "TileMovement",
-									"parameters": {
-										"control": "right"
-									}
-								}
-							],
-							"sid": 214922967957378
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-touched-object",
-							"objectClass": "Touch",
-							"sid": 152558404003710,
-							"parameters": {
-								"object": "MobileButton"
-							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 564540826588096,
-							"parameters": {
-								"layer": "\"MobileControl\""
-							}
-						},
-						{
-							"id": "is-visible",
-							"objectClass": "MobileButton",
-							"sid": 511947531772811
-						},
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "MobileButton",
-							"sid": 326085623117289,
-							"parameters": {
-								"comparison": 0,
-								"number": "4"
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Player",
-							"sid": 794283145181723,
-							"behaviorType": "TileMovement",
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 659221552785257,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 137571046100352,
-									"parameters": {
-										"first-value": "TutorialFinished*3 + TutorialNow",
-										"comparison": 5,
-										"second-value": "2"
-									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 257656833737874,
-									"parameters": {
-										"variable": "pinOwned",
-										"comparison": 4,
-										"value": "0"
-									}
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Player",
-									"sid": 551868309384312,
-									"parameters": {
-										"object": "Pointer"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "spawn-another-object",
-									"objectClass": "Player",
-									"sid": 506024907349210,
-									"parameters": {
-										"object": "Pointer",
-										"layer": "\"Object\"",
-										"image-point": "0",
-										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "subtract-from-eventvar",
-									"objectClass": "System",
-									"sid": 521153733120898,
-									"parameters": {
-										"variable": "pinOwned",
-										"value": "1"
-									}
-								},
-								{
-									"callFunction": "playDropSFX",
-									"sid": 674218814715672
-								}
-							],
-							"sid": 139092649048251
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 907984071074280,
-									"parameters": {
-										"variable": "TutorialNow",
-										"comparison": 0,
-										"value": "1"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "TextTutorial",
-									"sid": 629355520654034,
-									"parameters": {
-										"instance-variable": "id",
-										"comparison": 0,
-										"value": "2"
-									}
-								},
-								{
-									"id": "compare-opacity",
-									"objectClass": "TextTutorial",
-									"sid": 812991472074507,
-									"parameters": {
-										"comparison": 4,
-										"opacity": "99"
-									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 465671027515968,
-									"parameters": {
-										"variable": "pinOwned",
-										"comparison": 4,
-										"value": "0"
-									}
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Player",
-									"sid": 625033517023306,
-									"parameters": {
-										"object": "Pointer"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "spawn-another-object",
-									"objectClass": "Player",
-									"sid": 217830791232033,
-									"parameters": {
-										"object": "Pointer",
-										"layer": "\"Object\"",
-										"image-point": "0",
-										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "subtract-from-eventvar",
-									"objectClass": "System",
-									"sid": 914912011227284,
-									"parameters": {
-										"variable": "pinOwned",
-										"value": "1"
-									}
-								},
-								{
-									"callFunction": "playDropSFX",
-									"sid": 279667961316127
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 848235252357315,
-									"parameters": {
-										"variable": "TutorialNow",
-										"value": "2"
-									}
-								}
-							],
-							"sid": 384347263289019
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 633006819714162
-						},
-						{
-							"id": "is-on-mobile",
-							"objectClass": "PlatformInfo",
-							"sid": 370250014511838,
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "MobileButton",
-							"sid": 923340148322296,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 443275488102487
 				}
 			],
 			"sid": 560219984425904
@@ -1153,15 +796,6 @@
 									}
 								},
 								{
-									"id": "set-layer-visible",
-									"objectClass": "System",
-									"sid": 442953083928733,
-									"parameters": {
-										"layer": "\"MobileControl\"",
-										"visibility": "invisible"
-									}
-								},
-								{
 									"id": "set-time-scale",
 									"objectClass": "System",
 									"sid": 667889890978902,
@@ -1224,15 +858,6 @@
 											"sid": 475738470579281,
 											"parameters": {
 												"layer": "\"UI\"",
-												"visibility": "visible"
-											}
-										},
-										{
-											"id": "set-layer-visible",
-											"objectClass": "System",
-											"sid": 362298403847958,
-											"parameters": {
-												"layer": "\"MobileControl\"",
 												"visibility": "visible"
 											}
 										},
@@ -1407,15 +1032,6 @@
 									}
 								},
 								{
-									"id": "set-layer-visible",
-									"objectClass": "System",
-									"sid": 939027889866155,
-									"parameters": {
-										"layer": "\"MobileControl\"",
-										"visibility": "invisible"
-									}
-								},
-								{
 									"id": "set-time-scale",
 									"objectClass": "System",
 									"sid": 628839613766193,
@@ -1470,15 +1086,6 @@
 									"sid": 876794649814122,
 									"parameters": {
 										"layer": "\"UI\"",
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-layer-visible",
-									"objectClass": "System",
-									"sid": 632065660826876,
-									"parameters": {
-										"layer": "\"MobileControl\"",
 										"visibility": "visible"
 									}
 								},
@@ -1736,6 +1343,7 @@
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [
 						{
@@ -1826,15 +1434,6 @@
 							"sid": 355968340025270,
 							"parameters": {
 								"layer": "\"UI\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 483341588499681,
-							"parameters": {
-								"layer": "\"MobileControl\"",
 								"visibility": "visible"
 							}
 						},
@@ -2597,6 +2196,7 @@
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [
 						{
@@ -2883,6 +2483,7 @@
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",
@@ -2996,6 +2597,7 @@
 					"functionDescription": "",
 					"functionCategory": "SFX",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",
@@ -3009,6 +2611,7 @@
 								"audio-file": "move",
 								"loop": "not-looping",
 								"volume": "20*log10(Audio/100)",
+								"stereo-pan": "0",
 								"tag-optional": "\"sfx\""
 							}
 						}
@@ -3020,6 +2623,7 @@
 					"functionDescription": "",
 					"functionCategory": "SFX",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",
@@ -3033,6 +2637,7 @@
 								"audio-file": "drop",
 								"loop": "not-looping",
 								"volume": "20*log10(Audio/100)",
+								"stereo-pan": "0",
 								"tag-optional": "\"sfx\""
 							}
 						}
@@ -3044,6 +2649,7 @@
 					"functionDescription": "",
 					"functionCategory": "SFX",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",
@@ -3057,6 +2663,7 @@
 								"audio-file": "pick",
 								"loop": "not-looping",
 								"volume": "20*log10(Audio/100)",
+								"stereo-pan": "0",
 								"tag-optional": "\"sfx\""
 							}
 						}
@@ -3068,6 +2675,7 @@
 					"functionDescription": "",
 					"functionCategory": "SFX",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",
@@ -3081,6 +2689,7 @@
 								"audio-file": "tap",
 								"loop": "not-looping",
 								"volume": "20*log10(Audio/100)",
+								"stereo-pan": "0",
 								"tag-optional": "\"sfx\""
 							}
 						}
@@ -3109,6 +2718,7 @@
 								"audio-file": "bgm",
 								"loop": "looping",
 								"volume": "20*log10(Music/100)",
+								"stereo-pan": "0",
 								"tag-optional": "\"bgm\""
 							}
 						}
@@ -3718,6 +3328,7 @@
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [
 						{
@@ -3782,6 +3393,7 @@
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": true,
 					"functionParameters": [
 						{
@@ -3823,7 +3435,8 @@
 										"ease": "easeinsine",
 										"destroy-on-complete": "no",
 										"loop": "no",
-										"ping-pong": "no"
+										"ping-pong": "no",
+										"repeat-count": "1"
 									}
 								}
 							],
@@ -3836,6 +3449,7 @@
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": true,
 					"functionParameters": [
 						{
@@ -3877,7 +3491,8 @@
 										"ease": "easeoutsine",
 										"destroy-on-complete": "no",
 										"loop": "no",
-										"ping-pong": "no"
+										"ping-pong": "no",
+										"repeat-count": "1"
 									}
 								}
 							],
@@ -3893,7 +3508,7 @@
 			"disabled": false,
 			"title": "Testing",
 			"description": "",
-			"isActiveOnStart": false,
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -3907,16 +3522,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "MobileButton",
-							"sid": 807709229300417,
-							"parameters": {
-								"visibility": "toggle"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 349558877656981
 				},
 				{
@@ -4006,94 +3612,6 @@
 						}
 					],
 					"sid": 769279646466628
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 795563224114026,
-							"parameters": {
-								"key": 67
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "CellMarker",
-							"sid": 216958579795403
-						}
-					],
-					"sid": 741684469257036
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 655031211322251,
-							"parameters": {
-								"key": 86
-							}
-						},
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 489380199723783,
-							"parameters": {
-								"name": "\"x\"",
-								"start-index": "0",
-								"end-index": "2880 / Pointer.Pathfinding.CellSize"
-							}
-						},
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 537995073864236,
-							"parameters": {
-								"name": "\"y\"",
-								"start-index": "0",
-								"end-index": "2880 / Pointer.Pathfinding.CellSize"
-							}
-						},
-						{
-							"id": "is-cell-obstacle",
-							"objectClass": "Pointer",
-							"sid": 974266743013754,
-							"behaviorType": "Pathfinding",
-							"parameters": {
-								"cell-x": "loopindex(\"x\")",
-								"cell-y": "loopindex(\"y\")"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 383595725406771,
-							"parameters": {
-								"object-to-create": "CellMarker",
-								"layer": "\"Object\"",
-								"x": "loopindex(\"x\") * Pointer.Pathfinding.CellSize",
-								"y": "loopindex(\"y\") * Pointer.Pathfinding.CellSize",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "set-size",
-							"objectClass": "CellMarker",
-							"sid": 785344439217457,
-							"parameters": {
-								"width": "Pointer.Pathfinding.CellSize",
-								"height": "Pointer.Pathfinding.CellSize"
-							}
-						}
-					],
-					"sid": 714525247845255
 				}
 			],
 			"sid": 829830143681033

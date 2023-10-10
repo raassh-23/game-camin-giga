@@ -16,11 +16,12 @@
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
-						"exportFormat": "png",
+						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"imageSpriteId": 7026846,
 						"useCollisionPoly": true,
-						"duration": 1
+						"duration": 1,
+						"tag": ""
 					}
 				],
 				"sid": 367677282021734,

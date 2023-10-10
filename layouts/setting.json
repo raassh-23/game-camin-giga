@@ -4,6 +4,7 @@
 		{
 			"name": "main",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "TextUI",
@@ -21,7 +22,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 118,
 					"instanceVariables": {
@@ -96,7 +98,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 119,
 					"instanceVariables": {
@@ -142,7 +145,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 123,
 					"instanceVariables": {
@@ -188,7 +192,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 124,
 					"instanceVariables": {
@@ -397,6 +402,7 @@
 			"sid": 543166535563513,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
 			"color": [
 				1,
 				1,
@@ -414,13 +420,17 @@
 			"parallaxY": 1,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		},
 		{
 			"name": "confirmation",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "TextUI",
@@ -438,7 +448,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 129,
 					"instanceVariables": {
@@ -530,6 +541,7 @@
 			"sid": 456674394524721,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
 			"color": [
 				1,
 				1,
@@ -547,8 +559,11 @@
 			"parallaxY": 1,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		}
 	],
@@ -558,5 +573,8 @@
 	"width": 1280,
 	"height": 720,
 	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
 	"eventSheet": "Setting_ES"
 }

@@ -7,36 +7,42 @@
 			"name": "isActive",
 			"type": "boolean",
 			"desc": "",
+			"show": true,
 			"sid": 488366772200541
 		},
 		{
 			"name": "Maze",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 629509420770840
 		},
 		{
 			"name": "Point",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 421606296515585
 		},
 		{
 			"name": "TargetMaze",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 627134591619872
 		},
 		{
 			"name": "TargetPoint",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 313497472908254
 		},
 		{
 			"name": "CollisionDir",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 647276340020785
 		}
 	],
