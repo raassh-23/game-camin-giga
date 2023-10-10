@@ -330,7 +330,8 @@
 								"ease": "easeoutsine",
 								"destroy-on-complete": "no",
 								"loop": "no",
-								"ping-pong": "no"
+								"ping-pong": "no",
+								"repeat-count": "1"
 							}
 						}
 					],

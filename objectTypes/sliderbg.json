@@ -8,6 +8,7 @@
 			"name": "id",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 571619110124387
 		}
 	],
@@ -19,9 +20,10 @@
 		"originX": 0.4696969696969697,
 		"originY": 0.3888888888888889,
 		"originalSource": "",
-		"exportFormat": "png",
+		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"imageSpriteId": 471432,
-		"useCollisionPoly": true
+		"useCollisionPoly": true,
+		"tag": ""
 	}
 }

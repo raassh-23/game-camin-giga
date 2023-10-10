@@ -8,6 +8,7 @@
 			"name": "id",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 546477066900016
 		}
 	],
@@ -23,11 +24,12 @@
 						"originX": 0.5,
 						"originY": 0.46774193548387094,
 						"originalSource": "",
-						"exportFormat": "png",
+						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"imageSpriteId": 4602009,
 						"useCollisionPoly": true,
-						"duration": 1
+						"duration": 1,
+						"tag": ""
 					},
 					{
 						"width": 62,
@@ -35,11 +37,12 @@
 						"originX": 0.5,
 						"originY": 0.46774193548387094,
 						"originalSource": "",
-						"exportFormat": "png",
+						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"imageSpriteId": 4669796,
 						"useCollisionPoly": true,
-						"duration": 1
+						"duration": 1,
+						"tag": ""
 					}
 				],
 				"sid": 427227817242903,

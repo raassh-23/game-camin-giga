@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 23404,
+	"savedWithRelease": 35800,
 	"name": "a-totally-normal-maze",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -8,74 +8,9 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "AJAX",
+			"name": "AJAX",
 			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Keyboard",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Tilemap",
-			"name": "Tilemap",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "shadowlight",
-			"name": "Shadow light",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Browser",
-			"name": "Browser",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Spritefont2",
-			"name": "Sprite font",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Touch",
-			"name": "Touch",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "PlatformInfo",
-			"name": "Platform info",
-			"author": "Scirra",
-			"version": "r234.4",
 			"bundled": false
 		},
 		{
@@ -83,15 +18,6 @@
 			"id": "Arr",
 			"name": "Array",
 			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "AJAX",
-			"name": "AJAX",
-			"author": "Scirra",
-			"version": "r234.4",
 			"bundled": false
 		},
 		{
@@ -99,23 +25,13 @@
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
-			"version": "r234.4",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "NinePatch",
-			"name": "9-patch",
+			"id": "Browser",
+			"name": "Browser",
 			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "LocalStorage",
-			"name": "Local storage",
-			"author": "Scirra",
-			"version": "r234.4",
 			"bundled": false
 		},
 		{
@@ -123,55 +39,76 @@
 			"id": "DrawingCanvas",
 			"name": "Drawing canvas",
 			"author": "Scirra",
-			"version": "r234.4",
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "TileMovement",
-			"name": "Tile movement",
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r234.4",
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
 			"author": "Scirra",
-			"version": "r234.4",
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "shadowcaster",
-			"name": "Shadow caster",
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
 			"author": "Scirra",
-			"version": "r234.4",
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
+			"type": "plugin",
+			"id": "PlatformInfo",
+			"name": "Platform info",
 			"author": "Scirra",
-			"version": "r234.4",
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "Pathfinding",
-			"name": "Pathfinding",
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r234.4",
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "Tween",
-			"name": "Tween",
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
 			"author": "Scirra",
-			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "shadowlight",
+			"name": "Shadow light",
+			"author": "Scirra",
 			"bundled": false
 		},
 		{
@@ -179,7 +116,6 @@
 			"id": "DragnDrop",
 			"name": "Drag & Drop",
 			"author": "Scirra",
-			"version": "r234.4",
 			"bundled": false
 		},
 		{
@@ -187,7 +123,48 @@
 			"id": "Fade",
 			"name": "Fade",
 			"author": "Scirra",
-			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "TileMovement",
+			"name": "Tile movement",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "shadowcaster",
+			"name": "Shadow caster",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
 			"bundled": false
 		}
 	],
@@ -208,7 +185,6 @@
 			"Pointer",
 			"PointerIcon",
 			"TextUI",
-			"MobileButton",
 			"Touch",
 			"PlatformInfo",
 			"LevelButton",
@@ -221,7 +197,6 @@
 			"LocalStorage",
 			"TextTutorial",
 			"levelSelect",
-			"CellMarker",
 			"BlackBG",
 			"TraceArray",
 			"TraceMap",
@@ -283,27 +258,42 @@
 				{
 					"name": "move.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 245390000773184
+					"sid": 245390000773184,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "pick.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 542730179456331
+					"sid": 542730179456331,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "drop.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 336392613687466
+					"sid": 336392613687466,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "tap.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 413578879210498
+					"sid": 413578879210498,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "bgm.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 870102827838848
+					"sid": 870102827838848,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
@@ -386,7 +376,10 @@
 				{
 					"name": "LevelData.json",
 					"type": "application/json",
-					"sid": 641942857901762
+					"sid": 641942857901762,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
@@ -409,6 +402,8 @@
 		"authorWebsite": "",
 		"appId": "",
 		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-scale",
 		"fullscreenQuality": "high",
@@ -432,21 +427,26 @@
 			1,
 			0
 		],
-		"useHighDpi": true,
 		"orientations": "any",
-		"enableWebGL": true,
+		"webgpu": "auto",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
 		"sampling": "trilinear",
 		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "progress",
 		"preloadSounds": true,
-		"clearBackground": true,
-		"enhancedAccelerationPrecision": true,
-		"cordovaiOSScheme": "app"
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "file",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "flat",
+		"uidAllocationMode": "increment"
 	},
 	"viewportWidth": 1280,
 	"viewportHeight": 720,
